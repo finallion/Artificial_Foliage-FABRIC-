@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "":
+    {
+      "model": "arfo:block/glowing_mushroom_fields_grass_block"
+    }
+  }
+}

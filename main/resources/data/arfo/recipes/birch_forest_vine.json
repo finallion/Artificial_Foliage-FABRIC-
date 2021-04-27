@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#X"
+  ],
+  "key": {
+    "#": {
+      "tag": "arfo:vines"
+    },
+    "X": {
+      "item": "arfo:birch_forest_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:birch_forest_vine",
+    "count": 1
+  }
+}

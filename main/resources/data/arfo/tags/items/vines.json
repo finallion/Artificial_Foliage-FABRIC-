@@ -1,0 +1,22 @@
+{
+  "values": [
+    "arfo:jungle_vine",
+    "arfo:jungle_edge_vine",
+    "arfo:savanna_vine",
+    "arfo:badlands_vine",
+    "arfo:forest_vine",
+    "arfo:birch_forest_vine",
+    "arfo:dark_forest_vine",
+    "arfo:plains_vine",
+    "arfo:swamp_vine",
+    "arfo:lush_swamp_vine",
+    "arfo:mountains_vine",
+    "arfo:mushroom_fields_vine",
+    "arfo:taiga_vine",
+    "arfo:mega_taiga_vine",
+    "arfo:snowy_vine",
+    "arfo:snowy_beach_vine",
+    "arfo:waters_vine",
+    "minecraft:vine"
+  ]
+}

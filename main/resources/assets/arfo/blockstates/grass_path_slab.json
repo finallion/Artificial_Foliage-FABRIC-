@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "type=bottom,snowy=false":
+    {
+      "model": "arfo:block/grass_path_slab"
+    },
+    "type=top,snowy=false":
+    {
+      "model": "arfo:block/grass_path_slab_top"
+    },
+    "type=double,snowy=false":
+    {
+      "model": "minecraft:block/grass_path"
+    },
+    "type=bottom,snowy=true":
+    {
+      "model": "arfo:block/grass_path_slab_snow"
+    },
+    "type=top,snowy=true":
+    {
+      "model": "arfo:block/grass_path_slab_top_snow"
+    },
+    "type=double,snowy=true":
+    {
+      "model": "arfo:block/grass_block_snow"
+    }
+  }
+}

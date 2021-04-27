@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "arfo:badlands_oak_leaves"
+    }
+  },
+  "result": {
+    "item": "arfo:badlands_oak_leaves_carpet",
+    "count": 8
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "values": [
+    "arfo:tropical_jungle_leaves",
+    "arfo:tropical_edge_jungle_leaves",
+    "arfo:savanna_jungle_leaves",
+    "arfo:badlands_jungle_leaves",
+    "arfo:forest_jungle_leaves",
+    "arfo:birch_forest_jungle_leaves",
+    "arfo:dark_forest_jungle_leaves",
+    "arfo:plains_jungle_leaves",
+    "arfo:swamp_jungle_leaves",
+    "arfo:lush_swamp_jungle_leaves",
+    "arfo:mountains_jungle_leaves",
+    "arfo:mushroom_fields_jungle_leaves",
+    "arfo:taiga_jungle_leaves",
+    "arfo:mega_taiga_jungle_leaves",
+    "arfo:snowy_jungle_leaves",
+    "arfo:snowy_beach_jungle_leaves",
+    "arfo:waters_jungle_leaves",
+    "minecraft:jungle_leaves"
+  ]
+}

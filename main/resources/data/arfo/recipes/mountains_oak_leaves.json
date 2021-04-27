@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "arfo:oak_leaves"
+    },
+    "X": {
+      "item": "arfo:mountains_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:mountains_oak_leaves",
+    "count": 8
+  }
+}

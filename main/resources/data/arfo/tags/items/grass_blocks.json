@@ -1,0 +1,22 @@
+{
+  "values": [
+    "arfo:jungle_grass_block",
+    "arfo:jungle_edge_grass_block",
+    "arfo:savanna_grass_block",
+    "arfo:badlands_grass_block",
+    "arfo:forest_grass_block",
+    "arfo:birch_forest_grass_block",
+    "arfo:dark_forest_grass_block",
+    "arfo:plains_grass_block",
+    "arfo:swamp_grass_block",
+    "arfo:lush_swamp_grass_block",
+    "arfo:mountains_grass_block",
+    "arfo:mushroom_fields_grass_block",
+    "arfo:taiga_grass_block",
+    "arfo:mega_taiga_grass_block",
+    "arfo:snowy_grass_block",
+    "arfo:snowy_beach_grass_block",
+    "arfo:waters_grass_block",
+    "minecraft:grass_block"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#X"
+  ],
+  "key": {
+    "#": {
+      "tag": "arfo:sugar_canes"
+    },
+    "X": {
+      "item": "arfo:lush_swamp_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:lush_swamp_sugar_cane",
+    "count": 1
+  }
+}
