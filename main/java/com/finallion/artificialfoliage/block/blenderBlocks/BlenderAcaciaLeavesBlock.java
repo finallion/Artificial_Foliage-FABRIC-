@@ -1,6 +1,5 @@
 package com.finallion.artificialfoliage.block.blenderBlocks;
 
-import com.finallion.artificialfoliage.block.IARFOLeaves;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockEntityProvider;
@@ -14,7 +13,7 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class BlenderAcaciaLeavesBlock extends Block implements BlockEntityProvider, IBlenderBlock, IBlenderLeavesBlock, IARFOLeaves {
+public class BlenderAcaciaLeavesBlock extends Block implements BlockEntityProvider, IBlenderBlock, IBlenderLeavesBlock {
 
     public BlenderAcaciaLeavesBlock() {
         super(FabricBlockSettings.copyOf(Blocks.ACACIA_LEAVES));

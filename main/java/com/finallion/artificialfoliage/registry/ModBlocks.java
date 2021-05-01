@@ -346,6 +346,26 @@ public class ModBlocks {
     public static final Block GLOWING_WATERS_GRASS_BLOCK = new ARFOGlowingGrassBlock();
 
 
+    // flower pot for ferns
+    public static final Block POTTED_JUNGLE_FERN = new FlowerPotBlock(JUNGLE_FERN, FabricBlockSettings.of(Material.SUPPORTED).breakInstantly().nonOpaque());
+    public static final Block POTTED_JUNGLE_EDGE_FERN = new FlowerPotBlock(JUNGLE_EDGE_FERN, FabricBlockSettings.of(Material.SUPPORTED).breakInstantly().nonOpaque());
+    public static final Block POTTED_BADLANDS_FERN = new FlowerPotBlock(BADLANDS_FERN, FabricBlockSettings.of(Material.SUPPORTED).breakInstantly().nonOpaque());
+    public static final Block POTTED_SAVANNA_FERN = new FlowerPotBlock(SAVANNA_FERN, FabricBlockSettings.of(Material.SUPPORTED).breakInstantly().nonOpaque());
+    public static final Block POTTED_FOREST_FERN = new FlowerPotBlock(FOREST_FERN, FabricBlockSettings.of(Material.SUPPORTED).breakInstantly().nonOpaque());
+    public static final Block POTTED_BIRCH_FOREST_FERN = new FlowerPotBlock(BIRCH_FOREST_FERN, FabricBlockSettings.of(Material.SUPPORTED).breakInstantly().nonOpaque());
+    public static final Block POTTED_DARK_FOREST_FERN = new FlowerPotBlock(DARK_FOREST_FERN, FabricBlockSettings.of(Material.SUPPORTED).breakInstantly().nonOpaque());
+    public static final Block POTTED_PLAINS_FERN = new FlowerPotBlock(PLAINS_FERN, FabricBlockSettings.of(Material.SUPPORTED).breakInstantly().nonOpaque());
+    public static final Block POTTED_SWAMP_FERN = new FlowerPotBlock(SWAMP_FERN, FabricBlockSettings.of(Material.SUPPORTED).breakInstantly().nonOpaque());
+    public static final Block POTTED_LUSH_SWAMP_FERN = new FlowerPotBlock(LUSH_SWAMP_FERN, FabricBlockSettings.of(Material.SUPPORTED).breakInstantly().nonOpaque());
+    public static final Block POTTED_MOUNTAINS_FERN = new FlowerPotBlock(MOUNTAINS_FERN, FabricBlockSettings.of(Material.SUPPORTED).breakInstantly().nonOpaque());
+    public static final Block POTTED_MUSHROOM_FIELDS_FERN = new FlowerPotBlock(MUSHROOM_FIELDS_FERN, FabricBlockSettings.of(Material.SUPPORTED).breakInstantly().nonOpaque());
+    public static final Block POTTED_TAIGA_FERN = new FlowerPotBlock(TAIGA_FERN, FabricBlockSettings.of(Material.SUPPORTED).breakInstantly().nonOpaque());
+    public static final Block POTTED_MEGA_TAIGA_FERN = new FlowerPotBlock(MEGA_TAIGA_FERN, FabricBlockSettings.of(Material.SUPPORTED).breakInstantly().nonOpaque());
+    public static final Block POTTED_SNOWY_FERN = new FlowerPotBlock(SNOWY_FERN, FabricBlockSettings.of(Material.SUPPORTED).breakInstantly().nonOpaque());
+    public static final Block POTTED_SNOWY_BEACH_FERN = new FlowerPotBlock(SNOWY_BEACH_FERN, FabricBlockSettings.of(Material.SUPPORTED).breakInstantly().nonOpaque());;
+    public static final Block POTTED_WATERS_FERN = new FlowerPotBlock(WATERS_FERN, FabricBlockSettings.of(Material.SUPPORTED).breakInstantly().nonOpaque());
+
+
     // blender blocks and block entities
     public static final Block BLENDER_GRASS_BLOCK = new BlenderGrassBlock();
     public static final Block BLENDER_OAK_LEAVES_BLOCK = new BlenderOakLeavesBlock();
@@ -669,6 +689,7 @@ public class ModBlocks {
         init("crimson_nylium_slab", CRIMSON_NYLIUM_SLAB);
         init("warped_nylium_slab", WARPED_NYLIUM_SLAB);
 
+        // glowing grass blocks
         init("glowing_jungle_grass_block", GLOWING_JUNGLE_GRASS_BLOCK);
         init("glowing_jungle_edge_grass_block", GLOWING_JUNGLE_EDGE_GRASS_BLOCK);
         init("glowing_badlands_grass_block", GLOWING_BADLANDS_GRASS_BLOCK);
@@ -686,6 +707,26 @@ public class ModBlocks {
         init("glowing_snowy_grass_block", GLOWING_SNOWY_GRASS_BLOCK);
         init("glowing_snowy_beach_grass_block", GLOWING_SNOWY_BEACH_GRASS_BLOCK);
         init("glowing_waters_grass_block", GLOWING_WATERS_GRASS_BLOCK);
+
+
+        // potted fern
+        init("potted_jungle_fern", POTTED_JUNGLE_FERN);
+        init("potted_jungle_edge_fern", POTTED_JUNGLE_EDGE_FERN);
+        init("potted_badlands_fern", POTTED_BADLANDS_FERN);
+        init("potted_savanna_fern", POTTED_SAVANNA_FERN);
+        init("potted_forest_fern", POTTED_FOREST_FERN);
+        init("potted_birch_forest_fern", POTTED_BIRCH_FOREST_FERN);
+        init("potted_dark_forest_fern", POTTED_DARK_FOREST_FERN);
+        init("potted_plains_fern", POTTED_PLAINS_FERN);
+        init("potted_swamp_fern", POTTED_SWAMP_FERN);
+        init("potted_lush_swamp_fern", POTTED_LUSH_SWAMP_FERN);
+        init("potted_mountains_fern", POTTED_MOUNTAINS_FERN);
+        init("potted_mushroom_fields_fern", POTTED_MUSHROOM_FIELDS_FERN);
+        init("potted_taiga_fern", POTTED_TAIGA_FERN);
+        init("potted_mega_taiga_fern", POTTED_MEGA_TAIGA_FERN);
+        init("potted_snowy_fern", POTTED_SNOWY_FERN);
+        init("potted_snowy_beach_fern", POTTED_SNOWY_BEACH_FERN);
+        init("potted_waters_fern", POTTED_WATERS_FERN);
 
 
 

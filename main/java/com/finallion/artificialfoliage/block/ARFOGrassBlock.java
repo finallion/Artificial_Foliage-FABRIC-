@@ -148,6 +148,8 @@ public class ARFOGrassBlock extends GrassBlock {
                     blockState4 = features.get(random.nextInt(features.size() / 2) + 4).getDefaultState();
                 }
 
+
+                // check if one above is air??
                 if (blockState4.canPlaceAt(world, blockPos2) && world.getBlockState(blockPos2).isAir()) {
                     world.setBlockState(blockPos2, blockState4, 3);
                     if (large) {

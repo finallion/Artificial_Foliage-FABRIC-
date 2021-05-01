@@ -6,7 +6,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.LeavesBlock;
 import net.minecraft.sound.BlockSoundGroup;
 
-public class ARFODarkOakLeavesBlock extends LeavesBlock implements IARFOLeaves {
+public class ARFODarkOakLeavesBlock extends LeavesBlock {
 
     public ARFODarkOakLeavesBlock() {
         super(FabricBlockSettings.copyOf(Blocks.DARK_OAK_LEAVES).breakByTool(FabricToolTags.HOES).breakByTool(FabricToolTags.SHEARS).sounds(BlockSoundGroup.GRASS));
