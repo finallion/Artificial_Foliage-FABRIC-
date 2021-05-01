@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "arfo:jungle_leaves"
+    },
+    "X": {
+      "item": "arfo:waters_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:waters_jungle_leaves",
+    "count": 8
+  }
+}

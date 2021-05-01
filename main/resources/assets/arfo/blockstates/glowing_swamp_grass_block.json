@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "":
+    {
+      "model": "arfo:block/glowing_swamp_grass_block"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "arfo:grass_blocks"
+    },
+    "X": {
+      "item": "arfo:swamp_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:swamp_grass_block",
+    "count": 8
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "arfo:badlands_grass_block"
+    }
+  },
+  "result": {
+    "item": "arfo:badlands_grass_slab",
+    "count": 6
+  }
+}

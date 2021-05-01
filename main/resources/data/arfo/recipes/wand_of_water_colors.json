@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " #Y",
+    " X#",
+    "X  "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:lapis_block"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    },
+    "Y": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "arfo:wand_of_water_colors",
+    "count": 1
+  }
+}

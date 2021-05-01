@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " #Y",
+    " XP",
+    "X  "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:redstone_block"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    },
+    "Y": {
+      "item": "minecraft:emerald_block"
+    },
+    "P": {
+      "item": "minecraft:diamond_block"
+    }
+  },
+  "result": {
+    "item": "arfo:wand_of_chaos_colors",
+    "count": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "arfo:acacia_leaves"
+    },
+    "X": {
+      "item": "arfo:badlands_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:badlands_acacia_leaves",
+    "count": 8
+  }
+}

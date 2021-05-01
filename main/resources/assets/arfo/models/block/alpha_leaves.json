@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/oak_leaves",
+  "textures": {
+    "all": "arfo:blocks/alpha_leaves"
+  }
+}

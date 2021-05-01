@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "arfo:mountains_jungle_leaves"
+    }
+  },
+  "result": {
+    "item": "arfo:mountains_jungle_leaves_carpet",
+    "count": 8
+  }
+}

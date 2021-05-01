@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "X": {
+      "item": "arfo:forest_grass_block"
+    }
+  },
+  "result": {
+    "item": "arfo:glowing_forest_grass_block",
+    "count": 1
+  }
+}

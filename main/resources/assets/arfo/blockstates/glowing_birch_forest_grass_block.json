@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "":
+    {
+      "model": "arfo:block/glowing_birch_forest_grass_block"
+    }
+  }
+}

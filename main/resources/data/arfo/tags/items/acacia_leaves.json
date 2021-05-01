@@ -1,0 +1,22 @@
+{
+  "values": [
+    "arfo:tropical_acacia_leaves",
+    "arfo:tropical_edge_acacia_leaves",
+    "arfo:savanna_acacia_leaves",
+    "arfo:badlands_acacia_leaves",
+    "arfo:forest_acacia_leaves",
+    "arfo:birch_forest_acacia_leaves",
+    "arfo:dark_forest_acacia_leaves",
+    "arfo:plains_acacia_leaves",
+    "arfo:swamp_acacia_leaves",
+    "arfo:lush_swamp_acacia_leaves",
+    "arfo:mountains_acacia_leaves",
+    "arfo:mushroom_fields_acacia_leaves",
+    "arfo:taiga_acacia_leaves",
+    "arfo:mega_taiga_acacia_leaves",
+    "arfo:snowy_acacia_leaves",
+    "arfo:snowy_beach_acacia_leaves",
+    "arfo:waters_acacia_leaves",
+    "minecraft:acacia_leaves"
+  ]
+}

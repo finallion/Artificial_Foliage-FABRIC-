@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "arfo:dark_oak_leaves"
+    },
+    "X": {
+      "item": "arfo:badlands_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:badlands_dark_oak_leaves",
+    "count": 8
+  }
+}
