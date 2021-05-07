@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#X"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:bucket"
+    },
+    "X": {
+      "tag": "arfo:swamp_water_dyes"
+    }
+  },
+  "result": {
+    "item": "arfo:swamp_water_bucket",
+    "count": 1
+  }
+}

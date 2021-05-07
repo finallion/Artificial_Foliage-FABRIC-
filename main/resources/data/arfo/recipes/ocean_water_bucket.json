@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#X"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:bucket"
+    },
+    "X": {
+      "tag": "arfo:ocean_dyes"
+    }
+  },
+  "result": {
+    "item": "arfo:ocean_water_bucket",
+    "count": 1
+  }
+}
