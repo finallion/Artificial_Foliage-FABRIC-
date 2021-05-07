@@ -9,7 +9,6 @@ import com.finallion.artificialfoliage.block.models.*;
 import com.finallion.artificialfoliage.registry.ModBlocks;
 import com.finallion.artificialfoliage.registry.ModItems;
 import com.finallion.artificialfoliage.utils.ColorProvider;
-import com.sun.org.apache.xpath.internal.operations.Mod;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -37,9 +36,14 @@ import org.jetbrains.annotations.Nullable;
 @Environment(EnvType.CLIENT)
 public class ArtificialFoliageClient implements ClientModInitializer {
 
-    private void registerBlockColor(BlockColorProvider color, Block ... block) {
+    private void registerGrassBlockColor(BlockColorProvider color, Block ... block) {
         ColorProviderRegistry.BLOCK.register(color, block);
         BlockRenderLayerMap.INSTANCE.putBlocks(GRASS_BLOCK_LAYER, block);
+    }
+
+    private void registerLeaveBlockColor(BlockColorProvider color, Block ... block) {
+        ColorProviderRegistry.BLOCK.register(color, block);
+        BlockRenderLayerMap.INSTANCE.putBlocks(LEAVE_BLOCK_LAYER, block);
     }
 
     private void registerItemColor(ItemColorProvider color, BlockItem ... blockItem) {
@@ -58,15 +62,20 @@ public class ArtificialFoliageClient implements ClientModInitializer {
 
 
         // blocks
-        registerBlockColor(ColorProvider.MUSHROOM_FIELDS_COLOR,
+        registerGrassBlockColor(ColorProvider.MUSHROOM_FIELDS_COLOR,
                 ModBlocks.MUSHROOM_FIELDS_GRASS_BLOCK,
                 ModBlocks.MUSHROOM_FIELDS_GRASS_SLAB,
                 ModBlocks.MUSHROOM_FIELDS_GRASS,
                 ModBlocks.TALL_MUSHROOM_FIELDS_GRASS,
                 ModBlocks.MUSHROOM_FIELDS_FERN,
                 ModBlocks.LARGE_MUSHROOM_FIELDS_FERN,
-                ModBlocks.MUSHROOM_FIELDS_VINE,
                 ModBlocks.MUSHROOM_FIELDS_SUGAR_CANE,
+                ModBlocks.GLOWING_MUSHROOM_FIELDS_GRASS_BLOCK,
+                ModBlocks.POTTED_MUSHROOM_FIELDS_FERN
+        );
+
+        registerLeaveBlockColor(ColorProvider.MUSHROOM_FIELDS_LEAVE_COLOR,
+                ModBlocks.MUSHROOM_FIELDS_VINE,
                 ModBlocks.MUSHROOM_FIELDS_ACACIA_LEAVES,
                 ModBlocks.MUSHROOM_FIELDS_ACACIA_LEAVES_CARPET,
                 ModBlocks.MUSHROOM_FIELDS_DARK_OAK_LEAVES,
@@ -74,20 +83,23 @@ public class ArtificialFoliageClient implements ClientModInitializer {
                 ModBlocks.MUSHROOM_FIELDS_JUNGLE_LEAVES,
                 ModBlocks.MUSHROOM_FIELDS_JUNGLE_LEAVES_CARPET,
                 ModBlocks.MUSHROOM_FIELDS_OAK_LEAVES,
-                ModBlocks.MUSHROOM_FIELDS_OAK_LEAVES_CARPET,
-                ModBlocks.GLOWING_MUSHROOM_FIELDS_GRASS_BLOCK,
-                ModBlocks.POTTED_MUSHROOM_FIELDS_FERN
+                ModBlocks.MUSHROOM_FIELDS_OAK_LEAVES_CARPET
         );
 
-        registerBlockColor(ColorProvider.JUNGLE_COLOR,
+        registerGrassBlockColor(ColorProvider.JUNGLE_COLOR,
                 ModBlocks.JUNGLE_GRASS_BLOCK,
                 ModBlocks.JUNGLE_GRASS_SLAB,
                 ModBlocks.JUNGLE_GRASS,
                 ModBlocks.TALL_JUNGLE_GRASS,
                 ModBlocks.JUNGLE_FERN,
                 ModBlocks.LARGE_JUNGLE_FERN,
-                ModBlocks.JUNGLE_VINE,
                 ModBlocks.JUNGLE_SUGAR_CANE,
+                ModBlocks.GLOWING_JUNGLE_GRASS_BLOCK,
+                ModBlocks.POTTED_JUNGLE_FERN
+        );
+
+        registerLeaveBlockColor(ColorProvider.JUNGLE_LEAVE_COLOR,
+                ModBlocks.JUNGLE_VINE,
                 ModBlocks.TROPICAL_ACACIA_LEAVES,
                 ModBlocks.TROPICAL_ACACIA_LEAVES_CARPET,
                 ModBlocks.TROPICAL_DARK_OAK_LEAVES,
@@ -95,20 +107,23 @@ public class ArtificialFoliageClient implements ClientModInitializer {
                 ModBlocks.TROPICAL_JUNGLE_LEAVES,
                 ModBlocks.TROPICAL_JUNGLE_LEAVES_CARPET,
                 ModBlocks.TROPICAL_OAK_LEAVES,
-                ModBlocks.TROPICAL_OAK_LEAVES_CARPET,
-                ModBlocks.GLOWING_JUNGLE_GRASS_BLOCK,
-                ModBlocks.POTTED_JUNGLE_FERN
+                ModBlocks.TROPICAL_OAK_LEAVES_CARPET
         );
 
-        registerBlockColor(ColorProvider.JUNGLE_EDGE_COLOR,
+        registerGrassBlockColor(ColorProvider.JUNGLE_EDGE_COLOR,
                 ModBlocks.JUNGLE_EDGE_GRASS_BLOCK,
                 ModBlocks.JUNGLE_EDGE_GRASS_SLAB,
                 ModBlocks.JUNGLE_EDGE_GRASS,
                 ModBlocks.TALL_JUNGLE_EDGE_GRASS,
                 ModBlocks.JUNGLE_EDGE_FERN,
                 ModBlocks.LARGE_JUNGLE_EDGE_FERN,
-                ModBlocks.JUNGLE_EDGE_VINE,
                 ModBlocks.JUNGLE_EDGE_SUGAR_CANE,
+                ModBlocks.GLOWING_JUNGLE_EDGE_GRASS_BLOCK,
+                ModBlocks.POTTED_JUNGLE_EDGE_FERN
+        );
+
+        registerLeaveBlockColor(ColorProvider.JUNGLE_EDGE_LEAVE_COLOR,
+                ModBlocks.JUNGLE_EDGE_VINE,
                 ModBlocks.TROPICAL_EDGE_ACACIA_LEAVES,
                 ModBlocks.TROPICAL_EDGE_ACACIA_LEAVES_CARPET,
                 ModBlocks.TROPICAL_EDGE_DARK_OAK_LEAVES,
@@ -116,20 +131,24 @@ public class ArtificialFoliageClient implements ClientModInitializer {
                 ModBlocks.TROPICAL_EDGE_JUNGLE_LEAVES,
                 ModBlocks.TROPICAL_EDGE_JUNGLE_LEAVES_CARPET,
                 ModBlocks.TROPICAL_EDGE_OAK_LEAVES,
-                ModBlocks.TROPICAL_EDGE_OAK_LEAVES_CARPET,
-                ModBlocks.GLOWING_JUNGLE_EDGE_GRASS_BLOCK,
-                ModBlocks.POTTED_JUNGLE_EDGE_FERN
+                ModBlocks.TROPICAL_EDGE_OAK_LEAVES_CARPET
         );
 
-        registerBlockColor(ColorProvider.PLAINS_COLOR,
+        registerGrassBlockColor(ColorProvider.PLAINS_COLOR,
                 ModBlocks.PLAINS_GRASS_BLOCK,
                 ModBlocks.PLAINS_GRASS_SLAB,
                 ModBlocks.PLAINS_GRASS,
                 ModBlocks.TALL_PLAINS_GRASS,
                 ModBlocks.PLAINS_FERN,
                 ModBlocks.LARGE_PLAINS_FERN,
-                ModBlocks.PLAINS_VINE,
                 ModBlocks.PLAINS_SUGAR_CANE,
+                ModBlocks.GLOWING_PLAINS_GRASS_BLOCK,
+                ModBlocks.POTTED_PLAINS_FERN
+        );
+
+
+        registerLeaveBlockColor(ColorProvider.PLAINS_LEAVE_COLOR,
+                ModBlocks.PLAINS_VINE,
                 ModBlocks.PLAINS_ACACIA_LEAVES,
                 ModBlocks.PLAINS_ACACIA_LEAVES_CARPET,
                 ModBlocks.PLAINS_DARK_OAK_LEAVES,
@@ -137,20 +156,23 @@ public class ArtificialFoliageClient implements ClientModInitializer {
                 ModBlocks.PLAINS_JUNGLE_LEAVES,
                 ModBlocks.PLAINS_JUNGLE_LEAVES_CARPET,
                 ModBlocks.PLAINS_OAK_LEAVES,
-                ModBlocks.PLAINS_OAK_LEAVES_CARPET,
-                ModBlocks.GLOWING_PLAINS_GRASS_BLOCK,
-                ModBlocks.POTTED_PLAINS_FERN
+                ModBlocks.PLAINS_OAK_LEAVES_CARPET
         );
 
-        registerBlockColor(ColorProvider.FOREST_COLOR,
+        registerGrassBlockColor(ColorProvider.FOREST_COLOR,
                 ModBlocks.FOREST_GRASS_BLOCK,
                 ModBlocks.FOREST_GRASS_SLAB,
                 ModBlocks.FOREST_GRASS,
                 ModBlocks.TALL_FOREST_GRASS,
                 ModBlocks.FOREST_FERN,
                 ModBlocks.LARGE_FOREST_FERN,
-                ModBlocks.FOREST_VINE,
                 ModBlocks.FOREST_SUGAR_CANE,
+                ModBlocks.GLOWING_FOREST_GRASS_BLOCK,
+                ModBlocks.POTTED_FOREST_FERN
+        );
+
+        registerLeaveBlockColor(ColorProvider.FOREST_LEAVE_COLOR,
+                ModBlocks.FOREST_VINE,
                 ModBlocks.FOREST_ACACIA_LEAVES,
                 ModBlocks.FOREST_ACACIA_LEAVES_CARPET,
                 ModBlocks.FOREST_DARK_OAK_LEAVES,
@@ -158,20 +180,23 @@ public class ArtificialFoliageClient implements ClientModInitializer {
                 ModBlocks.FOREST_JUNGLE_LEAVES,
                 ModBlocks.FOREST_JUNGLE_LEAVES_CARPET,
                 ModBlocks.FOREST_OAK_LEAVES,
-                ModBlocks.FOREST_OAK_LEAVES_CARPET,
-                ModBlocks.GLOWING_FOREST_GRASS_BLOCK,
-                ModBlocks.POTTED_FOREST_FERN
+                ModBlocks.FOREST_OAK_LEAVES_CARPET
         );
 
-        registerBlockColor(ColorProvider.BIRCH_FOREST_COLOR,
+        registerGrassBlockColor(ColorProvider.BIRCH_FOREST_COLOR,
                 ModBlocks.BIRCH_FOREST_GRASS_BLOCK,
                 ModBlocks.BIRCH_FOREST_GRASS_SLAB,
                 ModBlocks.BIRCH_FOREST_GRASS,
                 ModBlocks.TALL_BIRCH_FOREST_GRASS,
                 ModBlocks.BIRCH_FOREST_FERN,
                 ModBlocks.LARGE_BIRCH_FOREST_FERN,
-                ModBlocks.BIRCH_FOREST_VINE,
                 ModBlocks.BIRCH_FOREST_SUGAR_CANE,
+                ModBlocks.GLOWING_BIRCH_FOREST_GRASS_BLOCK,
+                ModBlocks.POTTED_BIRCH_FOREST_FERN
+        );
+
+        registerLeaveBlockColor(ColorProvider.BIRCH_FOREST_LEAVE_COLOR,
+                ModBlocks.BIRCH_FOREST_VINE,
                 ModBlocks.BIRCH_FOREST_ACACIA_LEAVES,
                 ModBlocks.BIRCH_FOREST_ACACIA_LEAVES_CARPET,
                 ModBlocks.BIRCH_FOREST_DARK_OAK_LEAVES,
@@ -179,20 +204,23 @@ public class ArtificialFoliageClient implements ClientModInitializer {
                 ModBlocks.BIRCH_FOREST_JUNGLE_LEAVES,
                 ModBlocks.BIRCH_FOREST_JUNGLE_LEAVES_CARPET,
                 ModBlocks.BIRCH_FOREST_OAK_LEAVES,
-                ModBlocks.BIRCH_FOREST_OAK_LEAVES_CARPET,
-                ModBlocks.GLOWING_BIRCH_FOREST_GRASS_BLOCK,
-                ModBlocks.POTTED_BIRCH_FOREST_FERN
+                ModBlocks.BIRCH_FOREST_OAK_LEAVES_CARPET
         );
 
-        registerBlockColor(ColorProvider.WATERS_COLOR,
+        registerGrassBlockColor(ColorProvider.WATERS_COLOR,
                 ModBlocks.WATERS_GRASS_BLOCK,
                 ModBlocks.WATERS_GRASS_SLAB,
                 ModBlocks.WATERS_GRASS,
                 ModBlocks.TALL_WATERS_GRASS,
                 ModBlocks.WATERS_FERN,
                 ModBlocks.LARGE_WATERS_FERN,
-                ModBlocks.WATERS_VINE,
                 ModBlocks.WATERS_SUGAR_CANE,
+                ModBlocks.GLOWING_WATERS_GRASS_BLOCK,
+                ModBlocks.POTTED_WATERS_FERN
+        );
+
+        registerLeaveBlockColor(ColorProvider.WATERS_LEAVE_COLOR,
+                ModBlocks.WATERS_VINE,
                 ModBlocks.WATERS_ACACIA_LEAVES,
                 ModBlocks.WATERS_ACACIA_LEAVES_CARPET,
                 ModBlocks.WATERS_DARK_OAK_LEAVES,
@@ -200,20 +228,23 @@ public class ArtificialFoliageClient implements ClientModInitializer {
                 ModBlocks.WATERS_JUNGLE_LEAVES,
                 ModBlocks.WATERS_JUNGLE_LEAVES_CARPET,
                 ModBlocks.WATERS_OAK_LEAVES,
-                ModBlocks.WATERS_OAK_LEAVES_CARPET,
-                ModBlocks.GLOWING_WATERS_GRASS_BLOCK,
-                ModBlocks.POTTED_WATERS_FERN
+                ModBlocks.WATERS_OAK_LEAVES_CARPET
         );
 
-        registerBlockColor(ColorProvider.MEGA_TAIGA_COLOR,
+        registerGrassBlockColor(ColorProvider.MEGA_TAIGA_COLOR,
                 ModBlocks.MEGA_TAIGA_GRASS_BLOCK,
                 ModBlocks.MEGA_TAIGA_GRASS_SLAB,
                 ModBlocks.MEGA_TAIGA_GRASS,
                 ModBlocks.TALL_MEGA_TAIGA_GRASS,
                 ModBlocks.MEGA_TAIGA_FERN,
                 ModBlocks.LARGE_MEGA_TAIGA_FERN,
-                ModBlocks.MEGA_TAIGA_VINE,
                 ModBlocks.MEGA_TAIGA_SUGAR_CANE,
+                ModBlocks.GLOWING_MEGA_TAIGA_GRASS_BLOCK,
+                ModBlocks.POTTED_MEGA_TAIGA_FERN
+        );
+
+        registerLeaveBlockColor(ColorProvider.MEGA_TAIGA_LEAVE_COLOR,
+                ModBlocks.MEGA_TAIGA_VINE,
                 ModBlocks.MEGA_TAIGA_ACACIA_LEAVES,
                 ModBlocks.MEGA_TAIGA_ACACIA_LEAVES_CARPET,
                 ModBlocks.MEGA_TAIGA_DARK_OAK_LEAVES,
@@ -221,20 +252,24 @@ public class ArtificialFoliageClient implements ClientModInitializer {
                 ModBlocks.MEGA_TAIGA_JUNGLE_LEAVES,
                 ModBlocks.MEGA_TAIGA_JUNGLE_LEAVES_CARPET,
                 ModBlocks.MEGA_TAIGA_OAK_LEAVES,
-                ModBlocks.MEGA_TAIGA_OAK_LEAVES_CARPET,
-                ModBlocks.GLOWING_MEGA_TAIGA_GRASS_BLOCK,
-                ModBlocks.POTTED_MEGA_TAIGA_FERN
+                ModBlocks.MEGA_TAIGA_OAK_LEAVES_CARPET
         );
 
-        registerBlockColor(ColorProvider.TAIGA_COLOR,
+
+        registerGrassBlockColor(ColorProvider.TAIGA_COLOR,
                 ModBlocks.TAIGA_GRASS_BLOCK,
                 ModBlocks.TAIGA_GRASS_SLAB,
                 ModBlocks.TAIGA_GRASS,
                 ModBlocks.TALL_TAIGA_GRASS,
                 ModBlocks.TAIGA_FERN,
                 ModBlocks.LARGE_TAIGA_FERN,
-                ModBlocks.TAIGA_VINE,
                 ModBlocks.TAIGA_SUGAR_CANE,
+                ModBlocks.GLOWING_TAIGA_GRASS_BLOCK,
+                ModBlocks.POTTED_TAIGA_FERN
+        );
+
+        registerLeaveBlockColor(ColorProvider.TAIGA_LEAVE_COLOR,
+                ModBlocks.TAIGA_VINE,
                 ModBlocks.TAIGA_ACACIA_LEAVES,
                 ModBlocks.TAIGA_ACACIA_LEAVES_CARPET,
                 ModBlocks.TAIGA_DARK_OAK_LEAVES,
@@ -242,20 +277,23 @@ public class ArtificialFoliageClient implements ClientModInitializer {
                 ModBlocks.TAIGA_JUNGLE_LEAVES,
                 ModBlocks.TAIGA_JUNGLE_LEAVES_CARPET,
                 ModBlocks.TAIGA_OAK_LEAVES,
-                ModBlocks.TAIGA_OAK_LEAVES_CARPET,
-                ModBlocks.GLOWING_TAIGA_GRASS_BLOCK,
-                ModBlocks.POTTED_TAIGA_FERN
+                ModBlocks.TAIGA_OAK_LEAVES_CARPET
         );
 
-        registerBlockColor(ColorProvider.MOUNTAINS_COLOR,
+        registerGrassBlockColor(ColorProvider.MOUNTAINS_COLOR,
                 ModBlocks.MOUNTAINS_GRASS_BLOCK,
                 ModBlocks.MOUNTAINS_GRASS_SLAB,
                 ModBlocks.MOUNTAINS_GRASS,
                 ModBlocks.TALL_MOUNTAINS_GRASS,
                 ModBlocks.MOUNTAINS_FERN,
                 ModBlocks.LARGE_MOUNTAINS_FERN,
-                ModBlocks.MOUNTAINS_VINE,
                 ModBlocks.MOUNTAINS_SUGAR_CANE,
+                ModBlocks.GLOWING_MOUNTAINS_GRASS_BLOCK,
+                ModBlocks.POTTED_MOUNTAINS_FERN
+        );
+
+        registerLeaveBlockColor(ColorProvider.MOUNTAINS_LEAVE_COLOR,
+                ModBlocks.MOUNTAINS_VINE,
                 ModBlocks.MOUNTAINS_ACACIA_LEAVES,
                 ModBlocks.MOUNTAINS_ACACIA_LEAVES_CARPET,
                 ModBlocks.MOUNTAINS_DARK_OAK_LEAVES,
@@ -263,20 +301,23 @@ public class ArtificialFoliageClient implements ClientModInitializer {
                 ModBlocks.MOUNTAINS_JUNGLE_LEAVES,
                 ModBlocks.MOUNTAINS_JUNGLE_LEAVES_CARPET,
                 ModBlocks.MOUNTAINS_OAK_LEAVES,
-                ModBlocks.MOUNTAINS_OAK_LEAVES_CARPET,
-                ModBlocks.GLOWING_MOUNTAINS_GRASS_BLOCK,
-                ModBlocks.POTTED_MOUNTAINS_FERN
+                ModBlocks.MOUNTAINS_OAK_LEAVES_CARPET
         );
 
-        registerBlockColor(ColorProvider.SNOWY_COLOR,
+        registerGrassBlockColor(ColorProvider.SNOWY_COLOR,
                 ModBlocks.SNOWY_GRASS_BLOCK,
                 ModBlocks.SNOWY_GRASS_SLAB,
                 ModBlocks.SNOWY_GRASS,
                 ModBlocks.TALL_SNOWY_GRASS,
                 ModBlocks.SNOWY_FERN,
                 ModBlocks.LARGE_SNOWY_FERN,
-                ModBlocks.SNOWY_VINE,
                 ModBlocks.SNOWY_SUGAR_CANE,
+                ModBlocks.GLOWING_SNOWY_GRASS_BLOCK,
+                ModBlocks.POTTED_SNOWY_FERN
+        );
+
+        registerLeaveBlockColor(ColorProvider.SNOWY_LEAVE_COLOR,
+                ModBlocks.SNOWY_VINE,
                 ModBlocks.SNOWY_ACACIA_LEAVES,
                 ModBlocks.SNOWY_ACACIA_LEAVES_CARPET,
                 ModBlocks.SNOWY_DARK_OAK_LEAVES,
@@ -284,20 +325,23 @@ public class ArtificialFoliageClient implements ClientModInitializer {
                 ModBlocks.SNOWY_JUNGLE_LEAVES,
                 ModBlocks.SNOWY_JUNGLE_LEAVES_CARPET,
                 ModBlocks.SNOWY_OAK_LEAVES,
-                ModBlocks.SNOWY_OAK_LEAVES_CARPET,
-                ModBlocks.GLOWING_SNOWY_GRASS_BLOCK,
-                ModBlocks.POTTED_SNOWY_FERN
+                ModBlocks.SNOWY_OAK_LEAVES_CARPET
         );
 
-        registerBlockColor(ColorProvider.SNOWY_BEACH_COLOR,
+        registerGrassBlockColor(ColorProvider.SNOWY_BEACH_COLOR,
                 ModBlocks.SNOWY_BEACH_GRASS_BLOCK,
                 ModBlocks.SNOWY_BEACH_GRASS_SLAB,
                 ModBlocks.SNOWY_BEACH_GRASS,
                 ModBlocks.TALL_SNOWY_BEACH_GRASS,
                 ModBlocks.SNOWY_BEACH_FERN,
                 ModBlocks.LARGE_SNOWY_BEACH_FERN,
-                ModBlocks.SNOWY_BEACH_VINE,
                 ModBlocks.SNOWY_BEACH_SUGAR_CANE,
+                ModBlocks.GLOWING_SNOWY_BEACH_GRASS_BLOCK,
+                ModBlocks.POTTED_SNOWY_BEACH_FERN
+        );
+
+        registerLeaveBlockColor(ColorProvider.SNOWY_BEACH_LEAVE_COLOR,
+                ModBlocks.SNOWY_BEACH_VINE,
                 ModBlocks.SNOWY_BEACH_ACACIA_LEAVES,
                 ModBlocks.SNOWY_BEACH_ACACIA_LEAVES_CARPET,
                 ModBlocks.SNOWY_BEACH_DARK_OAK_LEAVES,
@@ -305,20 +349,23 @@ public class ArtificialFoliageClient implements ClientModInitializer {
                 ModBlocks.SNOWY_BEACH_JUNGLE_LEAVES,
                 ModBlocks.SNOWY_BEACH_JUNGLE_LEAVES_CARPET,
                 ModBlocks.SNOWY_BEACH_OAK_LEAVES,
-                ModBlocks.SNOWY_BEACH_OAK_LEAVES_CARPET,
-                ModBlocks.GLOWING_SNOWY_BEACH_GRASS_BLOCK,
-                ModBlocks.POTTED_SNOWY_BEACH_FERN
+                ModBlocks.SNOWY_BEACH_OAK_LEAVES_CARPET
         );
 
-        registerBlockColor(ColorProvider.DARK_FOREST_COLOR,
+        registerGrassBlockColor(ColorProvider.DARK_FOREST_COLOR,
                 ModBlocks.DARK_FOREST_GRASS_BLOCK,
                 ModBlocks.DARK_FOREST_GRASS_SLAB,
                 ModBlocks.DARK_FOREST_GRASS,
                 ModBlocks.TALL_DARK_FOREST_GRASS,
                 ModBlocks.DARK_FOREST_FERN,
                 ModBlocks.LARGE_DARK_FOREST_FERN,
-                ModBlocks.DARK_FOREST_VINE,
                 ModBlocks.DARK_FOREST_SUGAR_CANE,
+                ModBlocks.GLOWING_DARK_FOREST_GRASS_BLOCK,
+                ModBlocks.POTTED_DARK_FOREST_FERN
+        );
+
+        registerLeaveBlockColor(ColorProvider.DARK_FOREST_LEAVE_COLOR,
+                ModBlocks.DARK_FOREST_VINE,
                 ModBlocks.DARK_FOREST_ACACIA_LEAVES,
                 ModBlocks.DARK_FOREST_ACACIA_LEAVES_CARPET,
                 ModBlocks.DARK_FOREST_DARK_OAK_LEAVES,
@@ -326,20 +373,23 @@ public class ArtificialFoliageClient implements ClientModInitializer {
                 ModBlocks.DARK_FOREST_JUNGLE_LEAVES,
                 ModBlocks.DARK_FOREST_JUNGLE_LEAVES_CARPET,
                 ModBlocks.DARK_FOREST_OAK_LEAVES,
-                ModBlocks.DARK_FOREST_OAK_LEAVES_CARPET,
-                ModBlocks.GLOWING_DARK_FOREST_GRASS_BLOCK,
-                ModBlocks.POTTED_DARK_FOREST_FERN
+                ModBlocks.DARK_FOREST_OAK_LEAVES_CARPET
         );
 
-        registerBlockColor(ColorProvider.LUSH_SWAMP_COLOR,
+        registerGrassBlockColor(ColorProvider.LUSH_SWAMP_COLOR,
                 ModBlocks.LUSH_SWAMP_GRASS_BLOCK,
                 ModBlocks.LUSH_SWAMP_GRASS_SLAB,
                 ModBlocks.LUSH_SWAMP_GRASS,
                 ModBlocks.TALL_LUSH_SWAMP_GRASS,
                 ModBlocks.LUSH_SWAMP_FERN,
                 ModBlocks.LARGE_LUSH_SWAMP_FERN,
-                ModBlocks.LUSH_SWAMP_VINE,
                 ModBlocks.LUSH_SWAMP_SUGAR_CANE,
+                ModBlocks.GLOWING_LUSH_SWAMP_GRASS_BLOCK,
+                ModBlocks.POTTED_LUSH_SWAMP_FERN
+        );
+
+        registerLeaveBlockColor(ColorProvider.LUSH_SWAMP_LEAVE_COLOR,
+                ModBlocks.LUSH_SWAMP_VINE,
                 ModBlocks.LUSH_SWAMP_ACACIA_LEAVES,
                 ModBlocks.LUSH_SWAMP_ACACIA_LEAVES_CARPET,
                 ModBlocks.LUSH_SWAMP_DARK_OAK_LEAVES,
@@ -347,20 +397,23 @@ public class ArtificialFoliageClient implements ClientModInitializer {
                 ModBlocks.LUSH_SWAMP_JUNGLE_LEAVES,
                 ModBlocks.LUSH_SWAMP_JUNGLE_LEAVES_CARPET,
                 ModBlocks.LUSH_SWAMP_OAK_LEAVES,
-                ModBlocks.LUSH_SWAMP_OAK_LEAVES_CARPET,
-                ModBlocks.GLOWING_LUSH_SWAMP_GRASS_BLOCK,
-                ModBlocks.POTTED_LUSH_SWAMP_FERN
+                ModBlocks.LUSH_SWAMP_OAK_LEAVES_CARPET
         );
 
-        registerBlockColor(ColorProvider.SWAMP_COLOR,
+        registerGrassBlockColor(ColorProvider.SWAMP_COLOR,
                 ModBlocks.SWAMP_GRASS_BLOCK,
                 ModBlocks.SWAMP_GRASS_SLAB,
                 ModBlocks.SWAMP_GRASS,
                 ModBlocks.TALL_SWAMP_GRASS,
                 ModBlocks.SWAMP_FERN,
                 ModBlocks.LARGE_SWAMP_FERN,
-                ModBlocks.SWAMP_VINE,
                 ModBlocks.SWAMP_SUGAR_CANE,
+                ModBlocks.GLOWING_SWAMP_GRASS_BLOCK,
+                ModBlocks.POTTED_SWAMP_FERN
+        );
+
+        registerLeaveBlockColor(ColorProvider.SWAMP_LEAVE_COLOR,
+                ModBlocks.SWAMP_VINE,
                 ModBlocks.SWAMP_ACACIA_LEAVES,
                 ModBlocks.SWAMP_ACACIA_LEAVES_CARPET,
                 ModBlocks.SWAMP_DARK_OAK_LEAVES,
@@ -368,20 +421,22 @@ public class ArtificialFoliageClient implements ClientModInitializer {
                 ModBlocks.SWAMP_JUNGLE_LEAVES,
                 ModBlocks.SWAMP_JUNGLE_LEAVES_CARPET,
                 ModBlocks.SWAMP_OAK_LEAVES,
-                ModBlocks.SWAMP_OAK_LEAVES_CARPET,
-                ModBlocks.GLOWING_SWAMP_GRASS_BLOCK,
-                ModBlocks.POTTED_SWAMP_FERN
+                ModBlocks.SWAMP_OAK_LEAVES_CARPET
         );
 
-        registerBlockColor(ColorProvider.SAVANNA_COLOR,
+        registerGrassBlockColor(ColorProvider.SAVANNA_COLOR,
                 ModBlocks.SAVANNA_GRASS_BLOCK,
                 ModBlocks.SAVANNA_GRASS_SLAB,
                 ModBlocks.SAVANNA_GRASS,
                 ModBlocks.TALL_SAVANNA_GRASS,
                 ModBlocks.SAVANNA_FERN,
                 ModBlocks.LARGE_SAVANNA_FERN,
-                ModBlocks.SAVANNA_VINE,
                 ModBlocks.SAVANNA_SUGAR_CANE,
+                ModBlocks.GLOWING_SAVANNA_GRASS_BLOCK,
+                ModBlocks.POTTED_SAVANNA_FERN
+        );
+        registerLeaveBlockColor(ColorProvider.SAVANNA_LEAVE_COLOR,
+                ModBlocks.SAVANNA_VINE,
                 ModBlocks.SAVANNA_ACACIA_LEAVES,
                 ModBlocks.SAVANNA_ACACIA_LEAVES_CARPET,
                 ModBlocks.SAVANNA_DARK_OAK_LEAVES,
@@ -389,20 +444,23 @@ public class ArtificialFoliageClient implements ClientModInitializer {
                 ModBlocks.SAVANNA_JUNGLE_LEAVES,
                 ModBlocks.SAVANNA_JUNGLE_LEAVES_CARPET,
                 ModBlocks.SAVANNA_OAK_LEAVES,
-                ModBlocks.SAVANNA_OAK_LEAVES_CARPET,
-                ModBlocks.GLOWING_SAVANNA_GRASS_BLOCK,
-                ModBlocks.POTTED_SAVANNA_FERN
+                ModBlocks.SAVANNA_OAK_LEAVES_CARPET
         );
 
-        registerBlockColor(ColorProvider.BADLANDS_COLOR,
+        registerGrassBlockColor(ColorProvider.BADLANDS_COLOR,
                 ModBlocks.BADLANDS_GRASS_BLOCK,
                 ModBlocks.BADLANDS_GRASS_SLAB,
                 ModBlocks.BADLANDS_GRASS,
                 ModBlocks.TALL_BADLANDS_GRASS,
                 ModBlocks.BADLANDS_FERN,
                 ModBlocks.LARGE_BADLANDS_FERN,
-                ModBlocks.BADLANDS_VINE,
                 ModBlocks.BADLANDS_SUGAR_CANE,
+                ModBlocks.GLOWING_BADLANDS_GRASS_BLOCK,
+                ModBlocks.POTTED_BADLANDS_FERN
+        );
+
+        registerLeaveBlockColor(ColorProvider.BADLANDS_LEAVE_COLOR,
+                ModBlocks.BADLANDS_VINE,
                 ModBlocks.BADLANDS_ACACIA_LEAVES,
                 ModBlocks.BADLANDS_ACACIA_LEAVES_CARPET,
                 ModBlocks.BADLANDS_DARK_OAK_LEAVES,
@@ -410,9 +468,7 @@ public class ArtificialFoliageClient implements ClientModInitializer {
                 ModBlocks.BADLANDS_JUNGLE_LEAVES,
                 ModBlocks.BADLANDS_JUNGLE_LEAVES_CARPET,
                 ModBlocks.BADLANDS_OAK_LEAVES,
-                ModBlocks.BADLANDS_OAK_LEAVES_CARPET,
-                ModBlocks.GLOWING_BADLANDS_GRASS_BLOCK,
-                ModBlocks.POTTED_BADLANDS_FERN
+                ModBlocks.BADLANDS_OAK_LEAVES_CARPET
         );
 
         BlockRenderLayerMap.INSTANCE.putBlocks(PLANT_BLOCK_LAYER,
