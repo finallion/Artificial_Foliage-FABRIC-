@@ -123,7 +123,7 @@ public class ArtificialFoliageClient implements ClientModInitializer {
         registerFluidColor(3750089, ModFluids.STILL_FROZEN_OCEAN_WATER, ModFluids.FLOWING_FROZEN_OCEAN_WATER);
         registerFluidColor(4566514, ModFluids.STILL_LUKEWARM_OCEAN_WATER, ModFluids.FLOWING_LUKEWARM_OCEAN_WATER);
         registerFluidColor(4445678, ModFluids.STILL_WARM_OCEAN_WATER, ModFluids.FLOWING_WARM_OCEAN_WATER);
-        registerFluidColor(2302743, ModFluids.STILL_SWAMP_WATER, ModFluids.FLOWING_SWAMP_WATER);
+        registerFluidColor(6388580, ModFluids.STILL_SWAMP_WATER, ModFluids.FLOWING_SWAMP_WATER);
         registerFluidColor(4159204, ModFluids.STILL_OCEAN_WATER, ModFluids.FLOWING_OCEAN_WATER);
 
 

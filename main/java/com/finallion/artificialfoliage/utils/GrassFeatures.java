@@ -1,5 +1,9 @@
 package com.finallion.artificialfoliage.utils;
 
+import com.finallion.artificialfoliage.block.ARFOGlowingGrassBlock;
+import com.finallion.artificialfoliage.block.ARFOGrassBlock;
+import com.finallion.artificialfoliage.block.ARFOSoilBlock;
+import com.finallion.artificialfoliage.block.blenderBlocks.BlenderGrassBlock;
 import com.finallion.artificialfoliage.registry.ModBlocks;
 import net.minecraft.block.Block;
 
@@ -9,6 +13,11 @@ import java.util.List;
 import java.util.Map;
 
 public class GrassFeatures {
+
+
+    public static boolean isTreeGrowable(Block block ) {
+        return block instanceof ARFOGrassBlock || block instanceof BlenderGrassBlock || block instanceof ARFOGlowingGrassBlock || block instanceof ARFOSoilBlock;
+    }
 
     public static List<Block> jungle = new ArrayList<Block>() {
         {

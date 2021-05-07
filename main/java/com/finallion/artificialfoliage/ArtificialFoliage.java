@@ -27,11 +27,6 @@ import net.minecraft.world.World;
 import java.util.List;
 import java.util.function.Function;
 
-// check leave color
-// water
-// byg addons
-
-
 
 public class ArtificialFoliage implements ModInitializer {
 
