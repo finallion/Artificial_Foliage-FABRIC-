@@ -11,7 +11,8 @@
     "MixinSpreadableBlock",
     "MixinBoneMealItem",
     "MixinNetherrackBlock",
-    "MixinFeature"
+    "MixinFeature",
+    "AccessorFluidTags"
   ],
   "injectors": {
     "defaultRequire": 1

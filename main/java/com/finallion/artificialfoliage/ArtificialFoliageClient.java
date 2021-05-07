@@ -7,6 +7,7 @@ import com.finallion.artificialfoliage.block.blenderBlocks.BlenderBlockEntity;
 import com.finallion.artificialfoliage.block.blenderBlocks.IBlenderBlock;
 import com.finallion.artificialfoliage.block.models.*;
 import com.finallion.artificialfoliage.registry.ModBlocks;
+import com.finallion.artificialfoliage.registry.ModFluids;
 import com.finallion.artificialfoliage.registry.ModItems;
 import com.finallion.artificialfoliage.utils.ColorProvider;
 import net.fabricmc.api.ClientModInitializer;
@@ -14,7 +15,11 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.model.ModelLoadingRegistry;
+import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandler;
+import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
+import net.fabricmc.fabric.api.resource.SimpleSynchronousResourceReloadListener;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
@@ -26,11 +31,22 @@ import net.minecraft.client.color.world.FoliageColors;
 import net.minecraft.client.color.world.GrassColors;
 import net.minecraft.client.render.RenderLayer;
 
+import net.minecraft.client.texture.Sprite;
+import net.minecraft.client.texture.SpriteAtlasTexture;
+import net.minecraft.fluid.FlowableFluid;
+import net.minecraft.fluid.Fluid;
+import net.minecraft.fluid.FluidState;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemStack;
+import net.minecraft.resource.ResourceManager;
+import net.minecraft.resource.ResourceType;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.registry.Registry;
 import net.minecraft.world.BlockRenderView;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.function.Function;
 
 
 @Environment(EnvType.CLIENT)
@@ -39,6 +55,50 @@ public class ArtificialFoliageClient implements ClientModInitializer {
     private void registerGrassBlockColor(BlockColorProvider color, Block ... block) {
         ColorProviderRegistry.BLOCK.register(color, block);
         BlockRenderLayerMap.INSTANCE.putBlocks(GRASS_BLOCK_LAYER, block);
+    }
+
+    private void registerFluidColor(int color, Fluid still, Fluid flow) {
+        setupFluidRendering(still, flow, color);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), still, flow);
+    }
+
+    public static void setupFluidRendering(final Fluid still, final Fluid flowing, final int color) {
+        final Identifier stillSpriteId = new Identifier("minecraft:block/water_still");
+        final Identifier flowingSpriteId = new Identifier("minecraft:block/water_flow");
+
+        final Identifier fluidId = Registry.FLUID.getId(still);
+        final Identifier listenerId = new Identifier(fluidId.getNamespace(), fluidId.getPath() + "_reload_listener");
+
+        final Sprite[] fluidSprites = { null, null };
+
+        ResourceManagerHelper.get(ResourceType.CLIENT_RESOURCES).registerReloadListener(new SimpleSynchronousResourceReloadListener() {
+            @Override
+            public Identifier getFabricId() {
+                return listenerId;
+            }
+
+            @Override
+            public void apply(ResourceManager resourceManager) {
+                final Function<Identifier, Sprite> atlas = MinecraftClient.getInstance().getSpriteAtlas(SpriteAtlasTexture.BLOCK_ATLAS_TEXTURE);
+                fluidSprites[0] = atlas.apply(stillSpriteId);
+                fluidSprites[1] = atlas.apply(flowingSpriteId);
+            }
+        });
+
+        final FluidRenderHandler renderHandler = new FluidRenderHandler()
+        {
+            @Override
+            public Sprite[] getFluidSprites(BlockRenderView view, BlockPos pos, FluidState state) {
+                return fluidSprites;
+            }
+
+            @Override
+            public int getFluidColor(BlockRenderView view, BlockPos pos, FluidState state) {
+                return color;
+            }
+        };
+        FluidRenderHandlerRegistry.INSTANCE.register(still, renderHandler);
+        FluidRenderHandlerRegistry.INSTANCE.register(flowing, renderHandler);
     }
 
     private void registerLeaveBlockColor(BlockColorProvider color, Block ... block) {
@@ -59,6 +119,12 @@ public class ArtificialFoliageClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
 
+        registerFluidColor(4020182, ModFluids.STILL_COLD_OCEAN_WATER, ModFluids.FLOWING_COLD_OCEAN_WATER);
+        registerFluidColor(3750089, ModFluids.STILL_FROZEN_OCEAN_WATER, ModFluids.FLOWING_FROZEN_OCEAN_WATER);
+        registerFluidColor(4566514, ModFluids.STILL_LUKEWARM_OCEAN_WATER, ModFluids.FLOWING_LUKEWARM_OCEAN_WATER);
+        registerFluidColor(4445678, ModFluids.STILL_WARM_OCEAN_WATER, ModFluids.FLOWING_WARM_OCEAN_WATER);
+        registerFluidColor(2302743, ModFluids.STILL_SWAMP_WATER, ModFluids.FLOWING_SWAMP_WATER);
+        registerFluidColor(4159204, ModFluids.STILL_OCEAN_WATER, ModFluids.FLOWING_OCEAN_WATER);
 
 
         // blocks

@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:water",
+    "minecraft:flowing_water",
+    "arfo:still_cold_ocean_water",
+    "arfo:flowing_cold_ocean_water",
+    "arfo:still_frozen_ocean_water",
+    "arfo:flowing_frozen_ocean_water",
+    "arfo:still_lukewarm_ocean_water",
+    "arfo:flowing_lukewarm_ocean_water",
+    "arfo:still_warm_ocean_water",
+    "arfo:flowing_warm_ocean_water",
+    "arfo:still_swamp_water",
+    "arfo:flowing_swamp_water",
+    "arfo:still_ocean_water",
+    "arfo:flowing_ocean_water"
+  ]
+}

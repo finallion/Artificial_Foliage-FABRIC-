@@ -1,6 +1,15 @@
 {
   "item.arfo.grass_seed": "Artificial Grass Seed",
 
+
+  "item.arfo.cold_ocean_water_bucket": "Cold Ocean Water Bucket",
+  "item.arfo.frozen_ocean_water_bucket": "Frozen Ocean Water Bucket",
+  "item.arfo.lukewarm_ocean_water_bucket": "Lukewarm Ocean Water Bucket",
+  "item.arfo.warm_ocean_water_bucket": "Warm Ocean Water Bucket",
+  "item.arfo.ocean_water_bucket": "Ocean Water Bucket",
+  "item.arfo.swamp_water_bucket": "Swamp Water Bucket",
+
+
   "block.arfo.artificial_soil": "Artificial Soil",
   "block.arfo.artificial_soil_slab": "Artificial Soil Slab",
   "block.arfo.grass_slab": "Grass Slab",

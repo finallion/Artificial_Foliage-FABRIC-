@@ -5,14 +5,18 @@ import com.finallion.artificialfoliage.item.*;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
 
+import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 
 import net.minecraft.util.registry.Registry;
 
 
 public class ModItems {
+
+
     // block items
     public static final BlockItem ARTIFICIAL_SOIL = initBlockItem(ModBlocks.ARTIFICIAL_SOIL);
     public static final BlockItem JUNGLE_GRASS_BLOCK = initBlockItem(ModBlocks.JUNGLE_GRASS_BLOCK);
@@ -376,6 +380,15 @@ public class ModItems {
     public static final BlockItem GLOWING_SNOWY_BEACH_GRASS_BLOCK = initBlockItem(ModBlocks.GLOWING_SNOWY_BEACH_GRASS_BLOCK);
     public static final BlockItem GLOWING_WATERS_GRASS_BLOCK = initBlockItem(ModBlocks.GLOWING_WATERS_GRASS_BLOCK);
 
+
+    public static final BucketItem COLD_OCEAN_WATER_BUCKET = new BucketItem(ModFluids.STILL_COLD_OCEAN_WATER, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1));
+    public static final BucketItem FROZEN_OCEAN_WATER_BUCKET = new BucketItem(ModFluids.STILL_FROZEN_OCEAN_WATER, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1));
+    public static final BucketItem LUKEWARM_OCEAN_WATER_BUCKET = new BucketItem(ModFluids.STILL_LUKEWARM_OCEAN_WATER, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1));
+    public static final BucketItem WARM_OCEAN_WATER_BUCKET = new BucketItem(ModFluids.STILL_WARM_OCEAN_WATER, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1));
+    public static final BucketItem SWAMP_WATER_BUCKET = new BucketItem(ModFluids.STILL_SWAMP_WATER, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1));
+    public static final BucketItem OCEAN_WATER_BUCKET = new BucketItem(ModFluids.STILL_OCEAN_WATER, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1));
+
+
     public static final Item GRASS_SEED = new ARFOGrassSeedItem(new Item.Settings());
 
     private static BlockItem initBlockItem(Block block) {
@@ -384,6 +397,9 @@ public class ModItems {
 
 
     public static void registerItems() {
+
+
+
         init("artificial_soil", ARTIFICIAL_SOIL);
         init("jungle_grass_block", JUNGLE_GRASS_BLOCK);
         init("badlands_grass_block", BADLANDS_GRASS_BLOCK);
@@ -743,6 +759,13 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(ArtificialFoliage.MOD_ID, "wand_of_snow"), WAND_OF_SNOW);
         Registry.register(Registry.ITEM, new Identifier(ArtificialFoliage.MOD_ID, "wand_of_chaos_colors"), WAND_OF_CHAOS_COLORS);
         Registry.register(Registry.ITEM, new Identifier(ArtificialFoliage.MOD_ID, "wand_of_imitation"), WAND_OF_IMITATION);
+
+        Registry.register(Registry.ITEM, new Identifier(ArtificialFoliage.MOD_ID, "cold_ocean_water_bucket"), COLD_OCEAN_WATER_BUCKET);
+        Registry.register(Registry.ITEM, new Identifier(ArtificialFoliage.MOD_ID, "frozen_ocean_water_bucket"), FROZEN_OCEAN_WATER_BUCKET);
+        Registry.register(Registry.ITEM, new Identifier(ArtificialFoliage.MOD_ID, "lukewarm_ocean_water_bucket"), LUKEWARM_OCEAN_WATER_BUCKET);
+        Registry.register(Registry.ITEM, new Identifier(ArtificialFoliage.MOD_ID, "warm_ocean_water_bucket"), WARM_OCEAN_WATER_BUCKET);
+        Registry.register(Registry.ITEM, new Identifier(ArtificialFoliage.MOD_ID, "swamp_water_bucket"), SWAMP_WATER_BUCKET);
+        Registry.register(Registry.ITEM, new Identifier(ArtificialFoliage.MOD_ID, "ocean_water_bucket"), OCEAN_WATER_BUCKET);
     }
 
     private static void init(String path, BlockItem blockItem) {

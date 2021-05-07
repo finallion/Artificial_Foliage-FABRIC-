@@ -365,6 +365,12 @@ public class ModBlocks {
     public static final Block POTTED_SNOWY_BEACH_FERN = new FlowerPotBlock(SNOWY_BEACH_FERN, FabricBlockSettings.of(Material.SUPPORTED).breakInstantly().nonOpaque());;
     public static final Block POTTED_WATERS_FERN = new FlowerPotBlock(WATERS_FERN, FabricBlockSettings.of(Material.SUPPORTED).breakInstantly().nonOpaque());
 
+    public static final Block COLD_OCEAN_WATER = new FluidBlock(ModFluids.STILL_COLD_OCEAN_WATER, FabricBlockSettings.copy(Blocks.WATER)){};
+    public static final Block FROZEN_OCEAN_WATER = new FluidBlock(ModFluids.STILL_FROZEN_OCEAN_WATER, FabricBlockSettings.copy(Blocks.WATER)){};
+    public static final Block LUKEWARM_OCEAN_WATER = new FluidBlock(ModFluids.STILL_LUKEWARM_OCEAN_WATER, FabricBlockSettings.copy(Blocks.WATER)){};
+    public static final Block WARM_OCEAN_WATER = new FluidBlock(ModFluids.STILL_WARM_OCEAN_WATER, FabricBlockSettings.copy(Blocks.WATER)){};
+    public static final Block SWAMP_WATER = new FluidBlock(ModFluids.STILL_SWAMP_WATER, FabricBlockSettings.copy(Blocks.WATER)){};
+    public static final Block OCEAN_WATER = new FluidBlock(ModFluids.STILL_OCEAN_WATER, FabricBlockSettings.copy(Blocks.WATER)){};
 
     // blender blocks and block entities
     public static final Block BLENDER_GRASS_BLOCK = new BlenderGrassBlock();
@@ -378,6 +384,13 @@ public class ModBlocks {
 
 
     public static void registerBlocks() {
+        init("cold_ocean_water", COLD_OCEAN_WATER);
+        init("frozen_ocean_water", FROZEN_OCEAN_WATER);
+        init("lukewarm_ocean_water", LUKEWARM_OCEAN_WATER);
+        init("warm_ocean_water", WARM_OCEAN_WATER);
+        init("swamp_water", SWAMP_WATER);
+        init("ocean_water", OCEAN_WATER);
+
         init("tropical_oak_leaves_carpet", TROPICAL_OAK_LEAVES_CARPET);
         init("tropical_dark_oak_leaves_carpet", TROPICAL_DARK_OAK_LEAVES_CARPET);
         init("tropical_jungle_leaves_carpet", TROPICAL_JUNGLE_LEAVES_CARPET);

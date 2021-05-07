@@ -1,7 +1,9 @@
 package com.finallion.artificialfoliage;
 
 import com.finallion.artificialfoliage.item.ARFOGrassSeedItem;
+import com.finallion.artificialfoliage.registry.FabricTagRegistry;
 import com.finallion.artificialfoliage.registry.ModBlocks;
+import com.finallion.artificialfoliage.registry.ModFluids;
 import com.finallion.artificialfoliage.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
@@ -9,15 +11,21 @@ import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
 import net.minecraft.block.DispenserBlock;
 import net.minecraft.block.dispenser.FallibleItemDispenserBehavior;
+import net.minecraft.fluid.Fluid;
 import net.minecraft.item.*;
 import net.minecraft.loot.ConstantLootTableRange;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.tag.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPointer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
+
+import java.util.List;
+import java.util.function.Function;
 
 // check leave color
 // water
@@ -34,6 +42,8 @@ public class ArtificialFoliage implements ModInitializer {
     public void onInitialize() {
         ModItems.registerItems();
         ModBlocks.registerBlocks();
+        ModFluids.registerFluids();
+        FabricTagRegistry.init();
 
         LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
             if (TALL_GRASS_LOOT_TABLE_ID.equals(id)) {
@@ -76,7 +86,9 @@ public class ArtificialFoliage implements ModInitializer {
                 return stack;
             }
         });
+
     }
+
 
     public static ItemGroup ADVANCED = FabricItemGroupBuilder.create(
             new Identifier(MOD_ID, "advanced"))
@@ -406,6 +418,15 @@ public class ArtificialFoliage implements ModInitializer {
                 itemStacks.add(new ItemStack(ModItems.BADLANDS_SUGAR_CANE));
                 itemStacks.add(new ItemStack(ModItems.BADLANDS_VINE));
 
+                itemStacks.add(new ItemStack(Items.BUCKET));
+                itemStacks.add(new ItemStack(Items.LAVA_BUCKET));
+                itemStacks.add(new ItemStack(Items.WATER_BUCKET));
+                itemStacks.add(new ItemStack(ModItems.OCEAN_WATER_BUCKET));
+                itemStacks.add(new ItemStack(ModItems.FROZEN_OCEAN_WATER_BUCKET));
+                itemStacks.add(new ItemStack(ModItems.COLD_OCEAN_WATER_BUCKET));
+                itemStacks.add(new ItemStack(ModItems.LUKEWARM_OCEAN_WATER_BUCKET));
+                itemStacks.add(new ItemStack(ModItems.WARM_OCEAN_WATER_BUCKET));
+                itemStacks.add(new ItemStack(ModItems.SWAMP_WATER_BUCKET));
 
                 itemStacks.add(new ItemStack(ModItems.BLENDER_GRASS_BLOCK));
                 itemStacks.add(new ItemStack(ModItems.BLENDER_OAK_LEAVES_BLOCK));
