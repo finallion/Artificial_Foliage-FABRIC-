@@ -19,6 +19,12 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 
+// check leave color
+// water
+// byg addons
+
+
+
 public class ArtificialFoliage implements ModInitializer {
 
     public static final String MOD_ID = "arfo";
