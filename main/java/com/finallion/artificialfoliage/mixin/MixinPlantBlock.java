@@ -3,6 +3,7 @@ package com.finallion.artificialfoliage.mixin;
 import com.finallion.artificialfoliage.block.ARFOGlowingGrassBlock;
 import com.finallion.artificialfoliage.block.ARFOGrassBlock;
 import com.finallion.artificialfoliage.block.ARFOSlabBlock;
+import com.finallion.artificialfoliage.block.ARFOSoilBlock;
 import com.finallion.artificialfoliage.block.blenderBlocks.BlenderGrassBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -25,14 +26,10 @@ public class MixinPlantBlock {
     void canPlaceAt(BlockState state, WorldView world, BlockPos pos, CallbackInfoReturnable<Boolean> info) {
         Block block = world.getBlockState(pos.down()).getBlock();
 
-        if (block instanceof ARFOGrassBlock || block instanceof BlenderGrassBlock || block instanceof ARFOGlowingGrassBlock) {
+        if (block instanceof ARFOGrassBlock || block instanceof BlenderGrassBlock || block instanceof ARFOGlowingGrassBlock || block instanceof ARFOSoilBlock) {
             info.setReturnValue(true);
         } else if (block instanceof ARFOSlabBlock) {
             if (world.getBlockState(pos.down()).get(TYPE) != SlabType.BOTTOM) info.setReturnValue(true);
         }
-        // gives nice world gen in desert
-        //else if (world.getBlockState(pos.down()).isFullCube(world, pos.down())) {
-        // info.setReturnValue(true);
-        //}
     }
 }
