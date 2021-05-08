@@ -2,6 +2,7 @@ package com.finallion.artificialfoliage.item;
 
 import com.finallion.artificialfoliage.block.*;
 import com.finallion.artificialfoliage.registry.ModBlocks;
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.enums.SlabType;
 import net.minecraft.item.BoneMealItem;
@@ -47,9 +48,11 @@ public class ARFOGrassSeedItem extends Item {
         if (!world.isClient()) {
             if (blockState.getBlock() instanceof ARFOGrassBlock) {
                 ARFOGrassBlock grassBlock = (ARFOGrassBlock) blockState.getBlock();
-                grassBlock.growArtificialGrass(world, world.random, pos, blockState);
-                stack.decrement(1);
-                return true;
+                if (!grassBlock.is(ModBlocks.ALPHA_GRASS_BLOCK)) {
+                    grassBlock.growArtificialGrass(world, world.random, pos, blockState);
+                    stack.decrement(1);
+                    return true;
+                }
             } else if (blockState.getBlock() instanceof ARFOGlowingGrassBlock) {
                 ARFOGlowingGrassBlock grassBlock = (ARFOGlowingGrassBlock) blockState.getBlock();
                 grassBlock.growArtificialGrass(world, world.random, pos, blockState);

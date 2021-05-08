@@ -111,7 +111,6 @@ public class ARFOGrassBlock extends GrassBlock {
 
             for (int j = 0; j < i / 16; ++j) {
                 blockPos2 = blockPos2.add(random.nextInt(3) - 1, (random.nextInt(3) - 1) * random.nextInt(3) / 2, random.nextInt(3) - 1);
-                //TODO stops spread to top slabs
                 if (!(world.getBlockState(blockPos2.down()).getBlock() instanceof ARFOGrassBlock) || world.getBlockState(blockPos2).isFullCube(world, blockPos2)) {
                     continue label48;
                 }

@@ -677,25 +677,6 @@ public class ArtificialFoliageClient implements ClientModInitializer {
                 ModItems.GLOWING_BIRCH_FOREST_GRASS_BLOCK
         );
 
-        registerItemColor(ColorProvider.WATERS_ITEM_COLOR,
-                ModItems.WATERS_GRASS_BLOCK,
-                ModItems.WATERS_GRASS_SLAB,
-                ModItems.WATERS_GRASS,
-                ModItems.TALL_WATERS_GRASS,
-                ModItems.WATERS_FERN,
-                ModItems.LARGE_WATERS_FERN,
-                ModItems.WATERS_VINE,
-                ModItems.WATERS_SUGAR_CANE,
-                ModItems.WATERS_ACACIA_LEAVES,
-                ModItems.WATERS_ACACIA_LEAVES_CARPET,
-                ModItems.WATERS_DARK_OAK_LEAVES,
-                ModItems.WATERS_DARK_OAK_LEAVES_CARPET,
-                ModItems.WATERS_JUNGLE_LEAVES,
-                ModItems.WATERS_JUNGLE_LEAVES_CARPET,
-                ModItems.WATERS_OAK_LEAVES,
-                ModItems.WATERS_OAK_LEAVES_CARPET,
-                ModItems.GLOWING_WATERS_GRASS_BLOCK
-        );
 
         registerItemColor(ColorProvider.WATERS_ITEM_COLOR,
                 ModItems.WATERS_GRASS_BLOCK,

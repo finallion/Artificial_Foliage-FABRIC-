@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(Feature.class)
 public class MixinFeature {
 
-    @Inject(at = @At("RETURN"), method = "isSoil(Lnet/minecraft/block/Block;)Z", cancellable = true)
+    @Inject(at = @At("HEAD"), method = "isSoil(Lnet/minecraft/block/Block;)Z", cancellable = true)
     private static void isSoil(Block block, CallbackInfoReturnable<Boolean> info) {
         if (block.isIn(FabricTagRegistry.DIRT))
             info.setReturnValue(true);
