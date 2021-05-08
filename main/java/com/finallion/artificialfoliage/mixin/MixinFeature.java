@@ -1,5 +1,6 @@
 package com.finallion.artificialfoliage.mixin;
 
+import com.finallion.artificialfoliage.registry.FabricTagRegistry;
 import com.finallion.artificialfoliage.utils.GrassFeatures;
 import net.minecraft.block.Block;
 import net.minecraft.world.gen.feature.Feature;
@@ -13,7 +14,7 @@ public class MixinFeature {
 
     @Inject(at = @At("RETURN"), method = "isSoil(Lnet/minecraft/block/Block;)Z", cancellable = true)
     private static void isSoil(Block block, CallbackInfoReturnable<Boolean> info) {
-        if (GrassFeatures.isTreeGrowable(block))
+        if (block.isIn(FabricTagRegistry.DIRT))
             info.setReturnValue(true);
     }
 }

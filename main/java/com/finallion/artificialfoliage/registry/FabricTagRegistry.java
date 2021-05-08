@@ -20,6 +20,8 @@ public class FabricTagRegistry {
     public static final Tag<Fluid> SWAMP_WATER = TagRegistry.fluid(new Identifier(ArtificialFoliage.MOD_ID, "swamp_water"));
 
 
+    public static final Tag<Block> DIRT = TagRegistry.block(new Identifier("c", "dirt"));
+
 
     public static void init() {
     }
