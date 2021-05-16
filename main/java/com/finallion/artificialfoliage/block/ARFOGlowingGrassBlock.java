@@ -15,6 +15,9 @@ import net.minecraft.tag.FluidTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
+import net.minecraft.world.gen.feature.ConfiguredFeatures;
+import net.minecraft.world.gen.feature.NetherForestVegetationFeature;
+import net.minecraft.world.gen.feature.TwistingVinesFeature;
 
 import java.util.*;
 
@@ -68,7 +71,8 @@ public class ARFOGlowingGrassBlock extends Block {
                     } else if (newState.isOf(ModBlocks.ARTIFICIAL_SOIL_SLAB)) {
                         BlockState matchingSlabState = newState;
                         for (Block b : BlockMapping.slabAndBlocks.keySet()) {
-                            if (b == state.getBlock()) matchingSlabState = BlockMapping.slabAndBlocks.get(b).getDefaultState();
+                            if (b == state.getBlock())
+                                matchingSlabState = BlockMapping.slabAndBlocks.get(b).getDefaultState();
                         }
 
                         if (!world.getBlockState(newPos.up()).isOpaque()) {
@@ -155,6 +159,25 @@ public class ARFOGlowingGrassBlock extends Block {
             }
         }
     }
+
+
+    public void growNetherGrass(ServerWorld world, Random random, BlockPos pos, BlockState state) {
+        BlockState blockState = world.getBlockState(pos);
+        BlockPos blockPos = pos.up();
+        if (blockState.isOf(ModBlocks.GLOWING_CRIMSON_NYLIUM)) {
+            NetherForestVegetationFeature.generate(world, random, blockPos, ConfiguredFeatures.Configs.CRIMSON_ROOTS_CONFIG, 3, 1);
+
+        } else if (blockState.isOf(ModBlocks.GLOWING_WARPED_NYLIUM)) {
+            NetherForestVegetationFeature.generate(world, random, blockPos, ConfiguredFeatures.Configs.WARPED_ROOTS_CONFIG, 3, 1);
+            NetherForestVegetationFeature.generate(world, random, blockPos, ConfiguredFeatures.Configs.NETHER_SPROUTS_CONFIG, 3, 1);
+            if (random.nextInt(8) == 0) {
+                TwistingVinesFeature.method_26265(world, random, blockPos, 3, 1, 2);
+            }
+
+        }
+
+    }
+
 
     private void initMap() {
         grassFeatures.put(ModBlocks.JUNGLE_GRASS_BLOCK, GrassFeatures.jungle);

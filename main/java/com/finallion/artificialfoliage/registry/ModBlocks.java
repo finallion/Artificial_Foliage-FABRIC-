@@ -344,7 +344,8 @@ public class ModBlocks {
     public static final Block GLOWING_SNOWY_GRASS_BLOCK = new ARFOGlowingGrassBlock();
     public static final Block GLOWING_SNOWY_BEACH_GRASS_BLOCK = new ARFOGlowingGrassBlock();
     public static final Block GLOWING_WATERS_GRASS_BLOCK = new ARFOGlowingGrassBlock();
-
+    public static final Block GLOWING_CRIMSON_NYLIUM = new ARFOGlowingGrassBlock();
+    public static final Block GLOWING_WARPED_NYLIUM = new ARFOGlowingGrassBlock();
 
     // flower pot for ferns
     public static final Block POTTED_JUNGLE_FERN = new FlowerPotBlock(JUNGLE_FERN, FabricBlockSettings.of(Material.SUPPORTED).breakInstantly().nonOpaque());
@@ -721,6 +722,8 @@ public class ModBlocks {
         init("glowing_snowy_beach_grass_block", GLOWING_SNOWY_BEACH_GRASS_BLOCK);
         init("glowing_waters_grass_block", GLOWING_WATERS_GRASS_BLOCK);
 
+        init("glowing_crimson_nylium", GLOWING_CRIMSON_NYLIUM);
+        init("glowing_warped_nylium", GLOWING_WARPED_NYLIUM);
 
         // potted fern
         init("potted_jungle_fern", POTTED_JUNGLE_FERN);

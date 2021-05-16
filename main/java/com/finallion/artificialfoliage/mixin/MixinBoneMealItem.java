@@ -2,12 +2,15 @@ package com.finallion.artificialfoliage.mixin;
 
 
 import com.finallion.artificialfoliage.block.ARFOFernBlock;
+import com.finallion.artificialfoliage.block.ARFOGlowingGrassBlock;
 import com.finallion.artificialfoliage.block.ARFOGrass;
 import com.finallion.artificialfoliage.block.ARFONetherSlabBlock;
 import com.finallion.artificialfoliage.registry.ModBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.NetherrackBlock;
+import net.minecraft.block.NyliumBlock;
+import net.minecraft.block.enums.SlabType;
 import net.minecraft.item.BoneMealItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
@@ -33,7 +36,17 @@ public class MixinBoneMealItem {
         if (!world.isClient()) {
             if (blockState.isOf(ModBlocks.NETHERRACK_SLAB)) {
                 ARFONetherSlabBlock netherSlab = (ARFONetherSlabBlock) blockState.getBlock();
-                netherSlab.grow(world, world.random, pos, blockState);
+                netherSlab.spread(world, world.random, pos, blockState);
+                success = true;
+
+            } else if (blockState.isOf(ModBlocks.WARPED_NYLIUM_SLAB) || blockState.isOf(ModBlocks.CRIMSON_NYLIUM_SLAB)) {
+                ARFONetherSlabBlock netherSlab = (ARFONetherSlabBlock) blockState.getBlock();
+                netherSlab.grow((ServerWorld)world, world.random, pos, blockState);
+                success = true;
+
+            } else if (blockState.isOf(ModBlocks.GLOWING_WARPED_NYLIUM) || blockState.isOf(ModBlocks.GLOWING_CRIMSON_NYLIUM)) {
+                ARFOGlowingGrassBlock block = (ARFOGlowingGrassBlock) blockState.getBlock();
+                block.growNetherGrass((ServerWorld)world, world.random, pos, blockState);
                 success = true;
 
             } else if (blockState.isOf(Blocks.NETHERRACK)) {

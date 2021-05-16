@@ -5,11 +5,16 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.enums.SlabType;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.EnumProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldView;
+import net.minecraft.world.gen.feature.ConfiguredFeatures;
+import net.minecraft.world.gen.feature.NetherForestVegetationFeature;
+import net.minecraft.world.gen.feature.TwistingVinesFeature;
 
 import java.util.Iterator;
 import java.util.Random;
@@ -24,7 +29,7 @@ public class ARFONetherSlabBlock extends SlabBlock {
     }
 
     // netherrack block method
-    public void grow(World world, Random random, BlockPos pos, BlockState state) {
+    public void spread(World world, Random random, BlockPos pos, BlockState state) {
         boolean bl = false;
         boolean bl2 = false;
         Iterator var7 = BlockPos.iterate(pos.add(-1, -1, -1), pos.add(1, 1, 1)).iterator();
@@ -60,6 +65,25 @@ public class ARFONetherSlabBlock extends SlabBlock {
                 world.setBlockState(pos, Blocks.WARPED_NYLIUM.getDefaultState(), 3);
             } else if (bl) {
                 world.setBlockState(pos, Blocks.CRIMSON_NYLIUM.getDefaultState(), 3);
+            }
+        }
+
+    }
+
+    public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {
+        BlockState blockState = world.getBlockState(pos);
+        BlockPos blockPos = pos.up();
+        if (blockState.isOf(ModBlocks.CRIMSON_NYLIUM_SLAB)) {
+            if (blockState.get(TYPE) != SlabType.BOTTOM) {
+                NetherForestVegetationFeature.generate(world, random, blockPos, ConfiguredFeatures.Configs.CRIMSON_ROOTS_CONFIG, 1, 1);
+            }
+        } else if (blockState.isOf(ModBlocks.WARPED_NYLIUM_SLAB)) {
+            if (blockState.get(TYPE) != SlabType.BOTTOM) {
+                NetherForestVegetationFeature.generate(world, random, blockPos, ConfiguredFeatures.Configs.WARPED_ROOTS_CONFIG, 1, 1);
+                NetherForestVegetationFeature.generate(world, random, blockPos, ConfiguredFeatures.Configs.NETHER_SPROUTS_CONFIG, 1, 1);
+                if (random.nextInt(8) == 0) {
+                    TwistingVinesFeature.method_26265(world, random, blockPos, 1, 1, 2);
+                }
             }
         }
 

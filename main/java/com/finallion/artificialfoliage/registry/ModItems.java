@@ -380,6 +380,8 @@ public class ModItems {
     public static final BlockItem GLOWING_SNOWY_BEACH_GRASS_BLOCK = initBlockItem(ModBlocks.GLOWING_SNOWY_BEACH_GRASS_BLOCK);
     public static final BlockItem GLOWING_WATERS_GRASS_BLOCK = initBlockItem(ModBlocks.GLOWING_WATERS_GRASS_BLOCK);
 
+    public static final BlockItem GLOWING_CRIMSON_NYLIUM = initBlockItem(ModBlocks.GLOWING_CRIMSON_NYLIUM);
+    public static final BlockItem GLOWING_WARPED_NYLIUM = initBlockItem(ModBlocks.GLOWING_WARPED_NYLIUM);
 
     public static final BucketItem COLD_OCEAN_WATER_BUCKET = new BucketItem(ModFluids.STILL_COLD_OCEAN_WATER, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1));
     public static final BucketItem FROZEN_OCEAN_WATER_BUCKET = new BucketItem(ModFluids.STILL_FROZEN_OCEAN_WATER, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1));
@@ -731,6 +733,9 @@ public class ModItems {
         init("glowing_snowy_grass_block", GLOWING_SNOWY_GRASS_BLOCK);
         init("glowing_snowy_beach_grass_block", GLOWING_SNOWY_BEACH_GRASS_BLOCK);
         init("glowing_waters_grass_block", GLOWING_WATERS_GRASS_BLOCK);
+
+        init("glowing_crimson_nylium", GLOWING_CRIMSON_NYLIUM);
+        init("glowing_warped_nylium", GLOWING_WARPED_NYLIUM);
 
 
         Registry.register(Registry.ITEM, new Identifier(ArtificialFoliage.MOD_ID, "jungle_dye"), JUNGLE_DYE);

@@ -1,9 +1,6 @@
 package com.finallion.artificialfoliage.mixin;
 
-import com.finallion.artificialfoliage.block.ARFOGlowingGrassBlock;
-import com.finallion.artificialfoliage.block.ARFOGrassBlock;
-import com.finallion.artificialfoliage.block.ARFOSlabBlock;
-import com.finallion.artificialfoliage.block.ARFOSoilBlock;
+import com.finallion.artificialfoliage.block.*;
 import com.finallion.artificialfoliage.block.blenderBlocks.BlenderGrassBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -28,7 +25,7 @@ public class MixinPlantBlock {
 
         if (block instanceof ARFOGrassBlock || block instanceof BlenderGrassBlock || block instanceof ARFOGlowingGrassBlock || block instanceof ARFOSoilBlock) {
             info.setReturnValue(true);
-        } else if (block instanceof ARFOSlabBlock) {
+        } else if (block instanceof ARFOSlabBlock || block instanceof ARFONetherSlabBlock) {
             if (world.getBlockState(pos.down()).get(TYPE) != SlabType.BOTTOM) info.setReturnValue(true);
         }
     }

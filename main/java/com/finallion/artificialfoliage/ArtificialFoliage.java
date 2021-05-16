@@ -27,6 +27,7 @@ import net.minecraft.world.World;
 import java.util.List;
 import java.util.function.Function;
 
+// check plant placement
 
 public class ArtificialFoliage implements ModInitializer {
 
@@ -448,7 +449,9 @@ public class ArtificialFoliage implements ModInitializer {
                 itemStacks.add(new ItemStack(ModItems.MYCELIUM_SLAB));
                 itemStacks.add(new ItemStack(ModItems.GRASS_PATH_SLAB));
                 itemStacks.add(new ItemStack(ModItems.NETHERRACK_SLAB));
+                itemStacks.add(new ItemStack(ModItems.GLOWING_CRIMSON_NYLIUM));
                 itemStacks.add(new ItemStack(ModItems.CRIMSON_NYLIUM_SLAB));
+                itemStacks.add(new ItemStack(ModItems.GLOWING_WARPED_NYLIUM));
                 itemStacks.add(new ItemStack(ModItems.WARPED_NYLIUM_SLAB));
                 itemStacks.add(new ItemStack(ModItems.SPRUCE_LEAVES_CARPET));
                 itemStacks.add(new ItemStack(ModItems.BIRCH_LEAVES_CARPET));

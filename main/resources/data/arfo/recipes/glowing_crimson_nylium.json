@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "X": {
+      "item": "minecraft:crimson_nylium"
+    }
+  },
+  "result": {
+    "item": "arfo:glowing_crimson_nylium",
+    "count": 1
+  }
+}
