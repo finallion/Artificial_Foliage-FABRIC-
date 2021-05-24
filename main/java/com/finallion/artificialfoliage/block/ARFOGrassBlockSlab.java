@@ -1,8 +1,7 @@
 package com.finallion.artificialfoliage.block;
 
-import com.finallion.artificialfoliage.registry.ModBlocks;
-import com.finallion.artificialfoliage.utils.GrassFeatures;
 import com.finallion.artificialfoliage.utils.BlockMapping;
+import com.finallion.artificialfoliage.utils.MapUtils;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
@@ -22,7 +21,7 @@ import java.util.*;
 public class ARFOGrassBlockSlab extends ARFOSlabBlock {
 
     public static final EnumProperty<DoubleBlockHalf> HALF = Properties.DOUBLE_BLOCK_HALF;
-    private static final Map<Block, List<Block>> grassFeatures = new HashMap<>();
+    public static final Map<Block, List<Block>> grassFeatures = new HashMap<>();
 
     public ARFOGrassBlockSlab() {
         super(FabricBlockSettings.copyOf(Blocks.GRASS_BLOCK).breakByTool(FabricToolTags.SHOVELS).sounds(BlockSoundGroup.GRASS));
@@ -33,7 +32,7 @@ public class ARFOGrassBlockSlab extends ARFOSlabBlock {
         BlockPos blockPos = pos.up();
         BlockState blockState = world.getBlockState(pos);
         BlockState failState = Blocks.AIR.getDefaultState();
-        initMap();
+        MapUtils.initMap(grassFeatures);
         boolean large = false;
         List<Block> features = new ArrayList<>();
 
@@ -93,25 +92,5 @@ public class ARFOGrassBlockSlab extends ARFOSlabBlock {
                 }
             }
         }
-    }
-
-    private void initMap() {
-        grassFeatures.put(ModBlocks.JUNGLE_GRASS_BLOCK, GrassFeatures.jungle);
-        grassFeatures.put(ModBlocks.JUNGLE_EDGE_GRASS_BLOCK, GrassFeatures.jungle_edge);
-        grassFeatures.put(ModBlocks.BADLANDS_GRASS_BLOCK, GrassFeatures.badlands);
-        grassFeatures.put(ModBlocks.SAVANNA_GRASS_BLOCK, GrassFeatures.savanna);
-        grassFeatures.put(ModBlocks.FOREST_GRASS_BLOCK, GrassFeatures.forest);
-        grassFeatures.put(ModBlocks.BIRCH_FOREST_GRASS_BLOCK, GrassFeatures.birch_forest);
-        grassFeatures.put(ModBlocks.DARK_FOREST_GRASS_BLOCK, GrassFeatures.dark_forest);
-        grassFeatures.put(ModBlocks.PLAINS_GRASS_BLOCK, GrassFeatures.plains);
-        grassFeatures.put(ModBlocks.SWAMP_GRASS_BLOCK, GrassFeatures.swamp);
-        grassFeatures.put(ModBlocks.LUSH_SWAMP_GRASS_BLOCK, GrassFeatures.lush_swamp);
-        grassFeatures.put(ModBlocks.MOUNTAINS_GRASS_BLOCK, GrassFeatures.mountains);
-        grassFeatures.put(ModBlocks.MUSHROOM_FIELDS_GRASS_BLOCK, GrassFeatures.mushrooms_fields);
-        grassFeatures.put(ModBlocks.TAIGA_GRASS_BLOCK, GrassFeatures.taiga);
-        grassFeatures.put(ModBlocks.MEGA_TAIGA_GRASS_BLOCK, GrassFeatures.mega_taiga);
-        grassFeatures.put(ModBlocks.SNOWY_GRASS_BLOCK, GrassFeatures.snowy_biomes);
-        grassFeatures.put(ModBlocks.SNOWY_BEACH_GRASS_BLOCK, GrassFeatures.snowy_beach);
-        grassFeatures.put(ModBlocks.WATERS_GRASS_BLOCK, GrassFeatures.waters);
     }
 }

@@ -3,7 +3,7 @@ package com.finallion.artificialfoliage.item;
 import com.finallion.artificialfoliage.block.ARFOGrassBlock;
 import com.finallion.artificialfoliage.block.ARFONetherSlabBlock;
 import com.finallion.artificialfoliage.block.ARFOSlabBlock;
-import com.finallion.artificialfoliage.registry.ModBlocks;
+import com.finallion.artificialfoliage.registry.ARFOBlocks;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.SlabType;
 import net.minecraft.entity.player.PlayerEntity;
@@ -35,7 +35,7 @@ public class WandOfSnow extends Item {
         PlayerEntity playerEntity = context.getPlayer();
 
         if (!world.isClient()) {
-            if (block instanceof ARFOSlabBlock || block.is(ModBlocks.PODZOL_SLAB) || block.is(ModBlocks.MYCELIUM_SLAB) || block.is(ModBlocks.COARSE_DIRT_SLAB) || block.is(ModBlocks.DIRT_SLAB) || block.is(ModBlocks.ARTIFICIAL_SOIL_SLAB)) {
+            if (block instanceof ARFOSlabBlock || block.is(ARFOBlocks.PODZOL_SLAB) || block.is(ARFOBlocks.MYCELIUM_SLAB) || block.is(ARFOBlocks.COARSE_DIRT_SLAB) || block.is(ARFOBlocks.DIRT_SLAB) || block.is(ARFOBlocks.ARTIFICIAL_SOIL_SLAB)) {
                 if (state.get(TYPE) == SlabType.BOTTOM) {
                     world.setBlockState(pos, block.getDefaultState().with(ARFOSlabBlock.SNOWY, true));
                 } else if (state.get(TYPE) == SlabType.TOP) {

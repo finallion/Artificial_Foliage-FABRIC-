@@ -24,6 +24,18 @@
     "arfo:mega_taiga_vine",
     "arfo:snowy_vine",
     "arfo:snowy_beach_vine",
-    "arfo:waters_vine"
+    "arfo:waters_vine",
+    "arfo:traverse_arid_highlands_vine",
+    "arfo:traverse_autumnal_woods_vine",
+    "arfo:traverse_cliffs_vine",
+    "arfo:traverse_snowy_cliffs_vine",
+    "arfo:traverse_coniferous_forest_vine",
+    "arfo:traverse_snowy_coniferous_forest_vine",
+    "arfo:traverse_meadow_vine",
+    "arfo:traverse_lush_swamp_vine",
+    "arfo:traverse_plains_plateau_vine",
+    "arfo:traverse_rolling_hills_vine",
+    "arfo:traverse_wooded_island_vine",
+    "arfo:traverse_woodlands_vine"
   ]
 }

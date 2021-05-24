@@ -12,7 +12,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
-                  "block": "arfo:dirt_slab",
+                  "block": "arfo:grass_path_slab",
                   "properties": {
                     "type": "double"
                   }
@@ -24,7 +24,7 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "arfo:dirt_slab"
+          "name": "arfo:grass_path_slab"
         }
       ]
     }

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "water_buckets",
+  "pattern": [
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:bucket"
+    },
+    "Y": {
+      "tag": "arfo:swamp_dyes"
+    },
+    "Z": {
+      "item": "arfo:traverse_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:traverse_lush_swamp_water_bucket",
+    "count": 1
+  }
+}

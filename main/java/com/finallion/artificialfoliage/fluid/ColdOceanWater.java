@@ -1,10 +1,9 @@
 package com.finallion.artificialfoliage.fluid;
 
-import com.finallion.artificialfoliage.registry.ModBlocks;
-import com.finallion.artificialfoliage.registry.ModFluids;
-import com.finallion.artificialfoliage.registry.ModItems;
+import com.finallion.artificialfoliage.registry.ARFOBlocks;
+import com.finallion.artificialfoliage.registry.ARFOFluids;
+import com.finallion.artificialfoliage.registry.ARFOItems;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.FluidBlock;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
@@ -15,22 +14,22 @@ public abstract class ColdOceanWater extends ARFOWater {
 
     @Override
     public Fluid getFlowing() {
-        return ModFluids.FLOWING_COLD_OCEAN_WATER;
+        return ARFOFluids.FLOWING_COLD_OCEAN_WATER;
     }
 
     @Override
     public Fluid getStill() {
-        return ModFluids.STILL_COLD_OCEAN_WATER;
+        return ARFOFluids.STILL_COLD_OCEAN_WATER;
     }
 
     @Override
     public Item getBucketItem() {
-        return ModItems.COLD_OCEAN_WATER_BUCKET;
+        return ARFOItems.COLD_OCEAN_WATER_BUCKET;
     }
 
     @Override
     protected BlockState toBlockState(FluidState state) {
-        return (BlockState) ModBlocks.COLD_OCEAN_WATER.getDefaultState().with(FluidBlock.LEVEL, method_15741(state));
+        return (BlockState) ARFOBlocks.COLD_OCEAN_WATER.getDefaultState().with(FluidBlock.LEVEL, method_15741(state));
     }
 
 

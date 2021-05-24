@@ -1,8 +1,8 @@
 package com.finallion.artificialfoliage.block;
 
-import com.finallion.artificialfoliage.registry.ModBlocks;
-import com.finallion.artificialfoliage.utils.GrassFeatures;
+import com.finallion.artificialfoliage.registry.ARFOBlocks;
 import com.finallion.artificialfoliage.utils.BlockMapping;
+import com.finallion.artificialfoliage.utils.MapUtils;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.DoubleBlockHalf;
@@ -66,9 +66,9 @@ public class ARFOGlowingGrassBlock extends Block {
                 }
 
                 if (canSpread(state, world, newPos) && state.getBlock() instanceof ARFOGrassBlock) {
-                    if (newState.isOf(ModBlocks.ARTIFICIAL_SOIL)) {
+                    if (newState.isOf(ARFOBlocks.ARTIFICIAL_SOIL)) {
                         world.setBlockState(newPos, state);
-                    } else if (newState.isOf(ModBlocks.ARTIFICIAL_SOIL_SLAB)) {
+                    } else if (newState.isOf(ARFOBlocks.ARTIFICIAL_SOIL_SLAB)) {
                         BlockState matchingSlabState = newState;
                         for (Block b : BlockMapping.slabAndBlocks.keySet()) {
                             if (b == state.getBlock())
@@ -92,7 +92,7 @@ public class ARFOGlowingGrassBlock extends Block {
     public void growArtificialGrass(World world, Random random, BlockPos pos, BlockState state) {
         BlockPos blockPos = pos.up();
         BlockState failState = Blocks.AIR.getDefaultState();
-        initMap();
+        MapUtils.initMap(grassFeatures);
         boolean large = false;
         List<Block> features = new ArrayList<>();
 
@@ -164,10 +164,10 @@ public class ARFOGlowingGrassBlock extends Block {
     public void growNetherGrass(ServerWorld world, Random random, BlockPos pos, BlockState state) {
         BlockState blockState = world.getBlockState(pos);
         BlockPos blockPos = pos.up();
-        if (blockState.isOf(ModBlocks.GLOWING_CRIMSON_NYLIUM)) {
+        if (blockState.isOf(ARFOBlocks.GLOWING_CRIMSON_NYLIUM)) {
             NetherForestVegetationFeature.generate(world, random, blockPos, ConfiguredFeatures.Configs.CRIMSON_ROOTS_CONFIG, 3, 1);
 
-        } else if (blockState.isOf(ModBlocks.GLOWING_WARPED_NYLIUM)) {
+        } else if (blockState.isOf(ARFOBlocks.GLOWING_WARPED_NYLIUM)) {
             NetherForestVegetationFeature.generate(world, random, blockPos, ConfiguredFeatures.Configs.WARPED_ROOTS_CONFIG, 3, 1);
             NetherForestVegetationFeature.generate(world, random, blockPos, ConfiguredFeatures.Configs.NETHER_SPROUTS_CONFIG, 3, 1);
             if (random.nextInt(8) == 0) {
@@ -178,26 +178,6 @@ public class ARFOGlowingGrassBlock extends Block {
 
     }
 
-
-    private void initMap() {
-        grassFeatures.put(ModBlocks.JUNGLE_GRASS_BLOCK, GrassFeatures.jungle);
-        grassFeatures.put(ModBlocks.JUNGLE_EDGE_GRASS_BLOCK, GrassFeatures.jungle_edge);
-        grassFeatures.put(ModBlocks.BADLANDS_GRASS_BLOCK, GrassFeatures.badlands);
-        grassFeatures.put(ModBlocks.SAVANNA_GRASS_BLOCK, GrassFeatures.savanna);
-        grassFeatures.put(ModBlocks.FOREST_GRASS_BLOCK, GrassFeatures.forest);
-        grassFeatures.put(ModBlocks.BIRCH_FOREST_GRASS_BLOCK, GrassFeatures.birch_forest);
-        grassFeatures.put(ModBlocks.DARK_FOREST_GRASS_BLOCK, GrassFeatures.dark_forest);
-        grassFeatures.put(ModBlocks.PLAINS_GRASS_BLOCK, GrassFeatures.plains);
-        grassFeatures.put(ModBlocks.SWAMP_GRASS_BLOCK, GrassFeatures.swamp);
-        grassFeatures.put(ModBlocks.LUSH_SWAMP_GRASS_BLOCK, GrassFeatures.lush_swamp);
-        grassFeatures.put(ModBlocks.MOUNTAINS_GRASS_BLOCK, GrassFeatures.mountains);
-        grassFeatures.put(ModBlocks.MUSHROOM_FIELDS_GRASS_BLOCK, GrassFeatures.mushrooms_fields);
-        grassFeatures.put(ModBlocks.TAIGA_GRASS_BLOCK, GrassFeatures.taiga);
-        grassFeatures.put(ModBlocks.MEGA_TAIGA_GRASS_BLOCK, GrassFeatures.mega_taiga);
-        grassFeatures.put(ModBlocks.SNOWY_GRASS_BLOCK, GrassFeatures.snowy_biomes);
-        grassFeatures.put(ModBlocks.SNOWY_BEACH_GRASS_BLOCK, GrassFeatures.snowy_beach);
-        grassFeatures.put(ModBlocks.WATERS_GRASS_BLOCK, GrassFeatures.waters);
-    }
 
 
     static {

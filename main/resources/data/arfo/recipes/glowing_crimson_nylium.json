@@ -1,20 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "glowing_nether_blocks",
   "pattern": [
-    "###",
-    "#X#",
-    "###"
+    "XXX",
+    "XYX",
+    "XXX"
   ],
   "key": {
-    "#": {
+    "X": {
       "item": "minecraft:glowstone_dust"
     },
-    "X": {
+    "Y": {
       "item": "minecraft:crimson_nylium"
     }
   },
   "result": {
     "item": "arfo:glowing_crimson_nylium",
-    "count": 1
+    "count": 4
   }
 }

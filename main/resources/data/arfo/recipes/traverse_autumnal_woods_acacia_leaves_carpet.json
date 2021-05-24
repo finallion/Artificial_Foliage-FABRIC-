@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "acacia_leaves_carpet",
+  "pattern": [
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "arfo:traverse_autumnal_woods_acacia_leaves"
+    }
+  },
+  "result": {
+    "item": "arfo:traverse_autumnal_woods_acacia_leaves_carpet",
+    "count": 6
+  }
+}

@@ -1,20 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    "#X#",
-    "###"
+    "XXX",
+    "XY "
   ],
   "key": {
-    "#": {
-      "tag": "arfo:oak_leaves"
-    },
     "X": {
-        "item": "minecraft:lime_dye"
+      "tag": "arfo:leaves"
+    },
+    "Y": {
+      "item": "minecraft:lime_dye"
     }
   },
   "result": {
     "item": "arfo:alpha_leaves",
-    "count": 8
+    "count": 4
   }
 }

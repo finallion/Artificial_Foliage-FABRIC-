@@ -1,18 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "sugar_canes",
   "pattern": [
-    "#X"
+    "XY "
   ],
   "key": {
-    "#": {
+    "X": {
       "tag": "arfo:sugar_canes"
     },
-    "X": {
+    "Y": {
       "item": "arfo:waters_dye"
     }
   },
   "result": {
-    "item": "arfo:waters_sugar_cane",
-    "count": 1
+    "item": "arfo:waters_sugar_cane"
   }
 }

@@ -1,6 +1,6 @@
 package com.finallion.artificialfoliage.block;
 
-import com.finallion.artificialfoliage.registry.ModBlocks;
+import com.finallion.artificialfoliage.registry.ARFOBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SlabBlock;
@@ -11,7 +11,6 @@ import net.minecraft.state.property.EnumProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.minecraft.world.WorldView;
 import net.minecraft.world.gen.feature.ConfiguredFeatures;
 import net.minecraft.world.gen.feature.NetherForestVegetationFeature;
 import net.minecraft.world.gen.feature.TwistingVinesFeature;
@@ -37,11 +36,11 @@ public class ARFONetherSlabBlock extends SlabBlock {
         while(var7.hasNext()) {
             BlockPos blockPos = (BlockPos)var7.next();
             BlockState blockState = world.getBlockState(blockPos);
-            if (blockState.isOf(ModBlocks.WARPED_NYLIUM_SLAB) || blockState.isOf(Blocks.WARPED_NYLIUM)) {
+            if (blockState.isOf(ARFOBlocks.WARPED_NYLIUM_SLAB) || blockState.isOf(Blocks.WARPED_NYLIUM)) {
                 bl2 = true;
             }
 
-            if (blockState.isOf(ModBlocks.CRIMSON_NYLIUM_SLAB) || blockState.isOf(Blocks.CRIMSON_NYLIUM)) {
+            if (blockState.isOf(ARFOBlocks.CRIMSON_NYLIUM_SLAB) || blockState.isOf(Blocks.CRIMSON_NYLIUM)) {
                 bl = true;
             }
 
@@ -52,11 +51,11 @@ public class ARFONetherSlabBlock extends SlabBlock {
 
         if (state.isOf(this)) {
             if (bl2 && bl) {
-                world.setBlockState(pos, random.nextBoolean() ? ModBlocks.WARPED_NYLIUM_SLAB.getDefaultState().with(TYPE, state.get(TYPE)).with(WATERLOGGED, state.get(WATERLOGGED)) : ModBlocks.CRIMSON_NYLIUM_SLAB.getDefaultState().with(TYPE, state.get(TYPE)).with(WATERLOGGED, state.get(WATERLOGGED)), 3);
+                world.setBlockState(pos, random.nextBoolean() ? ARFOBlocks.WARPED_NYLIUM_SLAB.getDefaultState().with(TYPE, state.get(TYPE)).with(WATERLOGGED, state.get(WATERLOGGED)) : ARFOBlocks.CRIMSON_NYLIUM_SLAB.getDefaultState().with(TYPE, state.get(TYPE)).with(WATERLOGGED, state.get(WATERLOGGED)), 3);
             } else if (bl2) {
-                world.setBlockState(pos, ModBlocks.WARPED_NYLIUM_SLAB.getDefaultState().with(TYPE, state.get(TYPE)).with(WATERLOGGED, state.get(WATERLOGGED)), 3);
+                world.setBlockState(pos, ARFOBlocks.WARPED_NYLIUM_SLAB.getDefaultState().with(TYPE, state.get(TYPE)).with(WATERLOGGED, state.get(WATERLOGGED)), 3);
             } else if (bl) {
-                world.setBlockState(pos, ModBlocks.CRIMSON_NYLIUM_SLAB.getDefaultState().with(TYPE, state.get(TYPE)).with(WATERLOGGED, state.get(WATERLOGGED)), 3);
+                world.setBlockState(pos, ARFOBlocks.CRIMSON_NYLIUM_SLAB.getDefaultState().with(TYPE, state.get(TYPE)).with(WATERLOGGED, state.get(WATERLOGGED)), 3);
             }
         } else {
             if (bl2 && bl) {
@@ -73,11 +72,11 @@ public class ARFONetherSlabBlock extends SlabBlock {
     public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {
         BlockState blockState = world.getBlockState(pos);
         BlockPos blockPos = pos.up();
-        if (blockState.isOf(ModBlocks.CRIMSON_NYLIUM_SLAB)) {
+        if (blockState.isOf(ARFOBlocks.CRIMSON_NYLIUM_SLAB)) {
             if (blockState.get(TYPE) != SlabType.BOTTOM) {
                 NetherForestVegetationFeature.generate(world, random, blockPos, ConfiguredFeatures.Configs.CRIMSON_ROOTS_CONFIG, 1, 1);
             }
-        } else if (blockState.isOf(ModBlocks.WARPED_NYLIUM_SLAB)) {
+        } else if (blockState.isOf(ARFOBlocks.WARPED_NYLIUM_SLAB)) {
             if (blockState.get(TYPE) != SlabType.BOTTOM) {
                 NetherForestVegetationFeature.generate(world, random, blockPos, ConfiguredFeatures.Configs.WARPED_ROOTS_CONFIG, 1, 1);
                 NetherForestVegetationFeature.generate(world, random, blockPos, ConfiguredFeatures.Configs.NETHER_SPROUTS_CONFIG, 1, 1);

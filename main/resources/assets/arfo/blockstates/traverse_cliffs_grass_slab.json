@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "type=bottom,snowy=false":
+    {
+      "model": "arfo:block/traverse_cliffs_grass_slab"
+    },
+    "type=top,snowy=false":
+    {
+      "model": "arfo:block/traverse_cliffs_grass_slab_top"
+    },
+    "type=double,snowy=false":
+    {
+      "model": "arfo:block/traverse_cliffs_grass_block"
+    },
+    "type=bottom,snowy=true":
+    {
+      "model": "arfo:block/traverse_cliffs_grass_slab_snow"
+    },
+    "type=top,snowy=true":
+    {
+      "model": "arfo:block/traverse_cliffs_grass_slab_top_snow"
+    },
+    "type=double,snowy=true":
+    {
+      "model": "arfo:block/grass_block_snow"
+    }
+  }
+}

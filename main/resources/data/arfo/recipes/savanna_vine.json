@@ -1,18 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "vines",
   "pattern": [
-    "#X"
+    "XY "
   ],
   "key": {
-    "#": {
+    "X": {
       "tag": "arfo:vines"
     },
-    "X": {
+    "Y": {
       "item": "arfo:savanna_dye"
     }
   },
   "result": {
-    "item": "arfo:savanna_vine",
-    "count": 1
+    "item": "arfo:savanna_vine"
   }
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "arfo",
-  "version": "1.2",
+  "version": "2.0",
 
   "name": "Artificial Foliage",
   "description": "This mod allows you to build in any biome, without worrying about ugly grass and foliage colors.",
@@ -35,6 +35,6 @@
     "minecraft": "1.16.x"
   },
   "suggests": {
-    "another-mod": "*"
+    "traverse": "*"
   }
 }

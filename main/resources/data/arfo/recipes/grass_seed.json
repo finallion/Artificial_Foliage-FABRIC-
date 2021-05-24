@@ -1,16 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "##",
-    "##"
+    "XX ",
+    "XX "
   ],
   "key": {
-    "#": {
+    "X": {
       "item": "minecraft:wheat_seeds"
     }
   },
   "result": {
-    "item": "arfo:grass_seed",
-    "count": 1
+    "item": "arfo:grass_seed"
   }
 }

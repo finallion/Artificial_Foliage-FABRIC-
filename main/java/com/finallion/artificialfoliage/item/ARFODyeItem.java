@@ -4,7 +4,7 @@ import net.minecraft.item.Item;
 
 public class ARFODyeItem extends Item {
 
-    public ARFODyeItem() {
-        super(new Item.Settings());
+    public ARFODyeItem(Settings settings) {
+        super(settings);
     }
 }

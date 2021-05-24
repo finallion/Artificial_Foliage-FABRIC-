@@ -1,18 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "vines",
   "pattern": [
-    "#X"
+    "XY "
   ],
   "key": {
-    "#": {
+    "X": {
       "tag": "arfo:vines"
     },
-    "X": {
+    "Y": {
       "item": "arfo:birch_forest_dye"
     }
   },
   "result": {
-    "item": "arfo:birch_forest_vine",
-    "count": 1
+    "item": "arfo:birch_forest_vine"
   }
 }

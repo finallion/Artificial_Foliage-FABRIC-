@@ -1,6 +1,6 @@
 package com.finallion.artificialfoliage.mixin;
 
-import com.finallion.artificialfoliage.registry.ModBlocks;
+import com.finallion.artificialfoliage.registry.ARFOBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.NetherrackBlock;
@@ -26,11 +26,11 @@ public class MixinNetherrackBlock {
             while(var7.hasNext()) {
                 BlockPos blockPos = (BlockPos)var7.next();
                 BlockState blockState = world.getBlockState(blockPos);
-                if (blockState.isOf(ModBlocks.WARPED_NYLIUM_SLAB) || blockState.isOf(Blocks.WARPED_NYLIUM) || blockState.isOf(ModBlocks.GLOWING_WARPED_NYLIUM)) {
+                if (blockState.isOf(ARFOBlocks.WARPED_NYLIUM_SLAB) || blockState.isOf(Blocks.WARPED_NYLIUM) || blockState.isOf(ARFOBlocks.GLOWING_WARPED_NYLIUM)) {
                     bl2 = true;
                 }
 
-                if (blockState.isOf(ModBlocks.CRIMSON_NYLIUM_SLAB) || blockState.isOf(Blocks.CRIMSON_NYLIUM) || blockState.isOf(ModBlocks.GLOWING_CRIMSON_NYLIUM)) {
+                if (blockState.isOf(ARFOBlocks.CRIMSON_NYLIUM_SLAB) || blockState.isOf(Blocks.CRIMSON_NYLIUM) || blockState.isOf(ARFOBlocks.GLOWING_CRIMSON_NYLIUM)) {
                     bl = true;
                 }
 

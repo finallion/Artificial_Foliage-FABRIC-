@@ -5,37 +5,26 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:alternatives",
-          "children": [
+          "type": "minecraft:item",
+          "functions": [
             {
-              "type": "minecraft:item",
+              "function": "minecraft:set_count",
               "conditions": [
                 {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "enchantments": [
-                      {
-                        "enchantment": "minecraft:silk_touch",
-                        "levels": {
-                          "min": 1
-                        }
-                      }
-                    ]
+                  "condition": "minecraft:block_state_property",
+                  "block": "arfo:grass_slab",
+                  "properties": {
+                    "type": "double"
                   }
                 }
               ],
-              "name": "arfo:grass_slab"
+              "count": 2
             },
             {
-              "type": "minecraft:item",
-              "conditions": [
-                {
-                  "condition": "minecraft:survives_explosion"
-                }
-              ],
-              "name": "arfo:dirt_slab"
+              "function": "minecraft:explosion_decay"
             }
-          ]
+          ],
+          "name": "arfo:grass_slab"
         }
       ]
     }

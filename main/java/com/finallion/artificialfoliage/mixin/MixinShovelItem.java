@@ -3,7 +3,7 @@ package com.finallion.artificialfoliage.mixin;
 import com.finallion.artificialfoliage.block.ARFOGrassBlock;
 import com.finallion.artificialfoliage.block.ARFOSlabBlock;
 import com.finallion.artificialfoliage.block.blenderBlocks.BlenderGrassBlock;
-import com.finallion.artificialfoliage.registry.ModBlocks;
+import com.finallion.artificialfoliage.registry.ARFOBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -41,9 +41,9 @@ public class MixinShovelItem {
             SlabType slabType = state.get(ARFOSlabBlock.TYPE);
 
             if (slabType == SlabType.BOTTOM) {
-                newState = ModBlocks.GRASS_PATH_SLAB.getDefaultState().with(TYPE, SlabType.BOTTOM);
+                newState = ARFOBlocks.GRASS_PATH_SLAB.getDefaultState().with(TYPE, SlabType.BOTTOM);
             } else if (slabType == SlabType.TOP) {
-                newState = ModBlocks.GRASS_PATH_SLAB.getDefaultState().with(TYPE, SlabType.TOP);
+                newState = ARFOBlocks.GRASS_PATH_SLAB.getDefaultState().with(TYPE, SlabType.TOP);
             } else {
                 newState = Blocks.GRASS_PATH.getDefaultState();
             }
