@@ -17,24 +17,4 @@ public class ARFOSoilBlock extends Block {
         super(FabricBlockSettings.copyOf(Blocks.DIRT).breakByTool(FabricToolTags.SHOVELS).sounds(BlockSoundGroup.GRASS));
     }
 
-
-    public void grow(World world, Random random, BlockPos pos, BlockState state) {
-        Iterator var7 = BlockPos.iterate(pos.add(-1, -1, -1), pos.add(1, 1, 1)).iterator();
-        boolean found = false;
-        BlockState blockState = world.getBlockState(pos);
-
-        while(var7.hasNext()) {
-            BlockPos blockPos = (BlockPos)var7.next();
-            blockState = world.getBlockState(blockPos);
-            if (blockState.getBlock() instanceof ARFOGrassBlock) {
-                found = true;
-                break;
-            }
-        }
-
-        if (!world.isClient() && found) {
-            world.setBlockState(pos, blockState, 3);
-        }
-
-    }
 }

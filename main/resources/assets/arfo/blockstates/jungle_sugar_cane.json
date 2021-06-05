@@ -1,7 +1,6 @@
 {
   "variants": {
-    "":
-    {
+    "": {
       "model": "arfo:block/jungle_sugar_cane"
     }
   }

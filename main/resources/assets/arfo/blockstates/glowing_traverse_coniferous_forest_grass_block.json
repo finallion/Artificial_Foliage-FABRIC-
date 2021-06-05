@@ -1,7 +1,6 @@
 {
   "variants": {
-    "":
-    {
+    "": {
       "model": "arfo:block/glowing_traverse_coniferous_forest_grass_block"
     }
   }

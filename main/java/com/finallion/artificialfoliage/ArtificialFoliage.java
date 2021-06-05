@@ -6,7 +6,6 @@ import com.finallion.artificialfoliage.registry.ARFOItemTags;
 import com.finallion.artificialfoliage.registry.ARFOBlocks;
 import com.finallion.artificialfoliage.registry.ARFOFluids;
 import com.finallion.artificialfoliage.registry.ARFOItems;
-import com.finallion.artificialfoliage.utils.VanillaDispenserBehavior;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.*;
@@ -22,7 +21,6 @@ public class ArtificialFoliage implements ModInitializer {
         ARFOBlocks.registerBlocks();
         ARFOFluids.registerFluids();
         VanillaLootTableCompat.init();
-        VanillaDispenserBehavior.init();
         ARFOItemTags.init();
 
         // mod compat

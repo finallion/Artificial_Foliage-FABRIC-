@@ -1,7 +1,6 @@
 {
   "variants": {
-    "":
-    {
+    "": {
       "model": "arfo:block/traverse_meadow_acacia_leaves_carpet"
     }
   }

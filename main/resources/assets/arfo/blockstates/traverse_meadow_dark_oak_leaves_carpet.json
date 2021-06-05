@@ -1,7 +1,6 @@
 {
   "variants": {
-    "":
-    {
+    "": {
       "model": "arfo:block/traverse_meadow_dark_oak_leaves_carpet"
     }
   }

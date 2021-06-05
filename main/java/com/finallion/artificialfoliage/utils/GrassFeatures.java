@@ -1,5 +1,7 @@
 package com.finallion.artificialfoliage.utils;
 
+
+import com.finallion.artificialfoliage.compatibilty.BYG.BYGBlocks;
 import com.finallion.artificialfoliage.compatibilty.Traverse.TraverseBlocks;
 import com.finallion.artificialfoliage.registry.ARFOBlocks;
 import net.minecraft.block.Block;
@@ -8,7 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GrassFeatures {
-
 
     public static List<Block> jungle = new ArrayList<Block>() {
         {
@@ -371,4 +372,565 @@ public class GrassFeatures {
             add(TraverseBlocks.TRAVERSE_WOODLANDS_ACACIA_LEAVES_CARPET);
         }
     };
+
+    public static List<Block> ancient_forest = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_ANCIENT_FOREST_FERN);
+            add(BYGBlocks.BYG_ANCIENT_FOREST_GRASS);
+            add(BYGBlocks.TALL_BYG_ANCIENT_FOREST_GRASS);
+            add(BYGBlocks.LARGE_BYG_ANCIENT_FOREST_FERN);
+            add(BYGBlocks.BYG_ANCIENT_FOREST_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_ANCIENT_FOREST_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_ANCIENT_FOREST_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_ANCIENT_FOREST_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> aspen_forest = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_ASPEN_FOREST_FERN);
+            add(BYGBlocks.BYG_ASPEN_FOREST_GRASS);
+            add(BYGBlocks.TALL_BYG_ASPEN_FOREST_GRASS);
+            add(BYGBlocks.LARGE_BYG_ASPEN_FOREST_FERN);
+            add(BYGBlocks.BYG_ASPEN_FOREST_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_ASPEN_FOREST_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_ASPEN_FOREST_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_ASPEN_FOREST_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> araucaria_savanna = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_ARAUCARIA_SAVANNA_FERN);
+            add(BYGBlocks.BYG_ARAUCARIA_SAVANNA_GRASS);
+            add(BYGBlocks.TALL_BYG_ARAUCARIA_SAVANNA_GRASS);
+            add(BYGBlocks.LARGE_BYG_ARAUCARIA_SAVANNA_FERN);
+            add(BYGBlocks.BYG_ARAUCARIA_SAVANNA_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_ARAUCARIA_SAVANNA_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_ARAUCARIA_SAVANNA_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_ARAUCARIA_SAVANNA_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> autumnal_valley = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_AUTUMNAL_VALLEY_FERN);
+            add(BYGBlocks.BYG_AUTUMNAL_VALLEY_GRASS);
+            add(BYGBlocks.TALL_BYG_AUTUMNAL_VALLEY_GRASS);
+            add(BYGBlocks.LARGE_BYG_AUTUMNAL_VALLEY_FERN);
+            add(BYGBlocks.BYG_AUTUMNAL_VALLEY_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_AUTUMNAL_VALLEY_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_AUTUMNAL_VALLEY_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_AUTUMNAL_VALLEY_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> basalt_barrera = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_BASALT_BARRERA_FERN);
+            add(BYGBlocks.BYG_BASALT_BARRERA_GRASS);
+            add(BYGBlocks.TALL_BYG_BASALT_BARRERA_GRASS);
+            add(BYGBlocks.LARGE_BYG_BASALT_BARRERA_FERN);
+            add(BYGBlocks.BYG_BASALT_BARRERA_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_BASALT_BARRERA_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_BASALT_BARRERA_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_BASALT_BARRERA_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> bayou = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_BAYOU_FERN);
+            add(BYGBlocks.BYG_BAYOU_GRASS);
+            add(BYGBlocks.TALL_BYG_BAYOU_GRASS);
+            add(BYGBlocks.LARGE_BYG_BAYOU_FERN);
+            add(BYGBlocks.BYG_BAYOU_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_BAYOU_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_BAYOU_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_BAYOU_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> bluff_steeps = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_BLUFF_STEEPS_FERN);
+            add(BYGBlocks.BYG_BLUFF_STEEPS_GRASS);
+            add(BYGBlocks.TALL_BYG_BLUFF_STEEPS_GRASS);
+            add(BYGBlocks.LARGE_BYG_BLUFF_STEEPS_FERN);
+            add(BYGBlocks.BYG_BLUFF_STEEPS_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_BLUFF_STEEPS_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_BLUFF_STEEPS_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_BLUFF_STEEPS_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> cherry_blossom_forest = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_CHERRY_BLOSSOM_FOREST_FERN);
+            add(BYGBlocks.BYG_CHERRY_BLOSSOM_FOREST_GRASS);
+            add(BYGBlocks.TALL_BYG_CHERRY_BLOSSOM_FOREST_GRASS);
+            add(BYGBlocks.LARGE_BYG_CHERRY_BLOSSOM_FOREST_FERN);
+            add(BYGBlocks.BYG_CHERRY_BLOSSOM_FOREST_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_CHERRY_BLOSSOM_FOREST_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_CHERRY_BLOSSOM_FOREST_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_CHERRY_BLOSSOM_FOREST_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> cika_woods = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_CIKA_WOODS_FERN);
+            add(BYGBlocks.BYG_CIKA_WOODS_GRASS);
+            add(BYGBlocks.TALL_BYG_CIKA_WOODS_GRASS);
+            add(BYGBlocks.LARGE_BYG_CIKA_WOODS_FERN);
+            add(BYGBlocks.BYG_CIKA_WOODS_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_CIKA_WOODS_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_CIKA_WOODS_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_CIKA_WOODS_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> cold_swamplands = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_COLD_SWAMPLANDS_FERN);
+            add(BYGBlocks.BYG_COLD_SWAMPLANDS_GRASS);
+            add(BYGBlocks.TALL_BYG_COLD_SWAMPLANDS_GRASS);
+            add(BYGBlocks.LARGE_BYG_COLD_SWAMPLANDS_FERN);
+            add(BYGBlocks.BYG_COLD_SWAMPLANDS_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_COLD_SWAMPLANDS_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_COLD_SWAMPLANDS_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_COLD_SWAMPLANDS_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> byg_coniferous_forest = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_CONIFEROUS_FOREST_FERN);
+            add(BYGBlocks.BYG_CONIFEROUS_FOREST_GRASS);
+            add(BYGBlocks.TALL_BYG_CONIFEROUS_FOREST_GRASS);
+            add(BYGBlocks.LARGE_BYG_CONIFEROUS_FOREST_FERN);
+            add(BYGBlocks.BYG_CONIFEROUS_FOREST_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_CONIFEROUS_FOREST_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_CONIFEROUS_FOREST_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_CONIFEROUS_FOREST_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> crag_gardens = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_CRAG_GARDENS_FERN);
+            add(BYGBlocks.BYG_CRAG_GARDENS_GRASS);
+            add(BYGBlocks.TALL_BYG_CRAG_GARDENS_GRASS);
+            add(BYGBlocks.LARGE_BYG_CRAG_GARDENS_FERN);
+            add(BYGBlocks.BYG_CRAG_GARDENS_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_CRAG_GARDENS_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_CRAG_GARDENS_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_CRAG_GARDENS_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> crimson_gardens = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_CRIMSON_GARDENS_FERN);
+            add(BYGBlocks.BYG_CRIMSON_GARDENS_GRASS);
+            add(BYGBlocks.TALL_BYG_CRIMSON_GARDENS_GRASS);
+            add(BYGBlocks.LARGE_BYG_CRIMSON_GARDENS_FERN);
+            add(BYGBlocks.BYG_CRIMSON_GARDENS_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_CRIMSON_GARDENS_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_CRIMSON_GARDENS_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_CRIMSON_GARDENS_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> cypress_swampland = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_CYPRESS_SWAMPLAND_FERN);
+            add(BYGBlocks.BYG_CYPRESS_SWAMPLAND_GRASS);
+            add(BYGBlocks.TALL_BYG_CYPRESS_SWAMPLAND_GRASS);
+            add(BYGBlocks.LARGE_BYG_CYPRESS_SWAMPLAND_FERN);
+            add(BYGBlocks.BYG_CYPRESS_SWAMPLAND_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_CYPRESS_SWAMPLAND_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_CYPRESS_SWAMPLAND_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_CYPRESS_SWAMPLAND_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> deciduous_forest = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_DECIDUOUS_FOREST_FERN);
+            add(BYGBlocks.BYG_DECIDUOUS_FOREST_GRASS);
+            add(BYGBlocks.TALL_BYG_DECIDUOUS_FOREST_GRASS);
+            add(BYGBlocks.LARGE_BYG_DECIDUOUS_FOREST_FERN);
+            add(BYGBlocks.BYG_DECIDUOUS_FOREST_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_DECIDUOUS_FOREST_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_DECIDUOUS_FOREST_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_DECIDUOUS_FOREST_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> enchanted_forest = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_ENCHANTED_FOREST_FERN);
+            add(BYGBlocks.BYG_ENCHANTED_FOREST_GRASS);
+            add(BYGBlocks.TALL_BYG_ENCHANTED_FOREST_GRASS);
+            add(BYGBlocks.LARGE_BYG_ENCHANTED_FOREST_FERN);
+            add(BYGBlocks.BYG_ENCHANTED_FOREST_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_ENCHANTED_FOREST_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_ENCHANTED_FOREST_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_ENCHANTED_FOREST_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> fresh_water_lake = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_FRESH_WATER_LAKE_FERN);
+            add(BYGBlocks.BYG_FRESH_WATER_LAKE_GRASS);
+            add(BYGBlocks.TALL_BYG_FRESH_WATER_LAKE_GRASS);
+            add(BYGBlocks.LARGE_BYG_FRESH_WATER_LAKE_FERN);
+            add(BYGBlocks.BYG_FRESH_WATER_LAKE_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_FRESH_WATER_LAKE_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_FRESH_WATER_LAKE_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_FRESH_WATER_LAKE_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> glowstone_gardens = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_GLOWSTONE_GARDENS_FERN);
+            add(BYGBlocks.BYG_GLOWSTONE_GARDENS_GRASS);
+            add(BYGBlocks.TALL_BYG_GLOWSTONE_GARDENS_GRASS);
+            add(BYGBlocks.LARGE_BYG_GLOWSTONE_GARDENS_FERN);
+            add(BYGBlocks.BYG_GLOWSTONE_GARDENS_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_GLOWSTONE_GARDENS_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_GLOWSTONE_GARDENS_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_GLOWSTONE_GARDENS_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> grass_land_plateau = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_GRASS_LAND_PLATEAU_FERN);
+            add(BYGBlocks.BYG_GRASS_LAND_PLATEAU_GRASS);
+            add(BYGBlocks.TALL_BYG_GRASS_LAND_PLATEAU_GRASS);
+            add(BYGBlocks.LARGE_BYG_GRASS_LAND_PLATEAU_FERN);
+            add(BYGBlocks.BYG_GRASS_LAND_PLATEAU_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_GRASS_LAND_PLATEAU_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_GRASS_LAND_PLATEAU_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_GRASS_LAND_PLATEAU_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> great_lakes = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_GREAT_LAKES_FERN);
+            add(BYGBlocks.BYG_GREAT_LAKES_GRASS);
+            add(BYGBlocks.TALL_BYG_GREAT_LAKES_GRASS);
+            add(BYGBlocks.LARGE_BYG_GREAT_LAKES_FERN);
+            add(BYGBlocks.BYG_GREAT_LAKES_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_GREAT_LAKES_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_GREAT_LAKES_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_GREAT_LAKES_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> grove = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_GROVE_FERN);
+            add(BYGBlocks.BYG_GROVE_GRASS);
+            add(BYGBlocks.TALL_BYG_GROVE_GRASS);
+            add(BYGBlocks.LARGE_BYG_GROVE_FERN);
+            add(BYGBlocks.BYG_GROVE_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_GROVE_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_GROVE_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_GROVE_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> guiana_shield = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_GUIANA_SHIELD_FERN);
+            add(BYGBlocks.BYG_GUIANA_SHIELD_GRASS);
+            add(BYGBlocks.TALL_BYG_GUIANA_SHIELD_GRASS);
+            add(BYGBlocks.LARGE_BYG_GUIANA_SHIELD_FERN);
+            add(BYGBlocks.BYG_GUIANA_SHIELD_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_GUIANA_SHIELD_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_GUIANA_SHIELD_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_GUIANA_SHIELD_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> jacaranda_forest = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_JACARANDA_FOREST_FERN);
+            add(BYGBlocks.BYG_JACARANDA_FOREST_GRASS);
+            add(BYGBlocks.TALL_BYG_JACARANDA_FOREST_GRASS);
+            add(BYGBlocks.LARGE_BYG_JACARANDA_FOREST_FERN);
+            add(BYGBlocks.BYG_JACARANDA_FOREST_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_JACARANDA_FOREST_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_JACARANDA_FOREST_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_JACARANDA_FOREST_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> lush_tundra = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_LUSH_TUNDRA_FERN);
+            add(BYGBlocks.BYG_LUSH_TUNDRA_GRASS);
+            add(BYGBlocks.TALL_BYG_LUSH_TUNDRA_GRASS);
+            add(BYGBlocks.LARGE_BYG_LUSH_TUNDRA_FERN);
+            add(BYGBlocks.BYG_LUSH_TUNDRA_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_LUSH_TUNDRA_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_LUSH_TUNDRA_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_LUSH_TUNDRA_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> orchard = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_ORCHARD_FERN);
+            add(BYGBlocks.BYG_ORCHARD_GRASS);
+            add(BYGBlocks.TALL_BYG_ORCHARD_GRASS);
+            add(BYGBlocks.LARGE_BYG_ORCHARD_FERN);
+            add(BYGBlocks.BYG_ORCHARD_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_ORCHARD_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_ORCHARD_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_ORCHARD_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> polluted_lake = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_POLLUTED_LAKE_FERN);
+            add(BYGBlocks.BYG_POLLUTED_LAKE_GRASS);
+            add(BYGBlocks.TALL_BYG_POLLUTED_LAKE_GRASS);
+            add(BYGBlocks.LARGE_BYG_POLLUTED_LAKE_FERN);
+            add(BYGBlocks.BYG_POLLUTED_LAKE_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_POLLUTED_LAKE_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_POLLUTED_LAKE_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_POLLUTED_LAKE_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> prairie = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_PRAIRIE_FERN);
+            add(BYGBlocks.BYG_PRAIRIE_GRASS);
+            add(BYGBlocks.TALL_BYG_PRAIRIE_GRASS);
+            add(BYGBlocks.LARGE_BYG_PRAIRIE_FERN);
+            add(BYGBlocks.BYG_PRAIRIE_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_PRAIRIE_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_PRAIRIE_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_PRAIRIE_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> red_oak_forest = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_RED_OAK_FOREST_FERN);
+            add(BYGBlocks.BYG_RED_OAK_FOREST_GRASS);
+            add(BYGBlocks.TALL_BYG_RED_OAK_FOREST_GRASS);
+            add(BYGBlocks.LARGE_BYG_RED_OAK_FOREST_FERN);
+            add(BYGBlocks.BYG_RED_OAK_FOREST_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_RED_OAK_FOREST_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_RED_OAK_FOREST_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_RED_OAK_FOREST_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> red_rock_mountains = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_RED_ROCK_MOUNTAINS_FERN);
+            add(BYGBlocks.BYG_RED_ROCK_MOUNTAINS_GRASS);
+            add(BYGBlocks.TALL_BYG_RED_ROCK_MOUNTAINS_GRASS);
+            add(BYGBlocks.LARGE_BYG_RED_ROCK_MOUNTAINS_FERN);
+            add(BYGBlocks.BYG_RED_ROCK_MOUNTAINS_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_RED_ROCK_MOUNTAINS_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_RED_ROCK_MOUNTAINS_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_RED_ROCK_MOUNTAINS_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> redwood_tropics = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_REDWOOD_TROPICS_FERN);
+            add(BYGBlocks.BYG_REDWOOD_TROPICS_GRASS);
+            add(BYGBlocks.TALL_BYG_REDWOOD_TROPICS_GRASS);
+            add(BYGBlocks.LARGE_BYG_REDWOOD_TROPICS_FERN);
+            add(BYGBlocks.BYG_REDWOOD_TROPICS_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_REDWOOD_TROPICS_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_REDWOOD_TROPICS_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_REDWOOD_TROPICS_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> rose_fields = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_ROSE_FIELDS_FERN);
+            add(BYGBlocks.BYG_ROSE_FIELDS_GRASS);
+            add(BYGBlocks.TALL_BYG_ROSE_FIELDS_GRASS);
+            add(BYGBlocks.LARGE_BYG_ROSE_FIELDS_FERN);
+            add(BYGBlocks.BYG_ROSE_FIELDS_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_ROSE_FIELDS_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_ROSE_FIELDS_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_ROSE_FIELDS_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> seasonal_deciduous_forest = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_SEASONAL_DECIDUOUS_FOREST_FERN);
+            add(BYGBlocks.BYG_SEASONAL_DECIDUOUS_FOREST_GRASS);
+            add(BYGBlocks.TALL_BYG_SEASONAL_DECIDUOUS_FOREST_GRASS);
+            add(BYGBlocks.LARGE_BYG_SEASONAL_DECIDUOUS_FOREST_FERN);
+            add(BYGBlocks.BYG_SEASONAL_DECIDUOUS_FOREST_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_SEASONAL_DECIDUOUS_FOREST_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_SEASONAL_DECIDUOUS_FOREST_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_SEASONAL_DECIDUOUS_FOREST_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> shrub_lands = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_SHRUB_LANDS_FERN);
+            add(BYGBlocks.BYG_SHRUB_LANDS_GRASS);
+            add(BYGBlocks.TALL_BYG_SHRUB_LANDS_GRASS);
+            add(BYGBlocks.LARGE_BYG_SHRUB_LANDS_FERN);
+            add(BYGBlocks.BYG_SHRUB_LANDS_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_SHRUB_LANDS_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_SHRUB_LANDS_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_SHRUB_LANDS_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> skyris_highlands = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_SKYRIS_HIGHLANDS_FERN);
+            add(BYGBlocks.BYG_SKYRIS_HIGHLANDS_GRASS);
+            add(BYGBlocks.TALL_BYG_SKYRIS_HIGHLANDS_GRASS);
+            add(BYGBlocks.LARGE_BYG_SKYRIS_HIGHLANDS_FERN);
+            add(BYGBlocks.BYG_SKYRIS_HIGHLANDS_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_SKYRIS_HIGHLANDS_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_SKYRIS_HIGHLANDS_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_SKYRIS_HIGHLANDS_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> snowy_deciduous_forest = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_SNOWY_DECIDUOUS_FOREST_FERN);
+            add(BYGBlocks.BYG_SNOWY_DECIDUOUS_FOREST_GRASS);
+            add(BYGBlocks.TALL_BYG_SNOWY_DECIDUOUS_FOREST_GRASS);
+            add(BYGBlocks.LARGE_BYG_SNOWY_DECIDUOUS_FOREST_FERN);
+            add(BYGBlocks.BYG_SNOWY_DECIDUOUS_FOREST_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_SNOWY_DECIDUOUS_FOREST_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_SNOWY_DECIDUOUS_FOREST_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_SNOWY_DECIDUOUS_FOREST_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> sythian_torrids = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_SYTHIAN_TORRIDS_FERN);
+            add(BYGBlocks.BYG_SYTHIAN_TORRIDS_GRASS);
+            add(BYGBlocks.TALL_BYG_SYTHIAN_TORRIDS_GRASS);
+            add(BYGBlocks.LARGE_BYG_SYTHIAN_TORRIDS_FERN);
+            add(BYGBlocks.BYG_SYTHIAN_TORRIDS_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_SYTHIAN_TORRIDS_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_SYTHIAN_TORRIDS_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_SYTHIAN_TORRIDS_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> tropical_rain_forest = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_TROPICAL_RAIN_FOREST_FERN);
+            add(BYGBlocks.BYG_TROPICAL_RAIN_FOREST_GRASS);
+            add(BYGBlocks.TALL_BYG_TROPICAL_RAIN_FOREST_GRASS);
+            add(BYGBlocks.LARGE_BYG_TROPICAL_RAIN_FOREST_FERN);
+            add(BYGBlocks.BYG_TROPICAL_RAIN_FOREST_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_TROPICAL_RAIN_FOREST_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_TROPICAL_RAIN_FOREST_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_TROPICAL_RAIN_FOREST_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> volcano = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_VOLCANO_FERN);
+            add(BYGBlocks.BYG_VOLCANO_GRASS);
+            add(BYGBlocks.TALL_BYG_VOLCANO_GRASS);
+            add(BYGBlocks.LARGE_BYG_VOLCANO_FERN);
+            add(BYGBlocks.BYG_VOLCANO_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_VOLCANO_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_VOLCANO_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_VOLCANO_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> wailing_garth = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_WAILING_GARTH_FERN);
+            add(BYGBlocks.BYG_WAILING_GARTH_GRASS);
+            add(BYGBlocks.TALL_BYG_WAILING_GARTH_GRASS);
+            add(BYGBlocks.LARGE_BYG_WAILING_GARTH_FERN);
+            add(BYGBlocks.BYG_WAILING_GARTH_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_WAILING_GARTH_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_WAILING_GARTH_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_WAILING_GARTH_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> weeping_mire = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_WEEPING_MIRE_FERN);
+            add(BYGBlocks.BYG_WEEPING_MIRE_GRASS);
+            add(BYGBlocks.TALL_BYG_WEEPING_MIRE_GRASS);
+            add(BYGBlocks.LARGE_BYG_WEEPING_MIRE_FERN);
+            add(BYGBlocks.BYG_WEEPING_MIRE_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_WEEPING_MIRE_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_WEEPING_MIRE_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_WEEPING_MIRE_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> withering_woods = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_WITHERING_WOODS_FERN);
+            add(BYGBlocks.BYG_WITHERING_WOODS_GRASS);
+            add(BYGBlocks.TALL_BYG_WITHERING_WOODS_GRASS);
+            add(BYGBlocks.LARGE_BYG_WITHERING_WOODS_FERN);
+            add(BYGBlocks.BYG_WITHERING_WOODS_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_WITHERING_WOODS_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_WITHERING_WOODS_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_WITHERING_WOODS_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> byg_woodlands = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_WOODLANDS_FERN);
+            add(BYGBlocks.BYG_WOODLANDS_GRASS);
+            add(BYGBlocks.TALL_BYG_WOODLANDS_GRASS);
+            add(BYGBlocks.LARGE_BYG_WOODLANDS_FERN);
+            add(BYGBlocks.BYG_WOODLANDS_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_WOODLANDS_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_WOODLANDS_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_WOODLANDS_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> zelkova_forest = new ArrayList<Block>() {
+        {
+            add(BYGBlocks.BYG_ZELKOVA_FOREST_FERN);
+            add(BYGBlocks.BYG_ZELKOVA_FOREST_GRASS);
+            add(BYGBlocks.TALL_BYG_ZELKOVA_FOREST_GRASS);
+            add(BYGBlocks.LARGE_BYG_ZELKOVA_FOREST_FERN);
+            add(BYGBlocks.BYG_ZELKOVA_FOREST_JUNGLE_LEAVES_CARPET);
+            add(BYGBlocks.BYG_ZELKOVA_FOREST_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_ZELKOVA_FOREST_DARK_OAK_LEAVES_CARPET);
+            add(BYGBlocks.BYG_ZELKOVA_FOREST_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+
 }

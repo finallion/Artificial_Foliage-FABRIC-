@@ -1,7 +1,6 @@
 {
   "variants": {
-    "":
-    {
+    "": {
       "model": "arfo:block/glowing_traverse_plains_plateau_grass_block"
     }
   }

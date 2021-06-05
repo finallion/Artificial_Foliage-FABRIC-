@@ -1,6 +1,5 @@
 package com.finallion.artificialfoliage.compatibilty.Traverse;
 
-import com.finallion.artificialfoliage.ArtificialFoliage;
 import com.finallion.artificialfoliage.compatibilty.CompatItemGroup;
 import com.finallion.artificialfoliage.item.ARFODyeItem;
 import com.finallion.artificialfoliage.registry.ARFOItems;

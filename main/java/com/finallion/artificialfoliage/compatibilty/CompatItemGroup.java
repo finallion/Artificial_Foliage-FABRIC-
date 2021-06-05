@@ -1,6 +1,7 @@
 package com.finallion.artificialfoliage.compatibilty;
 
 import com.finallion.artificialfoliage.ArtificialFoliage;
+import com.finallion.artificialfoliage.compatibilty.BYG.BYGItems;
 import com.finallion.artificialfoliage.compatibilty.Traverse.TraverseItems;
 import com.finallion.artificialfoliage.registry.ARFOItems;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
@@ -19,6 +20,13 @@ public class CompatItemGroup {
             new Identifier(ArtificialFoliage.MOD_ID, "addons"))
             .icon(() -> new ItemStack(ARFOItems.BADLANDS_DYE)).build();
 
+    /*
+    public static ItemGroup addonsTwo = FabricItemGroupBuilder.create(
+            new Identifier(ArtificialFoliage.MOD_ID, "addonsTwo"))
+            .icon(() -> new ItemStack(BYGItems.BYG_FOREST_DYE)).build();
+
+
+     */
 
     public static void init() {
 

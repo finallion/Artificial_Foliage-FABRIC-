@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "arfo:items/byg_shulkren_forest_water_bucket"
+  }
+}

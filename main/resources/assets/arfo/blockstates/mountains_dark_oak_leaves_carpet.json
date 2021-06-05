@@ -1,8 +1,7 @@
 {
   "variants": {
-    "":
-      {
-        "model": "arfo:block/mountains_dark_oak_leaves_carpet"
-      }
+    "": {
+      "model": "arfo:block/mountains_dark_oak_leaves_carpet"
+    }
   }
 }

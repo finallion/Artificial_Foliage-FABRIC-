@@ -1,28 +1,16 @@
 {
   "variants": {
-    "type=bottom,snowy=false":
+    "type=bottom":
     {
       "model": "arfo:block/dirt_slab"
     },
-    "type=top,snowy=false":
+    "type=top":
     {
       "model": "arfo:block/dirt_slab_top"
     },
-    "type=double,snowy=false":
+    "type=double":
     {
       "model": "minecraft:block/dirt"
-    },
-    "type=bottom,snowy=true":
-    {
-      "model": "arfo:block/jungle_grass_slab_snow"
-    },
-    "type=top,snowy=true":
-    {
-      "model": "arfo:block/jungle_grass_slab_top_snow"
-    },
-    "type=double,snowy=true":
-    {
-      "model": "arfo:block/grass_block_snow"
     }
   }
 }

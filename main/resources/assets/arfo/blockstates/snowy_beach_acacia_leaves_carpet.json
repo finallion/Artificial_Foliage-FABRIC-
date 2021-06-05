@@ -1,8 +1,7 @@
 {
   "variants": {
-    "":
-      {
-        "model": "arfo:block/snowy_beach_acacia_leaves_carpet"
-      }
+    "": {
+      "model": "arfo:block/snowy_beach_acacia_leaves_carpet"
+    }
   }
 }

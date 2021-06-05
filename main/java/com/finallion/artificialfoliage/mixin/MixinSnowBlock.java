@@ -1,6 +1,6 @@
 package com.finallion.artificialfoliage.mixin;
 
-import com.finallion.artificialfoliage.block.ARFOSlabBlock;
+import com.finallion.artificialfoliage.block.ARFOSpreadableSlab;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SnowBlock;
 import net.minecraft.block.enums.SlabType;
@@ -17,7 +17,7 @@ public class MixinSnowBlock {
     @Inject(method = "canPlaceAt", at = @At("HEAD"), cancellable = true)
     void canPlaceAt(BlockState state, WorldView world, BlockPos pos, CallbackInfoReturnable<Boolean> info) {
         BlockState stateDown = world.getBlockState(pos.down());
-        if (stateDown.getBlock() instanceof ARFOSlabBlock) {
+        if (stateDown.getBlock() instanceof ARFOSpreadableSlab) {
             if (stateDown.get(Properties.SLAB_TYPE) == SlabType.DOUBLE || stateDown.get(Properties.SLAB_TYPE) == SlabType.TOP || stateDown.get(Properties.SLAB_TYPE) == SlabType.BOTTOM) {
                 info.setReturnValue(true);
             }

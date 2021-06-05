@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "top": "minecraft:block/crimson_nylium",
+    "bottom": "minecraft:block/blackstone",
+    "side": "arfo:blocks/byg_overgrown_crimson_blackstone_side"
+  }
+}

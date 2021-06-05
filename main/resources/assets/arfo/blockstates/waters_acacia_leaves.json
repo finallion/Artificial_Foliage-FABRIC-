@@ -1,8 +1,7 @@
 {
   "variants": {
-    "":
-      {
-        "model": "arfo:block/waters_acacia_leaves"
-      }
+    "": {
+      "model": "arfo:block/waters_acacia_leaves"
+    }
   }
 }

@@ -1,7 +1,6 @@
 {
   "variants": {
-    "":
-    {
+    "": {
       "model": "arfo:block/traverse_snowy_cliffs_jungle_leaves_carpet"
     }
   }

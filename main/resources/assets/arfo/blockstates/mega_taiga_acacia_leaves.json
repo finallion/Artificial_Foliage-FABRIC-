@@ -1,8 +1,7 @@
 {
   "variants": {
-    "":
-      {
-        "model": "arfo:block/mega_taiga_acacia_leaves"
-      }
+    "": {
+      "model": "arfo:block/mega_taiga_acacia_leaves"
+    }
   }
 }

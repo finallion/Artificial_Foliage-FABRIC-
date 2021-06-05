@@ -16,112 +16,112 @@ import org.lwjgl.system.CallbackI;
 
 public class TraverseColorProvider {
 
-    private static final BlockColorProvider ARID_HIGHLANDS_GRASS = new BlockColorProvider() {
+    public static final BlockColorProvider ARID_HIGHLANDS_GRASS = new BlockColorProvider() {
         @Override
         public int getColor(BlockState state, @Nullable BlockRenderView world, @Nullable BlockPos pos, int tintIndex) {
             return 0xBACD78;
         }
     };
 
-    private static final BlockColorProvider ARID_HIGHLANDS_LEAVES = new BlockColorProvider() {
+    public static final BlockColorProvider ARID_HIGHLANDS_LEAVES = new BlockColorProvider() {
         @Override
         public int getColor(BlockState state, @Nullable BlockRenderView world, @Nullable BlockPos pos, int tintIndex) {
             return 0x80A02E;
         }
     };
 
-    private static final BlockColorProvider AUTUMNAL_WOODS_GRASS = new BlockColorProvider() {
+    public static final BlockColorProvider AUTUMNAL_WOODS_GRASS = new BlockColorProvider() {
         @Override
         public int getColor(BlockState state, @Nullable BlockRenderView world, @Nullable BlockPos pos, int tintIndex) {
             return 0xD6C23D;
         }
     };
 
-    private static final BlockColorProvider AUTUMNAL_WOODS_LEAVES = new BlockColorProvider() {
+    public static final BlockColorProvider AUTUMNAL_WOODS_LEAVES = new BlockColorProvider() {
         @Override
         public int getColor(BlockState state, @Nullable BlockRenderView world, @Nullable BlockPos pos, int tintIndex) {
             return 0xD2D31F;
         }
     };
 
-    private static final BlockColorProvider CLIFFS = ColorUtils.setDynamicBlockColorProvider(0.3F, 0.4F);
-    private static final BlockColorProvider SNOWY_CLIFFS = ColorUtils.setDynamicBlockColorProvider(0.22F, 0.4F);
+    public static final BlockColorProvider CLIFFS = ColorUtils.setDynamicBlockColorProvider(0.3F, 0.4F);
+    public static final BlockColorProvider SNOWY_CLIFFS = ColorUtils.setDynamicBlockColorProvider(0.22F, 0.4F);
 
-    private static final BlockColorProvider CONIFEROUS_FOREST_GRASS = new BlockColorProvider() {
+    public static final BlockColorProvider CONIFEROUS_FOREST_GRASS = new BlockColorProvider() {
         @Override
         public int getColor(BlockState state, @Nullable BlockRenderView world, @Nullable BlockPos pos, int tintIndex) {
             return 0x338235;
         }
     };
 
-    private static final BlockColorProvider CONIFEROUS_FOREST_LEAVES = new BlockColorProvider() {
+    public static final BlockColorProvider CONIFEROUS_FOREST_LEAVES = new BlockColorProvider() {
         @Override
         public int getColor(BlockState state, @Nullable BlockRenderView world, @Nullable BlockPos pos, int tintIndex) {
             return 0x338235;
         }
     };
 
-    private static final BlockColorProvider SNOWY_CONIFEROUS_FOREST_GRASS = new BlockColorProvider() {
+    public static final BlockColorProvider SNOWY_CONIFEROUS_FOREST_GRASS = new BlockColorProvider() {
         @Override
         public int getColor(BlockState state, @Nullable BlockRenderView world, @Nullable BlockPos pos, int tintIndex) {
             return 0x338251;
         }
     };
 
-    private static final BlockColorProvider SNOWY_CONIFEROUS_FOREST_LEAVES = new BlockColorProvider() {
+    public static final BlockColorProvider SNOWY_CONIFEROUS_FOREST_LEAVES = new BlockColorProvider() {
         @Override
         public int getColor(BlockState state, @Nullable BlockRenderView world, @Nullable BlockPos pos, int tintIndex) {
             return 0x338251;
         }
     };
 
-    private static final BlockColorProvider TRAVERSE_LUSH_SWAMP_GRASS = new BlockColorProvider() {
+    public static final BlockColorProvider TRAVERSE_LUSH_SWAMP_GRASS = new BlockColorProvider() {
         @Override
         public int getColor(BlockState state, @Nullable BlockRenderView world, @Nullable BlockPos pos, int tintIndex) {
             return 0x7FE03E;
         }
     };
 
-    private static final BlockColorProvider TRAVERSE_LUSH_SWAMP_LEAVES = new BlockColorProvider() {
+    public static final BlockColorProvider TRAVERSE_LUSH_SWAMP_LEAVES = new BlockColorProvider() {
         @Override
         public int getColor(BlockState state, @Nullable BlockRenderView world, @Nullable BlockPos pos, int tintIndex) {
             return 0x58EA33;
         }
     };
 
-    private static final BlockColorProvider MEADOW_GRASS = new BlockColorProvider() {
+    public static final BlockColorProvider MEADOW_GRASS = new BlockColorProvider() {
         @Override
         public int getColor(BlockState state, @Nullable BlockRenderView world, @Nullable BlockPos pos, int tintIndex) {
             return 0x65CC53;
         }
     };
 
-    private static final BlockColorProvider MEADOW_LEAVES = new BlockColorProvider() {
+    public static final BlockColorProvider MEADOW_LEAVES = new BlockColorProvider() {
         @Override
         public int getColor(BlockState state, @Nullable BlockRenderView world, @Nullable BlockPos pos, int tintIndex) {
             return 0x5DD64A;
         }
     };
 
-    private static final BlockColorProvider PLAINS_PLATEAU = ColorUtils.setDynamicBlockColorProvider(0.8F, 0.2F);
+    public static final BlockColorProvider PLAINS_PLATEAU = ColorUtils.setDynamicBlockColorProvider(0.8F, 0.2F);
 
-    private static final BlockColorProvider ROLLING_HILLS_GRASS = new BlockColorProvider() {
+    public static final BlockColorProvider ROLLING_HILLS_GRASS = new BlockColorProvider() {
         @Override
         public int getColor(BlockState state, @Nullable BlockRenderView world, @Nullable BlockPos pos, int tintIndex) {
             return 0x7FE03E;
         }
     };
 
-    private static final BlockColorProvider ROLLING_HILLS_LEAVES = new BlockColorProvider() {
+    public static final BlockColorProvider ROLLING_HILLS_LEAVES = new BlockColorProvider() {
         @Override
         public int getColor(BlockState state, @Nullable BlockRenderView world, @Nullable BlockPos pos, int tintIndex) {
             return 0x58EA33;
         }
     };
 
-    private static final BlockColorProvider WOODED_ISLAND = ColorUtils.setDynamicBlockColorProvider(0.8F, 0.8F);
+    public static final BlockColorProvider WOODED_ISLAND = ColorUtils.setDynamicBlockColorProvider(0.8F, 0.8F);
 
-    private static final BlockColorProvider WOODLANDS_GRASS = new BlockColorProvider() {
+    public static final BlockColorProvider WOODLANDS_GRASS = new BlockColorProvider() {
         @Override
         public int getColor(BlockState state, @Nullable BlockRenderView world, @Nullable BlockPos pos, int tintIndex) {
             return 0x99A955;
@@ -129,7 +129,7 @@ public class TraverseColorProvider {
     };
 
 
-    private static final BlockColorProvider WOODLANDS_LEAVES = new BlockColorProvider() {
+    public static final BlockColorProvider WOODLANDS_LEAVES = new BlockColorProvider() {
         @Override
         public int getColor(BlockState state, @Nullable BlockRenderView world, @Nullable BlockPos pos, int tintIndex) {
             return 0x849E4A;
@@ -198,6 +198,19 @@ public class TraverseColorProvider {
                 TraverseBlocks.TRAVERSE_YELLOW_AUTUMNAL_LEAVES_CARPET,
                 TraverseBlocks.TRAVERSE_ORANGE_AUTUMNAL_LEAVES_CARPET,
                 TraverseBlocks.TRAVERSE_BROWN_AUTUMNAL_LEAVES_CARPET);
+
+        BlockRenderLayerMap.INSTANCE.putBlock(TraverseBlocks.POTTED_ARID_HIGHLANDS_FERN, ColorUtils.PLANT_BLOCK_LAYER);
+        BlockRenderLayerMap.INSTANCE.putBlock(TraverseBlocks.POTTED_AUTUMNAL_WOODS_FERN, ColorUtils.PLANT_BLOCK_LAYER);
+        BlockRenderLayerMap.INSTANCE.putBlock(TraverseBlocks.POTTED_CLIFFS_FERN, ColorUtils.PLANT_BLOCK_LAYER);
+        BlockRenderLayerMap.INSTANCE.putBlock(TraverseBlocks.POTTED_CONIFEROUS_FOREST_FERN, ColorUtils.PLANT_BLOCK_LAYER);
+        BlockRenderLayerMap.INSTANCE.putBlock(TraverseBlocks.POTTED_MEADOW_FERN, ColorUtils.PLANT_BLOCK_LAYER);
+        BlockRenderLayerMap.INSTANCE.putBlock(TraverseBlocks.POTTED_PLAINS_PLATEAU_FERN, ColorUtils.PLANT_BLOCK_LAYER);
+        BlockRenderLayerMap.INSTANCE.putBlock(TraverseBlocks.POTTED_ROLLING_HILLS_FERN, ColorUtils.PLANT_BLOCK_LAYER);
+        BlockRenderLayerMap.INSTANCE.putBlock(TraverseBlocks.POTTED_SNOWY_CLIFFS_FERN, ColorUtils.PLANT_BLOCK_LAYER);
+        BlockRenderLayerMap.INSTANCE.putBlock(TraverseBlocks.POTTED_SNOWY_CONIFEROUS_FOREST_FERN, ColorUtils.PLANT_BLOCK_LAYER);
+        BlockRenderLayerMap.INSTANCE.putBlock(TraverseBlocks.POTTED_TRAVERSE_LUSH_SWAMP_FERN, ColorUtils.PLANT_BLOCK_LAYER);
+        BlockRenderLayerMap.INSTANCE.putBlock(TraverseBlocks.POTTED_WOODED_ISLAND_FERN, ColorUtils.PLANT_BLOCK_LAYER);
+        BlockRenderLayerMap.INSTANCE.putBlock(TraverseBlocks.POTTED_WOODLANDS_FERN, ColorUtils.PLANT_BLOCK_LAYER);
 
 
         ColorUtils.registerGrassBlockColor(ARID_HIGHLANDS_GRASS, TraverseBlocks.TRAVERSE_ARID_HIGHLANDS_GRASS_BLOCK, TraverseBlocks.GLOWING_TRAVERSE_ARID_HIGHLANDS_GRASS_BLOCK, TraverseBlocks.TRAVERSE_ARID_HIGHLANDS_GRASS_SLAB, TraverseBlocks.TRAVERSE_ARID_HIGHLANDS_GRASS, TraverseBlocks.TALL_TRAVERSE_ARID_HIGHLANDS_GRASS, TraverseBlocks.TRAVERSE_ARID_HIGHLANDS_FERN, TraverseBlocks.LARGE_TRAVERSE_ARID_HIGHLANDS_FERN, TraverseBlocks.TRAVERSE_ARID_HIGHLANDS_SUGAR_CANE, TraverseBlocks.POTTED_ARID_HIGHLANDS_FERN);

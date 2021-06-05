@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XYX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:netherrack"
+    },
+    "Y": {
+      "item": "minecraft:blue_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:byg_blue_netherrack_slab",
+    "count": 6
+  }
+}

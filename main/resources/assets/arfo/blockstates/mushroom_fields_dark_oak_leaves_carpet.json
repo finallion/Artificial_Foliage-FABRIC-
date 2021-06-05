@@ -1,8 +1,7 @@
 {
   "variants": {
-    "":
-      {
-        "model": "arfo:block/mushroom_fields_oak_leaves_carpet"
-      }
+    "": {
+      "model": "arfo:block/mushroom_fields_dark_oak_leaves_carpet"
+    }
   }
 }

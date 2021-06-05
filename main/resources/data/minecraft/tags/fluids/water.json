@@ -21,6 +21,27 @@
     "arfo:still_traverse_lush_swamp_water",
     "arfo:flowing_traverse_lush_swamp_water",
     "arfo:still_traverse_mini_jungle_water",
-    "arfo:flowing_traverse_mini_jungle_water"
+    "arfo:flowing_traverse_mini_jungle_water",
+
+    "arfo:still_byg_bulbis_gardens_water",
+    "arfo:still_byg_crag_gardens_water",
+    "arfo:still_byg_dead_sea_water",
+    "arfo:still_byg_polluted_lake_water",
+    "arfo:still_byg_tropical_island_water",
+    "arfo:still_byg_glowshroom_bayou_water",
+    "arfo:still_byg_imparius_grove_water",
+    "arfo:still_byg_ethereal_islands_water",
+    "arfo:still_byg_shulkren_forest_water",
+    "arfo:still_byg_vibrant_swampland_water",
+    "arfo:flowing_byg_bulbis_gardens_water",
+    "arfo:flowing_byg_crag_gardens_water",
+    "arfo:flowing_byg_dead_sea_water",
+    "arfo:flowing_byg_polluted_lake_water",
+    "arfo:flowing_byg_tropical_island_water",
+    "arfo:flowing_byg_glowshroom_bayou_water",
+    "arfo:flowing_byg_imparius_grove_water",
+    "arfo:flowing_byg_ethereal_islands_water",
+    "arfo:flowing_byg_shulkren_forest_water",
+    "arfo:flowing_byg_vibrant_swampland_water"
   ]
 }

@@ -1,10 +1,10 @@
 {
   "variants": {
-    "half=lower": {
-      "model": "minecraft:block/tall_grass_bottom"
-    },
     "half=upper": {
-      "model": "minecraft:block/tall_grass_top"
+      "model": "arfo:block/tall_traverse_arid_highlands_grass_top"
+    },
+    "half=lower": {
+      "model": "arfo:block/tall_traverse_arid_highlands_grass_bottom"
     }
   }
 }

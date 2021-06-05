@@ -1,7 +1,6 @@
 {
   "variants": {
-    "":
-    {
+    "": {
       "model": "arfo:block/glowing_traverse_woodlands_grass_block"
     }
   }

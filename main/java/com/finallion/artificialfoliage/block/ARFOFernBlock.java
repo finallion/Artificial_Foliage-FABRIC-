@@ -9,6 +9,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldView;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,6 +21,7 @@ public class ARFOFernBlock extends FernBlock implements Fertilizable {
     public ARFOFernBlock() {
         super(FabricBlockSettings.copyOf(Blocks.FERN).breakInstantly().sounds(BlockSoundGroup.GRASS).noCollision());
     }
+
 
     @Override
     public boolean isFertilizable(BlockView world, BlockPos pos, BlockState state, boolean isClient) {

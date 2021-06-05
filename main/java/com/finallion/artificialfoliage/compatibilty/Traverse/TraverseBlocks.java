@@ -16,8 +16,8 @@ public class TraverseBlocks {
     public static final Block TRAVERSE_ORANGE_AUTUMNAL_LEAVES_CARPET = ARFOBlocks.createBlock(new ARFOLeavesCarpetBlock(), "traverse_orange_autumnal_leaves_carpet");
     public static final Block TRAVERSE_BROWN_AUTUMNAL_LEAVES_CARPET = ARFOBlocks.createBlock(new ARFOLeavesCarpetBlock(), "traverse_brown_autumnal_leaves_carpet");
 
-    public static final Block TRAVERSE_ARID_HIGHLANDS_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOGrassBlock(), "traverse_arid_highlands_grass_block");
-    public static final Block TRAVERSE_ARID_HIGHLANDS_GRASS_SLAB = ARFOBlocks.createBlock(new ARFOGrassBlockSlab(), "traverse_arid_highlands_grass_slab");
+    public static final Block TRAVERSE_ARID_HIGHLANDS_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOSpreadableGrassBlock(), "traverse_arid_highlands_grass_block");
+    public static final Block TRAVERSE_ARID_HIGHLANDS_GRASS_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableGrassSlab(), "traverse_arid_highlands_grass_slab");
     public static final Block GLOWING_TRAVERSE_ARID_HIGHLANDS_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOGlowingGrassBlock(), "glowing_traverse_arid_highlands_grass_block");
     public static final Block TRAVERSE_ARID_HIGHLANDS_JUNGLE_LEAVES = ARFOBlocks.createBlock(new ARFOJungleLeavesBlock(), "traverse_arid_highlands_jungle_leaves");
     public static final Block TRAVERSE_ARID_HIGHLANDS_JUNGLE_LEAVES_CARPET = ARFOBlocks.createBlock(new ARFOLeavesCarpetBlock(), "traverse_arid_highlands_jungle_leaves_carpet");
@@ -35,8 +35,8 @@ public class TraverseBlocks {
     public static final Block TRAVERSE_ARID_HIGHLANDS_VINE = ARFOBlocks.createBlock(new ARFOVinesBlock(), "traverse_arid_highlands_vine");
     public static final Block POTTED_ARID_HIGHLANDS_FERN = ARFOBlocks.createPottedBlock(TRAVERSE_ARID_HIGHLANDS_FERN, "traverse_arid_highlands_fern");
 
-    public static final Block TRAVERSE_AUTUMNAL_WOODS_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOGrassBlock(), "traverse_autumnal_woods_grass_block");
-    public static final Block TRAVERSE_AUTUMNAL_WOODS_GRASS_SLAB = ARFOBlocks.createBlock(new ARFOGrassBlockSlab(), "traverse_autumnal_woods_grass_slab");
+    public static final Block TRAVERSE_AUTUMNAL_WOODS_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOSpreadableGrassBlock(), "traverse_autumnal_woods_grass_block");
+    public static final Block TRAVERSE_AUTUMNAL_WOODS_GRASS_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableGrassSlab(), "traverse_autumnal_woods_grass_slab");
     public static final Block GLOWING_TRAVERSE_AUTUMNAL_WOODS_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOGlowingGrassBlock(), "glowing_traverse_autumnal_woods_grass_block");
     public static final Block TRAVERSE_AUTUMNAL_WOODS_JUNGLE_LEAVES = ARFOBlocks.createBlock(new ARFOJungleLeavesBlock(), "traverse_autumnal_woods_jungle_leaves");
     public static final Block TRAVERSE_AUTUMNAL_WOODS_JUNGLE_LEAVES_CARPET = ARFOBlocks.createBlock(new ARFOLeavesCarpetBlock(), "traverse_autumnal_woods_jungle_leaves_carpet");
@@ -54,8 +54,8 @@ public class TraverseBlocks {
     public static final Block TRAVERSE_AUTUMNAL_WOODS_VINE = ARFOBlocks.createBlock(new ARFOVinesBlock(), "traverse_autumnal_woods_vine");
     public static final Block POTTED_AUTUMNAL_WOODS_FERN = ARFOBlocks.createPottedBlock(TRAVERSE_AUTUMNAL_WOODS_FERN, "traverse_autumnal_woods_fern");
 
-    public static final Block TRAVERSE_CLIFFS_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOGrassBlock(), "traverse_cliffs_grass_block");
-    public static final Block TRAVERSE_CLIFFS_GRASS_SLAB = ARFOBlocks.createBlock(new ARFOGrassBlockSlab(), "traverse_cliffs_grass_slab");
+    public static final Block TRAVERSE_CLIFFS_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOSpreadableGrassBlock(), "traverse_cliffs_grass_block");
+    public static final Block TRAVERSE_CLIFFS_GRASS_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableGrassSlab(), "traverse_cliffs_grass_slab");
     public static final Block GLOWING_TRAVERSE_CLIFFS_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOGlowingGrassBlock(), "glowing_traverse_cliffs_grass_block");
     public static final Block TRAVERSE_CLIFFS_JUNGLE_LEAVES = ARFOBlocks.createBlock(new ARFOJungleLeavesBlock(), "traverse_cliffs_jungle_leaves");
     public static final Block TRAVERSE_CLIFFS_JUNGLE_LEAVES_CARPET = ARFOBlocks.createBlock(new ARFOLeavesCarpetBlock(), "traverse_cliffs_jungle_leaves_carpet");
@@ -73,8 +73,8 @@ public class TraverseBlocks {
     public static final Block TRAVERSE_CLIFFS_VINE = ARFOBlocks.createBlock(new ARFOVinesBlock(), "traverse_cliffs_vine");
     public static final Block POTTED_CLIFFS_FERN = ARFOBlocks.createPottedBlock(TRAVERSE_CLIFFS_FERN, "traverse_cliffs_fern");
 
-    public static final Block TRAVERSE_SNOWY_CLIFFS_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOGrassBlock(), "traverse_snowy_cliffs_grass_block");
-    public static final Block TRAVERSE_SNOWY_CLIFFS_GRASS_SLAB = ARFOBlocks.createBlock(new ARFOGrassBlockSlab(), "traverse_snowy_cliffs_grass_slab");
+    public static final Block TRAVERSE_SNOWY_CLIFFS_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOSpreadableGrassBlock(), "traverse_snowy_cliffs_grass_block");
+    public static final Block TRAVERSE_SNOWY_CLIFFS_GRASS_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableGrassSlab(), "traverse_snowy_cliffs_grass_slab");
     public static final Block GLOWING_TRAVERSE_SNOWY_CLIFFS_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOGlowingGrassBlock(), "glowing_traverse_snowy_cliffs_grass_block");
     public static final Block TRAVERSE_SNOWY_CLIFFS_JUNGLE_LEAVES = ARFOBlocks.createBlock(new ARFOJungleLeavesBlock(), "traverse_snowy_cliffs_jungle_leaves");
     public static final Block TRAVERSE_SNOWY_CLIFFS_JUNGLE_LEAVES_CARPET = ARFOBlocks.createBlock(new ARFOLeavesCarpetBlock(), "traverse_snowy_cliffs_jungle_leaves_carpet");
@@ -92,8 +92,8 @@ public class TraverseBlocks {
     public static final Block TRAVERSE_SNOWY_CLIFFS_VINE = ARFOBlocks.createBlock(new ARFOVinesBlock(), "traverse_snowy_cliffs_vine");
     public static final Block POTTED_SNOWY_CLIFFS_FERN = ARFOBlocks.createPottedBlock(TRAVERSE_SNOWY_CLIFFS_FERN, "traverse_snowy_cliffs_fern");
 
-    public static final Block TRAVERSE_CONIFEROUS_FOREST_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOGrassBlock(), "traverse_coniferous_forest_grass_block");
-    public static final Block TRAVERSE_CONIFEROUS_FOREST_GRASS_SLAB = ARFOBlocks.createBlock(new ARFOGrassBlockSlab(), "traverse_coniferous_forest_grass_slab");
+    public static final Block TRAVERSE_CONIFEROUS_FOREST_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOSpreadableGrassBlock(), "traverse_coniferous_forest_grass_block");
+    public static final Block TRAVERSE_CONIFEROUS_FOREST_GRASS_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableGrassSlab(), "traverse_coniferous_forest_grass_slab");
     public static final Block GLOWING_TRAVERSE_CONIFEROUS_FOREST_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOGlowingGrassBlock(), "glowing_traverse_coniferous_forest_grass_block");
     public static final Block TRAVERSE_CONIFEROUS_FOREST_JUNGLE_LEAVES = ARFOBlocks.createBlock(new ARFOJungleLeavesBlock(), "traverse_coniferous_forest_jungle_leaves");
     public static final Block TRAVERSE_CONIFEROUS_FOREST_JUNGLE_LEAVES_CARPET = ARFOBlocks.createBlock(new ARFOLeavesCarpetBlock(), "traverse_coniferous_forest_jungle_leaves_carpet");
@@ -111,8 +111,8 @@ public class TraverseBlocks {
     public static final Block TRAVERSE_CONIFEROUS_FOREST_VINE = ARFOBlocks.createBlock(new ARFOVinesBlock(), "traverse_coniferous_forest_vine");
     public static final Block POTTED_CONIFEROUS_FOREST_FERN = ARFOBlocks.createPottedBlock(TRAVERSE_CONIFEROUS_FOREST_FERN, "traverse_coniferous_forest_fern");
 
-    public static final Block TRAVERSE_SNOWY_CONIFEROUS_FOREST_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOGrassBlock(), "traverse_snowy_coniferous_forest_grass_block");
-    public static final Block TRAVERSE_SNOWY_CONIFEROUS_FOREST_GRASS_SLAB = ARFOBlocks.createBlock(new ARFOGrassBlockSlab(), "traverse_snowy_coniferous_forest_grass_slab");
+    public static final Block TRAVERSE_SNOWY_CONIFEROUS_FOREST_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOSpreadableGrassBlock(), "traverse_snowy_coniferous_forest_grass_block");
+    public static final Block TRAVERSE_SNOWY_CONIFEROUS_FOREST_GRASS_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableGrassSlab(), "traverse_snowy_coniferous_forest_grass_slab");
     public static final Block GLOWING_TRAVERSE_SNOWY_CONIFEROUS_FOREST_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOGlowingGrassBlock(), "glowing_traverse_snowy_coniferous_forest_grass_block");
     public static final Block TRAVERSE_SNOWY_CONIFEROUS_FOREST_JUNGLE_LEAVES = ARFOBlocks.createBlock(new ARFOJungleLeavesBlock(), "traverse_snowy_coniferous_forest_jungle_leaves");
     public static final Block TRAVERSE_SNOWY_CONIFEROUS_FOREST_JUNGLE_LEAVES_CARPET = ARFOBlocks.createBlock(new ARFOLeavesCarpetBlock(), "traverse_snowy_coniferous_forest_jungle_leaves_carpet");
@@ -130,8 +130,8 @@ public class TraverseBlocks {
     public static final Block TRAVERSE_SNOWY_CONIFEROUS_FOREST_VINE = ARFOBlocks.createBlock(new ARFOVinesBlock(), "traverse_snowy_coniferous_forest_vine");
     public static final Block POTTED_SNOWY_CONIFEROUS_FOREST_FERN = ARFOBlocks.createPottedBlock(TRAVERSE_SNOWY_CONIFEROUS_FOREST_FERN, "traverse_snowy_coniferous_forest_fern");
 
-    public static final Block TRAVERSE_MEADOW_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOGrassBlock(), "traverse_meadow_grass_block");
-    public static final Block TRAVERSE_MEADOW_GRASS_SLAB = ARFOBlocks.createBlock(new ARFOGrassBlockSlab(), "traverse_meadow_grass_slab");
+    public static final Block TRAVERSE_MEADOW_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOSpreadableGrassBlock(), "traverse_meadow_grass_block");
+    public static final Block TRAVERSE_MEADOW_GRASS_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableGrassSlab(), "traverse_meadow_grass_slab");
     public static final Block GLOWING_TRAVERSE_MEADOW_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOGlowingGrassBlock(), "glowing_traverse_meadow_grass_block");
     public static final Block TRAVERSE_MEADOW_JUNGLE_LEAVES = ARFOBlocks.createBlock(new ARFOJungleLeavesBlock(), "traverse_meadow_jungle_leaves");
     public static final Block TRAVERSE_MEADOW_JUNGLE_LEAVES_CARPET = ARFOBlocks.createBlock(new ARFOLeavesCarpetBlock(), "traverse_meadow_jungle_leaves_carpet");
@@ -149,8 +149,8 @@ public class TraverseBlocks {
     public static final Block TRAVERSE_MEADOW_VINE = ARFOBlocks.createBlock(new ARFOVinesBlock(), "traverse_meadow_vine");
     public static final Block POTTED_MEADOW_FERN = ARFOBlocks.createPottedBlock(TRAVERSE_MEADOW_FERN, "traverse_meadow_fern");
 
-    public static final Block TRAVERSE_LUSH_SWAMP_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOGrassBlock(), "traverse_lush_swamp_grass_block");
-    public static final Block TRAVERSE_LUSH_SWAMP_GRASS_SLAB = ARFOBlocks.createBlock(new ARFOGrassBlockSlab(), "traverse_lush_swamp_grass_slab");
+    public static final Block TRAVERSE_LUSH_SWAMP_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOSpreadableGrassBlock(), "traverse_lush_swamp_grass_block");
+    public static final Block TRAVERSE_LUSH_SWAMP_GRASS_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableGrassSlab(), "traverse_lush_swamp_grass_slab");
     public static final Block GLOWING_TRAVERSE_LUSH_SWAMP_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOGlowingGrassBlock(), "glowing_traverse_lush_swamp_grass_block");
     public static final Block TRAVERSE_LUSH_SWAMP_JUNGLE_LEAVES = ARFOBlocks.createBlock(new ARFOJungleLeavesBlock(), "traverse_lush_swamp_jungle_leaves");
     public static final Block TRAVERSE_LUSH_SWAMP_JUNGLE_LEAVES_CARPET = ARFOBlocks.createBlock(new ARFOLeavesCarpetBlock(), "traverse_lush_swamp_jungle_leaves_carpet");
@@ -168,8 +168,8 @@ public class TraverseBlocks {
     public static final Block TRAVERSE_LUSH_SWAMP_VINE = ARFOBlocks.createBlock(new ARFOVinesBlock(), "traverse_lush_swamp_vine");
     public static final Block POTTED_TRAVERSE_LUSH_SWAMP_FERN = ARFOBlocks.createPottedBlock(TRAVERSE_LUSH_SWAMP_FERN, "traverse_lush_swamp_fern");
 
-    public static final Block TRAVERSE_PLAINS_PLATEAU_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOGrassBlock(), "traverse_plains_plateau_grass_block");
-    public static final Block TRAVERSE_PLAINS_PLATEAU_GRASS_SLAB = ARFOBlocks.createBlock(new ARFOGrassBlockSlab(), "traverse_plains_plateau_grass_slab");
+    public static final Block TRAVERSE_PLAINS_PLATEAU_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOSpreadableGrassBlock(), "traverse_plains_plateau_grass_block");
+    public static final Block TRAVERSE_PLAINS_PLATEAU_GRASS_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableGrassSlab(), "traverse_plains_plateau_grass_slab");
     public static final Block GLOWING_TRAVERSE_PLAINS_PLATEAU_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOGlowingGrassBlock(), "glowing_traverse_plains_plateau_grass_block");
     public static final Block TRAVERSE_PLAINS_PLATEAU_JUNGLE_LEAVES = ARFOBlocks.createBlock(new ARFOJungleLeavesBlock(), "traverse_plains_plateau_jungle_leaves");
     public static final Block TRAVERSE_PLAINS_PLATEAU_JUNGLE_LEAVES_CARPET = ARFOBlocks.createBlock(new ARFOLeavesCarpetBlock(), "traverse_plains_plateau_jungle_leaves_carpet");
@@ -187,8 +187,8 @@ public class TraverseBlocks {
     public static final Block TRAVERSE_PLAINS_PLATEAU_VINE = ARFOBlocks.createBlock(new ARFOVinesBlock(), "traverse_plains_plateau_vine");
     public static final Block POTTED_PLAINS_PLATEAU_FERN = ARFOBlocks.createPottedBlock(TRAVERSE_PLAINS_PLATEAU_FERN, "traverse_plains_plateau_fern");
 
-    public static final Block TRAVERSE_ROLLING_HILLS_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOGrassBlock(), "traverse_rolling_hills_grass_block");
-    public static final Block TRAVERSE_ROLLING_HILLS_GRASS_SLAB = ARFOBlocks.createBlock(new ARFOGrassBlockSlab(), "traverse_rolling_hills_grass_slab");
+    public static final Block TRAVERSE_ROLLING_HILLS_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOSpreadableGrassBlock(), "traverse_rolling_hills_grass_block");
+    public static final Block TRAVERSE_ROLLING_HILLS_GRASS_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableGrassSlab(), "traverse_rolling_hills_grass_slab");
     public static final Block GLOWING_TRAVERSE_ROLLING_HILLS_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOGlowingGrassBlock(), "glowing_traverse_rolling_hills_grass_block");
     public static final Block TRAVERSE_ROLLING_HILLS_JUNGLE_LEAVES = ARFOBlocks.createBlock(new ARFOJungleLeavesBlock(), "traverse_rolling_hills_jungle_leaves");
     public static final Block TRAVERSE_ROLLING_HILLS_JUNGLE_LEAVES_CARPET = ARFOBlocks.createBlock(new ARFOLeavesCarpetBlock(), "traverse_rolling_hills_jungle_leaves_carpet");
@@ -206,8 +206,8 @@ public class TraverseBlocks {
     public static final Block TRAVERSE_ROLLING_HILLS_VINE = ARFOBlocks.createBlock(new ARFOVinesBlock(), "traverse_rolling_hills_vine");
     public static final Block POTTED_ROLLING_HILLS_FERN = ARFOBlocks.createPottedBlock(TRAVERSE_ROLLING_HILLS_FERN, "traverse_rolling_hills_fern");
 
-    public static final Block TRAVERSE_WOODED_ISLAND_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOGrassBlock(), "traverse_wooded_island_grass_block");
-    public static final Block TRAVERSE_WOODED_ISLAND_GRASS_SLAB = ARFOBlocks.createBlock(new ARFOGrassBlockSlab(), "traverse_wooded_island_grass_slab");
+    public static final Block TRAVERSE_WOODED_ISLAND_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOSpreadableGrassBlock(), "traverse_wooded_island_grass_block");
+    public static final Block TRAVERSE_WOODED_ISLAND_GRASS_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableGrassSlab(), "traverse_wooded_island_grass_slab");
     public static final Block GLOWING_TRAVERSE_WOODED_ISLAND_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOGlowingGrassBlock(), "glowing_traverse_wooded_island_grass_block");
     public static final Block TRAVERSE_WOODED_ISLAND_JUNGLE_LEAVES = ARFOBlocks.createBlock(new ARFOJungleLeavesBlock(), "traverse_wooded_island_jungle_leaves");
     public static final Block TRAVERSE_WOODED_ISLAND_JUNGLE_LEAVES_CARPET = ARFOBlocks.createBlock(new ARFOLeavesCarpetBlock(), "traverse_wooded_island_jungle_leaves_carpet");
@@ -225,8 +225,8 @@ public class TraverseBlocks {
     public static final Block TRAVERSE_WOODED_ISLAND_VINE = ARFOBlocks.createBlock(new ARFOVinesBlock(), "traverse_wooded_island_vine");
     public static final Block POTTED_WOODED_ISLAND_FERN = ARFOBlocks.createPottedBlock(TRAVERSE_WOODED_ISLAND_FERN, "traverse_wooded_island_fern");
 
-    public static final Block TRAVERSE_WOODLANDS_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOGrassBlock(), "traverse_woodlands_grass_block");
-    public static final Block TRAVERSE_WOODLANDS_GRASS_SLAB = ARFOBlocks.createBlock(new ARFOGrassBlockSlab(), "traverse_woodlands_grass_slab");
+    public static final Block TRAVERSE_WOODLANDS_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOSpreadableGrassBlock(), "traverse_woodlands_grass_block");
+    public static final Block TRAVERSE_WOODLANDS_GRASS_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableGrassSlab(), "traverse_woodlands_grass_slab");
     public static final Block GLOWING_TRAVERSE_WOODLANDS_GRASS_BLOCK = ARFOBlocks.createBlock(new ARFOGlowingGrassBlock(), "glowing_traverse_woodlands_grass_block");
     public static final Block TRAVERSE_WOODLANDS_JUNGLE_LEAVES = ARFOBlocks.createBlock(new ARFOJungleLeavesBlock(), "traverse_woodlands_jungle_leaves");
     public static final Block TRAVERSE_WOODLANDS_JUNGLE_LEAVES_CARPET = ARFOBlocks.createBlock(new ARFOLeavesCarpetBlock(), "traverse_woodlands_jungle_leaves_carpet");

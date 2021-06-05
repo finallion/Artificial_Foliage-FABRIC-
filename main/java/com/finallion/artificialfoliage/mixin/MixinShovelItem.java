@@ -1,7 +1,9 @@
 package com.finallion.artificialfoliage.mixin;
 
-import com.finallion.artificialfoliage.block.ARFOGrassBlock;
-import com.finallion.artificialfoliage.block.ARFOSlabBlock;
+import com.finallion.artificialfoliage.block.ARFOGlowingGrassBlock;
+import com.finallion.artificialfoliage.block.ARFOSpreadableBlock;
+import com.finallion.artificialfoliage.block.ARFOSpreadableGrassBlock;
+import com.finallion.artificialfoliage.block.ARFOSpreadableGrassSlab;
 import com.finallion.artificialfoliage.block.blenderBlocks.BlenderGrassBlock;
 import com.finallion.artificialfoliage.registry.ARFOBlocks;
 import net.minecraft.block.Block;
@@ -36,9 +38,9 @@ public class MixinShovelItem {
         boolean success = false;
         Block block = world.getBlockState(pos).getBlock();
 
-        if (block instanceof ARFOSlabBlock) {
+        if (block instanceof ARFOSpreadableGrassSlab) {
             EnumProperty<SlabType> TYPE = Properties.SLAB_TYPE;
-            SlabType slabType = state.get(ARFOSlabBlock.TYPE);
+            SlabType slabType = state.get(ARFOSpreadableGrassSlab.TYPE);
 
             if (slabType == SlabType.BOTTOM) {
                 newState = ARFOBlocks.GRASS_PATH_SLAB.getDefaultState().with(TYPE, SlabType.BOTTOM);
@@ -50,7 +52,7 @@ public class MixinShovelItem {
 
             success = true;
 
-        } else if (block instanceof ARFOGrassBlock || block instanceof BlenderGrassBlock) {
+        } else if (block instanceof ARFOSpreadableGrassBlock || block instanceof BlenderGrassBlock) {
             newState = Blocks.GRASS_PATH.getDefaultState();
             success = true;
         }

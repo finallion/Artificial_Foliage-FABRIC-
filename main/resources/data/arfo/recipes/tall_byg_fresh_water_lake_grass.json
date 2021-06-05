@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tall_grass",
+  "pattern": [
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "tag": "arfo:tall_grass"
+    },
+    "Y": {
+      "item": "arfo:waters_dye"
+    },
+    "Z": {
+      "item": "arfo:byg_lowlands_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:tall_byg_fresh_water_lake_grass"
+  }
+}

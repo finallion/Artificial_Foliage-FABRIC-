@@ -1,8 +1,7 @@
 {
   "variants": {
-    "":
-      {
-        "model": "arfo:block/birch_forest_acacia_leaves"
-      }
+    "": {
+      "model": "arfo:block/birch_forest_acacia_leaves"
+    }
   }
 }

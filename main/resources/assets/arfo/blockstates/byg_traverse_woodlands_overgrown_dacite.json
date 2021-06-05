@@ -1,0 +1,24 @@
+{
+  "variants": {
+    "snowy=false": [
+      {
+        "model": "arfo:block/byg_traverse_woodlands_overgrown_dacite"
+      },
+      {
+        "model": "arfo:block/byg_traverse_woodlands_overgrown_dacite",
+        "y": 90
+      },
+      {
+        "model": "arfo:block/byg_traverse_woodlands_overgrown_dacite",
+        "y": 180
+      },
+      {
+        "model": "arfo:block/byg_traverse_woodlands_overgrown_dacite",
+        "y": 270
+      }
+    ],
+    "snowy=true": {
+      "model": "arfo:block/overgrown_dacite_snowy"
+    }
+  }
+}

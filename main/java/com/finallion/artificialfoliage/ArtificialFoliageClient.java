@@ -6,6 +6,9 @@ package com.finallion.artificialfoliage;
 import com.finallion.artificialfoliage.block.blenderBlocks.BlenderBlockEntity;
 import com.finallion.artificialfoliage.block.blenderBlocks.IBlenderBlock;
 import com.finallion.artificialfoliage.block.models.*;
+import com.finallion.artificialfoliage.compatibilty.BYG.BYGBlocks;
+import com.finallion.artificialfoliage.compatibilty.BYG.BYGColorProvider;
+import com.finallion.artificialfoliage.compatibilty.BYG.BYGItems;
 import com.finallion.artificialfoliage.compatibilty.Traverse.TraverseColorProvider;
 import com.finallion.artificialfoliage.registry.ARFOBlocks;
 import com.finallion.artificialfoliage.registry.ARFOFluids;
@@ -55,6 +58,7 @@ public class ArtificialFoliageClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         TraverseColorProvider.init();
+        BYGColorProvider.init();
 
         FluidUtils.registerFluidColor(4020182, ARFOFluids.STILL_COLD_OCEAN_WATER, ARFOFluids.FLOWING_COLD_OCEAN_WATER);
         FluidUtils.registerFluidColor(3750089, ARFOFluids.STILL_FROZEN_OCEAN_WATER, ARFOFluids.FLOWING_FROZEN_OCEAN_WATER);
@@ -872,16 +876,16 @@ public class ArtificialFoliageClient implements ClientModInitializer {
 
                 return -1;
             }
-        }, ARFOBlocks.GRASS_SLAB);
+        }, ARFOBlocks.GRASS_SLAB, BYGBlocks.BYG_MEADOW_GRASS_SLAB);
         ColorProviderRegistry.ITEM.register(new ItemColorProvider() {
             @Override
             public int getColor(ItemStack stack, int tintIndex) {
                 return GrassColors.getColor(0.5D, 1.0D);
             }
-        }, ARFOBlocks.GRASS_SLAB);
+        }, ARFOItems.GRASS_SLAB, BYGItems.BYG_MEADOW_GRASS_SLAB);
 
         BlockRenderLayerMap.INSTANCE.putBlock(ARFOBlocks.GRASS_SLAB, ColorUtils.GRASS_BLOCK_LAYER);
-
+        BlockRenderLayerMap.INSTANCE.putBlock(BYGBlocks.BYG_MEADOW_GRASS_SLAB, ColorUtils.GRASS_BLOCK_LAYER);
 
         // blender blocks ability to change color
         // blender blocks particle color based on blender block color

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XYX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:dirt"
+    },
+    "Y": {
+      "item": "minecraft:coarse_dirt"
+    }
+  },
+  "result": {
+    "item": "arfo:byg_meadow_dirt_slab",
+    "count": 6
+  }
+}

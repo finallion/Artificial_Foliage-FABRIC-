@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "arfo:dyes"
+    }
+  ],
+  "result": {
+    "item": "arfo:byg_forest_dye"
+  }
+}

@@ -1,27 +1,21 @@
 {
   "variants": {
-    "type=bottom,snowy=false":
-    {
-      "model": "arfo:block/traverse_coniferous_forest_grass_slab"
-    },
-    "type=top,snowy=false":
-    {
+    "snowy=false,type=top": {
       "model": "arfo:block/traverse_coniferous_forest_grass_slab_top"
     },
-    "type=double,snowy=false":
-    {
-      "model": "arfo:block/traverse_coniferous_forest_grass_block"
-    },
-    "type=bottom,snowy=true":
-    {
-      "model": "arfo:block/traverse_coniferous_forest_grass_slab_snow"
-    },
-    "type=top,snowy=true":
-    {
+    "snowy=true,type=top": {
       "model": "arfo:block/traverse_coniferous_forest_grass_slab_top_snow"
     },
-    "type=double,snowy=true":
-    {
+    "snowy=false,type=bottom": {
+      "model": "arfo:block/traverse_coniferous_forest_grass_slab"
+    },
+    "snowy=true,type=bottom": {
+      "model": "arfo:block/traverse_coniferous_forest_grass_slab_snow"
+    },
+    "snowy=false,type=double": {
+      "model": "arfo:block/glowing_traverse_coniferous_forest_grass_block"
+    },
+    "snowy=true,type=double": {
       "model": "arfo:block/grass_block_snow"
     }
   }

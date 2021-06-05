@@ -1,8 +1,7 @@
 {
   "variants": {
-    "":
-      {
-        "model": "arfo:block/savanna_jungle_leaves"
-      }
+    "": {
+      "model": "arfo:block/savanna_jungle_leaves"
+    }
   }
 }

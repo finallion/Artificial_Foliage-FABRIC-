@@ -18,6 +18,10 @@
     "arfo:swamp_dye",
     "arfo:savanna_dye",
     "arfo:badlands_dye",
-    "arfo:traverse_dye"
+    "arfo:traverse_dye",
+    "arfo:byg_forest_dye",
+    "arfo:byg_mountains_dye",
+    "arfo:byg_nether_dye",
+    "arfo:byg_lowlands_dye"
   ]
 }
