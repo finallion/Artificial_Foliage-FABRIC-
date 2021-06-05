@@ -1,0 +1,6 @@
+{
+  "parent": "arfo:block/leaf_carpet",
+  "textures": {
+    "all": "arfo:blocks/traverse_yellow_autumnal_leaves"
+  }
+}

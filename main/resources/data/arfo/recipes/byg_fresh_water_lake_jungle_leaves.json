@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "jungle_leaves",
+  "pattern": [
+    "XXX",
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "tag": "arfo:jungle_leaves"
+    },
+    "Y": {
+      "item": "arfo:waters_dye"
+    },
+    "Z": {
+      "item": "arfo:byg_lowlands_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:byg_fresh_water_lake_jungle_leaves",
+    "count": 4
+  }
+}

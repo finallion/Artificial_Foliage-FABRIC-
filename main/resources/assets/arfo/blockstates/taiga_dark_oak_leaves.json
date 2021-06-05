@@ -1,8 +1,7 @@
 {
   "variants": {
-    "":
-      {
-        "model": "arfo:block/taiga_dark_oak_leaves"
-      }
+    "": {
+      "model": "arfo:block/taiga_dark_oak_leaves"
+    }
   }
 }

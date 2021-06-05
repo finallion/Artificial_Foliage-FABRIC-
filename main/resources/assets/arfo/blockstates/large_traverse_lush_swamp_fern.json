@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "arfo:block/large_traverse_lush_swamp_fern_top"
+    },
+    "half=lower": {
+      "model": "arfo:block/large_traverse_lush_swamp_fern_bottom"
+    }
+  }
+}

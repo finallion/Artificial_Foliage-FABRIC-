@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "arfo:block/tall_traverse_lush_swamp_grass_top"
+    },
+    "half=lower": {
+      "model": "arfo:block/tall_traverse_lush_swamp_grass_bottom"
+    }
+  }
+}

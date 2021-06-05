@@ -1,7 +1,7 @@
 package com.finallion.artificialfoliage.mixin;
 
 
-import com.finallion.artificialfoliage.block.ARFOSlabBlock;
+import com.finallion.artificialfoliage.block.ARFOSpreadableBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SpreadableBlock;
 import net.minecraft.server.world.ServerWorld;
@@ -19,6 +19,6 @@ public class MixinSpreadableBlock {
     @Inject(method = "randomTick", at = @At("HEAD"), cancellable = true)
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random, CallbackInfo info) {
         // allows vanilla grass blocks to spread to ARFO slabs
-        ARFOSlabBlock.doTick(state, world, pos, random);
+        ARFOSpreadableBlock.doTick(state, world, pos, random);
     }
 }

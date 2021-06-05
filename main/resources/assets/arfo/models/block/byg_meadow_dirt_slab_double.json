@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "arfo:blocks/byg_meadow_dirt"
+  }
+}

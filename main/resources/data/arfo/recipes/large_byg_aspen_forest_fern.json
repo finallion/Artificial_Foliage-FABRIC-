@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "large_ferns",
+  "pattern": [
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "tag": "arfo:large_ferns"
+    },
+    "Y": {
+      "item": "arfo:birch_forest_dye"
+    },
+    "Z": {
+      "item": "arfo:byg_forest_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:large_byg_aspen_forest_fern"
+  }
+}

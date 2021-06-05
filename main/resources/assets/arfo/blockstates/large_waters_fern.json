@@ -1,10 +1,10 @@
 {
   "variants": {
-    "half=lower": {
-      "model": "minecraft:block/large_fern_bottom"
-    },
     "half=upper": {
-      "model": "minecraft:block/large_fern_top"
+      "model": "arfo:block/large_waters_fern_top"
+    },
+    "half=lower": {
+      "model": "arfo:block/large_waters_fern_bottom"
     }
   }
 }

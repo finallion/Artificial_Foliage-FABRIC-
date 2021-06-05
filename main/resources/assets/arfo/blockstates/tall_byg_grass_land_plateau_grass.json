@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "arfo:block/tall_byg_grass_land_plateau_grass_top"
+    },
+    "half=lower": {
+      "model": "arfo:block/tall_byg_grass_land_plateau_grass_bottom"
+    }
+  }
+}

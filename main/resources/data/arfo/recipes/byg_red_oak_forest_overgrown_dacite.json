@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "overgrown_dacite",
+  "pattern": [
+    "XXX",
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:diorite"
+    },
+    "Y": {
+      "item": "arfo:forest_dye"
+    },
+    "Z": {
+      "item": "arfo:byg_forest_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:byg_red_oak_forest_overgrown_dacite",
+    "count": 4
+  }
+}

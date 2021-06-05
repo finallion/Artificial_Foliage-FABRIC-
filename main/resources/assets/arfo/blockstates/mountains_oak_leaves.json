@@ -1,8 +1,7 @@
 {
   "variants": {
-    "":
-      {
-        "model": "arfo:block/mountains_oak_leaves"
-      }
+    "": {
+      "model": "arfo:block/mountains_oak_leaves"
+    }
   }
 }

@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "arfo:glowing_badlands_grass_block"
+          "name": "arfo:glowing_savanna_grass_block"
         }
       ],
       "conditions": [

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "arfo:block/large_byg_great_lakes_fern_top"
+    },
+    "half=lower": {
+      "model": "arfo:block/large_byg_great_lakes_fern_bottom"
+    }
+  }
+}

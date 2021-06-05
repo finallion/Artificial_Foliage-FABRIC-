@@ -1,18 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "water_buckets",
   "pattern": [
-    "#X"
+    "XY "
   ],
   "key": {
-    "#": {
+    "X": {
       "item": "minecraft:bucket"
     },
-    "X": {
-      "tag": "arfo:lukewarm_ocean_dyes"
+    "Y": {
+      "tag": "arfo:lukewarm_dyes"
     }
   },
   "result": {
-    "item": "arfo:lukewarm_ocean_water_bucket",
-    "count": 1
+    "item": "arfo:lukewarm_ocean_water_bucket"
   }
 }

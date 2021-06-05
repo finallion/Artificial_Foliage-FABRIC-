@@ -1,20 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    "#X#",
-    "###"
+    "XXX",
+    "XY "
   ],
   "key": {
-    "#": {
-      "item": "minecraft:grass_block"
-    },
     "X": {
-        "item": "minecraft:lime_dye"
+      "tag": "arfo:grass_blocks"
+    },
+    "Y": {
+      "item": "minecraft:lime_dye"
     }
   },
   "result": {
     "item": "arfo:alpha_grass_block",
-    "count": 8
+    "count": 4
   }
 }

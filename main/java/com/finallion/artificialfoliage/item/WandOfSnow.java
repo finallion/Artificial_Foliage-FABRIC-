@@ -1,9 +1,7 @@
 package com.finallion.artificialfoliage.item;
 
-import com.finallion.artificialfoliage.block.ARFOGrassBlock;
-import com.finallion.artificialfoliage.block.ARFONetherSlabBlock;
-import com.finallion.artificialfoliage.block.ARFOSlabBlock;
-import com.finallion.artificialfoliage.registry.ModBlocks;
+import com.finallion.artificialfoliage.block.*;
+import com.finallion.artificialfoliage.registry.ARFOBlocks;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.SlabType;
 import net.minecraft.entity.player.PlayerEntity;
@@ -35,27 +33,71 @@ public class WandOfSnow extends Item {
         PlayerEntity playerEntity = context.getPlayer();
 
         if (!world.isClient()) {
-            if (block instanceof ARFOSlabBlock || block.is(ModBlocks.PODZOL_SLAB) || block.is(ModBlocks.MYCELIUM_SLAB) || block.is(ModBlocks.COARSE_DIRT_SLAB) || block.is(ModBlocks.DIRT_SLAB) || block.is(ModBlocks.ARTIFICIAL_SOIL_SLAB)) {
+            if (block instanceof ARFOSpreadableGrassSlab || block instanceof ARFOSpreadableStoneSlab || block.is(ARFOBlocks.MYCELIUM_SLAB)) {
                 if (state.get(TYPE) == SlabType.BOTTOM) {
-                    world.setBlockState(pos, block.getDefaultState().with(ARFOSlabBlock.SNOWY, true));
+                    world.setBlockState(pos, block.getDefaultState().with(ARFOSpreadableSlab.SNOWY, true));
                 } else if (state.get(TYPE) == SlabType.TOP) {
                     if (state.get(SNOWY)) world.setBlockState(pos.up(), Blocks.SNOW.getDefaultState());
-                    else world.setBlockState(pos, block.getDefaultState().with(TYPE, SlabType.TOP).with(ARFOSlabBlock.SNOWY, true));
+                    else world.setBlockState(pos, block.getDefaultState().with(TYPE, SlabType.TOP).with(ARFOSpreadableSlab.SNOWY, true));
                 } else {
                     if (state.get(SNOWY) && state.get(TYPE) == SlabType.DOUBLE) world.setBlockState(pos.up(), Blocks.SNOW.getDefaultState());
-                    else world.setBlockState(pos, block.getDefaultState().with(TYPE, SlabType.DOUBLE).with(ARFOSlabBlock.SNOWY, true));
+                    else world.setBlockState(pos, block.getDefaultState().with(TYPE, SlabType.DOUBLE).with(ARFOSpreadableSlab.SNOWY, true));
                 }
 
                 playerEntity.playSound(SoundEvents.BLOCK_SNOW_PLACE, 1, 1);
                 return ActionResult.SUCCESS;
-            } else if (block instanceof ARFOGrassBlock) {
+            } else if (block instanceof ARFOSpreadableGrassBlock || block instanceof ARFOSpreadableStoneBlock) {
                 if (state.get(SNOWY)) world.setBlockState(pos.up(), Blocks.SNOW.getDefaultState());
                 else world.setBlockState(pos, block.getDefaultState().with(GrassBlock.SNOWY, true));
 
                 playerEntity.playSound(SoundEvents.BLOCK_SNOW_PLACE, 1, 1);
                 return ActionResult.SUCCESS;
-            } else if ((block.getDefaultState().isFullCube(world, pos) || block instanceof ARFONetherSlabBlock) && world.getBlockState(pos.up()).isAir()) {
-                if (!(block instanceof ARFONetherSlabBlock)) {
+            } else if (block instanceof SlabBlock) {
+                if (state.get(TYPE) != SlabType.BOTTOM) {
+                    world.setBlockState(pos.up(), Blocks.SNOW.getDefaultState());
+                    playerEntity.playSound(SoundEvents.BLOCK_SNOW_PLACE, 1, 1);
+                    return ActionResult.SUCCESS;
+                } else {
+                    return ActionResult.PASS;
+                }
+            } else if (block.getDefaultState().isFullCube(world, pos)) {
+                world.setBlockState(pos.up(), Blocks.SNOW.getDefaultState());
+                playerEntity.playSound(SoundEvents.BLOCK_SNOW_PLACE, 1, 1);
+                return ActionResult.SUCCESS;
+            } else if (block.is(Blocks.SNOW)) {
+                int layers = state.get(SnowBlock.LAYERS);
+                if (layers < 8) world.setBlockState(pos, Blocks.SNOW.getDefaultState().with(SnowBlock.LAYERS, layers + 1));
+                else world.setBlockState(pos.up(), Blocks.SNOW.getDefaultState());
+
+                playerEntity.playSound(SoundEvents.BLOCK_SNOW_PLACE, 1, 1);
+                return ActionResult.SUCCESS;
+            } else {
+                return ActionResult.PASS;
+            }
+
+
+            /*
+            if (block instanceof ARFOSpreadableGrassSlab || block instanceof ARFOSpreadableStoneSlab || block.is(ARFOBlocks.MYCELIUM_SLAB)) {
+                if (state.get(TYPE) == SlabType.BOTTOM) {
+                    world.setBlockState(pos, block.getDefaultState().with(ARFOSpreadableSlab.SNOWY, true));
+                } else if (state.get(TYPE) == SlabType.TOP) {
+                    if (state.get(SNOWY)) world.setBlockState(pos.up(), Blocks.SNOW.getDefaultState());
+                    else world.setBlockState(pos, block.getDefaultState().with(TYPE, SlabType.TOP).with(ARFOSpreadableSlab.SNOWY, true));
+                } else {
+                    if (state.get(SNOWY) && state.get(TYPE) == SlabType.DOUBLE) world.setBlockState(pos.up(), Blocks.SNOW.getDefaultState());
+                    else world.setBlockState(pos, block.getDefaultState().with(TYPE, SlabType.DOUBLE).with(ARFOSpreadableSlab.SNOWY, true));
+                }
+
+                playerEntity.playSound(SoundEvents.BLOCK_SNOW_PLACE, 1, 1);
+                return ActionResult.SUCCESS;
+            } else if (block instanceof ARFOSpreadableGrassBlock || block instanceof ARFOSpreadableStoneBlock) {
+                if (state.get(SNOWY)) world.setBlockState(pos.up(), Blocks.SNOW.getDefaultState());
+                else world.setBlockState(pos, block.getDefaultState().with(GrassBlock.SNOWY, true));
+
+                playerEntity.playSound(SoundEvents.BLOCK_SNOW_PLACE, 1, 1);
+                return ActionResult.SUCCESS;
+            } else if ((block.getDefaultState().isFullCube(world, pos) || block instanceof ARFONyliumSlab) && world.getBlockState(pos.up()).isAir()) {
+                if (!(block instanceof ARFONyliumSlab)) {
                     world.setBlockState(pos.up(), Blocks.SNOW.getDefaultState());
                     playerEntity.playSound(SoundEvents.BLOCK_SNOW_PLACE, 1, 1);
                     return ActionResult.SUCCESS;
@@ -74,10 +116,13 @@ public class WandOfSnow extends Item {
                 playerEntity.playSound(SoundEvents.BLOCK_SNOW_PLACE, 1, 1);
                 return ActionResult.SUCCESS;
             }
+             */
         }
 
 
         return ActionResult.PASS;
+
+
 
 
     }

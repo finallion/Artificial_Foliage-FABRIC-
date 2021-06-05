@@ -1,8 +1,7 @@
 {
   "variants": {
-    "":
-      {
-        "model": "arfo:block/badlands_dark_oak_leaves_carpet"
-      }
+    "": {
+      "model": "arfo:block/badlands_dark_oak_leaves_carpet"
+    }
   }
 }

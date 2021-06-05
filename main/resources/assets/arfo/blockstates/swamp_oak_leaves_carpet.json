@@ -1,8 +1,7 @@
 {
   "variants": {
-    "":
-      {
-        "model": "arfo:block/swamp_oak_leaves_carpet"
-      }
+    "": {
+      "model": "arfo:block/swamp_oak_leaves_carpet"
+    }
   }
 }

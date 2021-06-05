@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ferns",
+  "pattern": [
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "tag": "arfo:ferns"
+    },
+    "Y": {
+      "item": "arfo:savanna_dye"
+    },
+    "Z": {
+      "item": "arfo:byg_forest_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:byg_seasonal_deciduous_forest_fern"
+  }
+}

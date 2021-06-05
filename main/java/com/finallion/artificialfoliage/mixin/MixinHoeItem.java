@@ -1,7 +1,8 @@
 package com.finallion.artificialfoliage.mixin;
 
-import com.finallion.artificialfoliage.block.ARFOGrassBlock;
-import com.finallion.artificialfoliage.block.ARFOSlabBlock;
+import com.finallion.artificialfoliage.block.ARFOGlowingGrassBlock;
+import com.finallion.artificialfoliage.block.ARFOSpreadableGrassBlock;
+import com.finallion.artificialfoliage.block.ARFOSpreadableGrassSlab;
 import com.finallion.artificialfoliage.block.blenderBlocks.BlenderGrassBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -33,14 +34,14 @@ public class MixinHoeItem {
         boolean success = false;
         Block block = world.getBlockState(pos).getBlock();
 
-        if (block instanceof ARFOSlabBlock) {
-            SlabType slabType = state.get(ARFOSlabBlock.TYPE);
+        if (block instanceof ARFOSpreadableGrassSlab) {
+            SlabType slabType = state.get(ARFOSpreadableGrassSlab.TYPE);
             if (slabType == SlabType.DOUBLE) {
                 newState = Blocks.FARMLAND.getDefaultState();
                 success = true;
             }
 
-        } else if (block instanceof ARFOGrassBlock || block instanceof BlenderGrassBlock) {
+        } else if (block instanceof ARFOSpreadableGrassBlock || block instanceof BlenderGrassBlock) {
             newState = Blocks.FARMLAND.getDefaultState();
             success = true;
         }

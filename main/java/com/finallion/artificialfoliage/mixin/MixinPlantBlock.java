@@ -1,9 +1,6 @@
 package com.finallion.artificialfoliage.mixin;
 
-import com.finallion.artificialfoliage.block.ARFOGlowingGrassBlock;
-import com.finallion.artificialfoliage.block.ARFOGrassBlock;
-import com.finallion.artificialfoliage.block.ARFOSlabBlock;
-import com.finallion.artificialfoliage.block.ARFOSoilBlock;
+import com.finallion.artificialfoliage.block.*;
 import com.finallion.artificialfoliage.block.blenderBlocks.BlenderGrassBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -26,9 +23,9 @@ public class MixinPlantBlock {
     void canPlaceAt(BlockState state, WorldView world, BlockPos pos, CallbackInfoReturnable<Boolean> info) {
         Block block = world.getBlockState(pos.down()).getBlock();
 
-        if (block instanceof ARFOGrassBlock || block instanceof BlenderGrassBlock || block instanceof ARFOGlowingGrassBlock || block instanceof ARFOSoilBlock) {
+        if (block instanceof ARFOSpreadableBlock || block instanceof BlenderGrassBlock || block instanceof ARFOGlowingNyliumBlock || block instanceof ARFOSoilBlock || block instanceof ARFOStoneSoilBlock) {
             info.setReturnValue(true);
-        } else if (block instanceof ARFOSlabBlock) {
+        } else if (block instanceof ARFOSpreadableSlab || block instanceof ARFONyliumSlab || block instanceof ARFOSlab) {
             if (world.getBlockState(pos.down()).get(TYPE) != SlabType.BOTTOM) info.setReturnValue(true);
         }
     }

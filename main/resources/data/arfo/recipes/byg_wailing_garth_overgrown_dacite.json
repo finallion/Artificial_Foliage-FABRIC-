@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "overgrown_dacite",
+  "pattern": [
+    "XXX",
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:diorite"
+    },
+    "Y": {
+      "item": "arfo:plains_dye"
+    },
+    "Z": {
+      "item": "arfo:byg_nether_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:byg_wailing_garth_overgrown_dacite",
+    "count": 4
+  }
+}

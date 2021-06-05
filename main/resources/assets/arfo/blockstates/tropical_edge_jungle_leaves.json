@@ -1,8 +1,7 @@
 {
   "variants": {
-    "":
-      {
-        "model": "arfo:block/tropical_edge_jungle_leaves"
-      }
+    "": {
+      "model": "arfo:block/tropical_edge_jungle_leaves"
+    }
   }
 }

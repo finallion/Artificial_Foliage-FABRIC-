@@ -1,6 +1,6 @@
 package com.finallion.artificialfoliage.block.blenderBlocks;
 
-import com.finallion.artificialfoliage.registry.ModBlocks;
+import com.finallion.artificialfoliage.registry.ARFOBlocks;
 import net.fabricmc.fabric.api.block.entity.BlockEntityClientSerializable;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
@@ -12,7 +12,7 @@ public class BlenderBlockEntity extends BlockEntity implements BlockEntityClient
     private int color;
 
     public BlenderBlockEntity() {
-        super(ModBlocks.BLENDER_BLOCK_ENTITY_TYPE);
+        super(ARFOBlocks.BLENDER_BLOCK_ENTITY_TYPE);
     }
 
 

@@ -1,6 +1,6 @@
 package com.finallion.artificialfoliage.mixin;
 
-import com.finallion.artificialfoliage.registry.ModBlocks;
+import com.finallion.artificialfoliage.registry.ARFOBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.NetherrackBlock;
@@ -10,14 +10,46 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
 import java.util.Iterator;
 import java.util.Random;
 
-@Mixin (NetherrackBlock.class)
+@Mixin(NetherrackBlock.class)
 public class MixinNetherrackBlock {
+    @Inject(method = "grow", at = @At("TAIL"), cancellable = true)
+    private void grow(ServerWorld world, Random random, BlockPos pos, BlockState state, CallbackInfo ci) {
+
+        Iterator var7 = BlockPos.iterate(pos.add(-1, -1, -1), pos.add(1, 1, 1)).iterator();
+
+        BlockState blockState = state;
+        while (var7.hasNext()) {
+            BlockPos blockPos = (BlockPos) var7.next();
+            blockState = world.getBlockState(blockPos);
+            if (blockState.getBlock().is(ARFOBlocks.GLOWING_WARPED_NYLIUM) || blockState.getBlock().is(ARFOBlocks.GLOWING_CRIMSON_NYLIUM) || blockState.getBlock().is(ARFOBlocks.CRIMSON_NYLIUM_SLAB) || blockState.getBlock().is(ARFOBlocks.WARPED_NYLIUM_SLAB)) {
+                break;
+            }
+        }
+
+        if (state.getBlock() != blockState.getBlock()) {
+            if (blockState.getBlock().is(ARFOBlocks.WARPED_NYLIUM_SLAB) || blockState.getBlock().is(ARFOBlocks.GLOWING_WARPED_NYLIUM)) {
+                world.setBlockState(pos, Blocks.WARPED_NYLIUM.getDefaultState(), 2);
+            } else if (blockState.getBlock().is(ARFOBlocks.CRIMSON_NYLIUM_SLAB) || blockState.getBlock().is(ARFOBlocks.GLOWING_CRIMSON_NYLIUM)) {
+                world.setBlockState(pos, Blocks.CRIMSON_NYLIUM.getDefaultState(), 2);
+            } else {
+                world.setBlockState(pos, blockState.getBlock().getDefaultState(), 2);
+            }
+        }
+
+
+    }
+
+
+    /*
     @Inject(method = "grow", at = @At("HEAD"), cancellable = true)
     void grow(ServerWorld world, Random random, BlockPos pos, BlockState state, CallbackInfo info) {
+
+
         if (!world.isClient()) {
             boolean bl = false;
             boolean bl2 = false;
@@ -26,11 +58,11 @@ public class MixinNetherrackBlock {
             while(var7.hasNext()) {
                 BlockPos blockPos = (BlockPos)var7.next();
                 BlockState blockState = world.getBlockState(blockPos);
-                if (blockState.isOf(ModBlocks.WARPED_NYLIUM_SLAB) || blockState.isOf(Blocks.WARPED_NYLIUM)) {
+                if (blockState.isOf(ARFOBlocks.WARPED_NYLIUM_SLAB) || blockState.isOf(Blocks.WARPED_NYLIUM) || blockState.isOf(ARFOBlocks.GLOWING_WARPED_NYLIUM)) {
                     bl2 = true;
                 }
 
-                if (blockState.isOf(ModBlocks.CRIMSON_NYLIUM_SLAB) || blockState.isOf(Blocks.CRIMSON_NYLIUM)) {
+                if (blockState.isOf(ARFOBlocks.CRIMSON_NYLIUM_SLAB) || blockState.isOf(Blocks.CRIMSON_NYLIUM) || blockState.isOf(ARFOBlocks.GLOWING_CRIMSON_NYLIUM)) {
                     bl = true;
                 }
 
@@ -47,5 +79,9 @@ public class MixinNetherrackBlock {
                 world.setBlockState(pos, Blocks.CRIMSON_NYLIUM.getDefaultState(), 3);
             }
         }
+
+
     }
+
+     */
 }

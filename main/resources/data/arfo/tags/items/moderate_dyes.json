@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "arfo:plains_dye",
+    "arfo:waters_dye",
+    "arfo:birch_forest_dye",
+    "arfo:forest_dye"
+  ]
+}

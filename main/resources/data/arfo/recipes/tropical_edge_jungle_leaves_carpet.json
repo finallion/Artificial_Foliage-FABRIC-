@@ -1,15 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "jungle_leaves_carpet",
   "pattern": [
-    "##"
+    "XXX"
   ],
   "key": {
-    "#": {
+    "X": {
       "item": "arfo:tropical_edge_jungle_leaves"
     }
   },
   "result": {
     "item": "arfo:tropical_edge_jungle_leaves_carpet",
-    "count": 8
+    "count": 6
   }
 }
