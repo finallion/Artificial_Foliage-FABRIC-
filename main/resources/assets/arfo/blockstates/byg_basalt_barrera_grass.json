@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "open=false": {
       "model": "arfo:block/byg_basalt_barrera_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/byg_basalt_barrera_grass_down"
     }
   }
 }

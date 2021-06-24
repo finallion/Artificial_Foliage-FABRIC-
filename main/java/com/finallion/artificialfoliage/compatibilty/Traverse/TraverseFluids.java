@@ -11,9 +11,6 @@ import java.util.List;
 
 public class TraverseFluids {
 
-    public static final FlowableFluid STILL_TRAVERSE_CLIFFS_WATER = ARFOFluids.createFluid(new CliffsWater.Still(), "still_traverse_cliffs_water");
-    public static final FlowableFluid FLOWING_TRAVERSE_CLIFFS_WATER = ARFOFluids.createFluid(new CliffsWater.Flowing(), "flowing_traverse_cliffs_water");
-
     public static final FlowableFluid STILL_TRAVERSE_LUSH_SWAMP_WATER = ARFOFluids.createFluid(new TraverseLushSwampWater.Still(), "still_traverse_lush_swamp_water");
     public static final FlowableFluid FLOWING_TRAVERSE_LUSH_SWAMP_WATER = ARFOFluids.createFluid(new TraverseLushSwampWater.Flowing(), "flowing_traverse_lush_swamp_water");
 

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/bop_rainforest_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/bop_rainforest_fern_down"
+    }
+  }
+}

@@ -1,15 +1,24 @@
 package com.finallion.artificialfoliage.block;
 
+import com.finallion.artificialfoliage.registry.ARFOBlocks;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.SlabType;
+import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.WorldAccess;
+import net.minecraft.world.WorldView;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.Random;
 
 public class ARFOSmallSlab extends SlabBlock {
     protected static final VoxelShape TOP_SHAPE;
@@ -43,6 +52,36 @@ public class ARFOSmallSlab extends SlabBlock {
     @Override
     public boolean hasSidedTransparency(BlockState state) {
         return super.hasSidedTransparency(state);
+    }
+
+    public BlockState getPlacementState(ItemPlacementContext ctx) {
+        return !this.getDefaultState().canPlaceAt(ctx.getWorld(), ctx.getBlockPos()) ? Block.pushEntitiesUpBeforeBlockChange(this.getDefaultState(), Blocks.DIRT.getDefaultState(), ctx.getWorld(), ctx.getBlockPos()) : super.getPlacementState(ctx);
+    }
+
+
+    public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState newState, WorldAccess world, BlockPos pos, BlockPos posFrom) {
+        if (direction == Direction.UP && !state.canPlaceAt(world, pos)) {
+            world.getBlockTickScheduler().schedule(pos, this, 1);
+        }
+
+        return super.getStateForNeighborUpdate(state, direction, newState, world, pos, posFrom);
+    }
+
+    public void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+        if (!canPlaceAt(state, world, pos)) {
+            if (state.get(TYPE) == SlabType.BOTTOM) {
+                world.setBlockState(pos, ARFOBlocks.ARTIFICIAL_SOIL_SLAB.getDefaultState(), 3);
+            } else if (state.get(TYPE) == SlabType.TOP) {
+                world.setBlockState(pos, ARFOBlocks.ARTIFICIAL_SOIL_SLAB.getDefaultState().with(TYPE, SlabType.TOP), 3);
+            } else {
+                world.setBlockState(pos, ARFOBlocks.ARTIFICIAL_SOIL.getDefaultState(), 3);
+            }
+        }
+    }
+
+    public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
+        BlockState blockState = world.getBlockState(pos.up());
+        return !blockState.getMaterial().isSolid() || blockState.getBlock() instanceof FenceGateBlock;
     }
 
     static {

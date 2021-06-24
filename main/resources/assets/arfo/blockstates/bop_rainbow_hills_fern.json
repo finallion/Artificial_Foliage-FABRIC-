@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/bop_rainbow_hills_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/bop_rainbow_hills_fern_down"
+    }
+  }
+}

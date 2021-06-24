@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "open=false": {
       "model": "arfo:block/byg_orchard_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/byg_orchard_grass_down"
     }
   }
 }

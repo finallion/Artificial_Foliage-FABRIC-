@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "arfo:items/traverse_cliffs_water_bucket"
-  }
-}

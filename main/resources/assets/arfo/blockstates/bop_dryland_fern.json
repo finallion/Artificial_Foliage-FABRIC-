@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/bop_dryland_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/bop_dryland_fern_down"
+    }
+  }
+}

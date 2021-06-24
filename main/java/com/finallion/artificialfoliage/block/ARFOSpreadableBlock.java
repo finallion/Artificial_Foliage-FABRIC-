@@ -62,6 +62,7 @@ public class ARFOSpreadableBlock extends SpreadableBlock implements Fertilizable
         boolean large = false;
         List<Block> features = new ArrayList<>();
 
+        //TODO check if block is instance and get direct without for-loop
         for (Block b2 : grassFeatures.keySet()) {
             if (blockState.getBlock().is(b2)) features = grassFeatures.get(b2);
         }

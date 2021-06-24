@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "open=false": {
       "model": "arfo:block/savanna_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/savanna_fern_down"
     }
   }
 }

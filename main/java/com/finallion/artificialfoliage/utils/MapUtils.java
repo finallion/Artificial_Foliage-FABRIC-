@@ -1,6 +1,7 @@
 package com.finallion.artificialfoliage.utils;
 
 
+import com.finallion.artificialfoliage.compatibilty.BOP.BOPBlocks;
 import com.finallion.artificialfoliage.compatibilty.BYG.BYGBlocks;
 import com.finallion.artificialfoliage.compatibilty.Traverse.TraverseBlocks;
 import com.finallion.artificialfoliage.registry.ARFOBlocks;
@@ -10,6 +11,8 @@ import java.util.List;
 import java.util.Map;
 
 public class MapUtils {
+
+    //TODO: change first map to block list !!
 
     public static Map<Block, List<Block>> initMap(Map<Block, List<Block>> grassFeatures) {
 
@@ -49,57 +52,57 @@ public class MapUtils {
         grassFeatures.put(ARFOBlocks.GLOWING_SNOWY_BEACH_GRASS_BLOCK, GrassFeatures.snowy_beach);
         grassFeatures.put(ARFOBlocks.GLOWING_WATERS_GRASS_BLOCK, GrassFeatures.waters);
         // vanilla overgrown
-        grassFeatures.put(BYGBlocks.BYG_JUNGLE_OVERGROWN_STONE, GrassFeatures.jungle);
-        grassFeatures.put(BYGBlocks.BYG_JUNGLE_EDGE_OVERGROWN_STONE, GrassFeatures.jungle_edge);
-        grassFeatures.put(BYGBlocks.BYG_BADLANDS_OVERGROWN_STONE, GrassFeatures.badlands);
-        grassFeatures.put(BYGBlocks.BYG_SAVANNA_OVERGROWN_STONE, GrassFeatures.savanna);
-        grassFeatures.put(BYGBlocks.BYG_FOREST_OVERGROWN_STONE, GrassFeatures.forest);
-        grassFeatures.put(BYGBlocks.BYG_BIRCH_FOREST_OVERGROWN_STONE, GrassFeatures.birch_forest);
-        grassFeatures.put(BYGBlocks.BYG_DARK_FOREST_OVERGROWN_STONE, GrassFeatures.dark_forest);
-        grassFeatures.put(BYGBlocks.BYG_PLAINS_OVERGROWN_STONE, GrassFeatures.plains);
-        grassFeatures.put(BYGBlocks.BYG_SWAMP_OVERGROWN_STONE, GrassFeatures.swamp);
-        grassFeatures.put(BYGBlocks.BYG_LUSH_SWAMP_OVERGROWN_STONE, GrassFeatures.lush_swamp);
-        grassFeatures.put(BYGBlocks.BYG_MOUNTAINS_OVERGROWN_STONE, GrassFeatures.mountains);
-        grassFeatures.put(BYGBlocks.BYG_MUSHROOM_FIELDS_OVERGROWN_STONE, GrassFeatures.mushrooms_fields);
-        grassFeatures.put(BYGBlocks.BYG_TAIGA_OVERGROWN_STONE, GrassFeatures.taiga);
-        grassFeatures.put(BYGBlocks.BYG_MEGA_TAIGA_OVERGROWN_STONE, GrassFeatures.mega_taiga);
-        grassFeatures.put(BYGBlocks.BYG_SNOWY_OVERGROWN_STONE, GrassFeatures.snowy_biomes);
-        grassFeatures.put(BYGBlocks.BYG_SNOWY_BEACH_OVERGROWN_STONE, GrassFeatures.snowy_beach);
-        grassFeatures.put(BYGBlocks.BYG_WATERS_OVERGROWN_STONE, GrassFeatures.waters);
-        grassFeatures.put(BYGBlocks.BYG_JUNGLE_OVERGROWN_DACITE, GrassFeatures.jungle);
-        grassFeatures.put(BYGBlocks.BYG_JUNGLE_EDGE_OVERGROWN_DACITE, GrassFeatures.jungle_edge);
-        grassFeatures.put(BYGBlocks.BYG_BADLANDS_OVERGROWN_DACITE, GrassFeatures.badlands);
-        grassFeatures.put(BYGBlocks.BYG_SAVANNA_OVERGROWN_DACITE, GrassFeatures.savanna);
-        grassFeatures.put(BYGBlocks.BYG_FOREST_OVERGROWN_DACITE, GrassFeatures.forest);
-        grassFeatures.put(BYGBlocks.BYG_BIRCH_FOREST_OVERGROWN_DACITE, GrassFeatures.birch_forest);
-        grassFeatures.put(BYGBlocks.BYG_DARK_FOREST_OVERGROWN_DACITE, GrassFeatures.dark_forest);
-        grassFeatures.put(BYGBlocks.BYG_PLAINS_OVERGROWN_DACITE, GrassFeatures.plains);
-        grassFeatures.put(BYGBlocks.BYG_SWAMP_OVERGROWN_DACITE, GrassFeatures.swamp);
-        grassFeatures.put(BYGBlocks.BYG_LUSH_SWAMP_OVERGROWN_DACITE, GrassFeatures.lush_swamp);
-        grassFeatures.put(BYGBlocks.BYG_MOUNTAINS_OVERGROWN_DACITE, GrassFeatures.mountains);
-        grassFeatures.put(BYGBlocks.BYG_MUSHROOM_FIELDS_OVERGROWN_DACITE, GrassFeatures.mushrooms_fields);
-        grassFeatures.put(BYGBlocks.BYG_TAIGA_OVERGROWN_DACITE, GrassFeatures.taiga);
-        grassFeatures.put(BYGBlocks.BYG_MEGA_TAIGA_OVERGROWN_DACITE, GrassFeatures.mega_taiga);
-        grassFeatures.put(BYGBlocks.BYG_SNOWY_OVERGROWN_DACITE, GrassFeatures.snowy_biomes);
-        grassFeatures.put(BYGBlocks.BYG_SNOWY_BEACH_OVERGROWN_DACITE, GrassFeatures.snowy_beach);
-        grassFeatures.put(BYGBlocks.BYG_WATERS_OVERGROWN_DACITE, GrassFeatures.waters);
-        grassFeatures.put(BYGBlocks.BYG_JUNGLE_OVERGROWN_NETHERRACK, GrassFeatures.jungle);
-        grassFeatures.put(BYGBlocks.BYG_JUNGLE_EDGE_OVERGROWN_NETHERRACK, GrassFeatures.jungle_edge);
-        grassFeatures.put(BYGBlocks.BYG_BADLANDS_OVERGROWN_NETHERRACK, GrassFeatures.badlands);
-        grassFeatures.put(BYGBlocks.BYG_SAVANNA_OVERGROWN_NETHERRACK, GrassFeatures.savanna);
-        grassFeatures.put(BYGBlocks.BYG_FOREST_OVERGROWN_NETHERRACK, GrassFeatures.forest);
-        grassFeatures.put(BYGBlocks.BYG_BIRCH_FOREST_OVERGROWN_NETHERRACK, GrassFeatures.birch_forest);
-        grassFeatures.put(BYGBlocks.BYG_DARK_FOREST_OVERGROWN_NETHERRACK, GrassFeatures.dark_forest);
-        grassFeatures.put(BYGBlocks.BYG_PLAINS_OVERGROWN_NETHERRACK, GrassFeatures.plains);
-        grassFeatures.put(BYGBlocks.BYG_SWAMP_OVERGROWN_NETHERRACK, GrassFeatures.swamp);
-        grassFeatures.put(BYGBlocks.BYG_LUSH_SWAMP_OVERGROWN_NETHERRACK, GrassFeatures.lush_swamp);
-        grassFeatures.put(BYGBlocks.BYG_MOUNTAINS_OVERGROWN_NETHERRACK, GrassFeatures.mountains);
-        grassFeatures.put(BYGBlocks.BYG_MUSHROOM_FIELDS_OVERGROWN_NETHERRACK, GrassFeatures.mushrooms_fields);
-        grassFeatures.put(BYGBlocks.BYG_TAIGA_OVERGROWN_NETHERRACK, GrassFeatures.taiga);
-        grassFeatures.put(BYGBlocks.BYG_MEGA_TAIGA_OVERGROWN_NETHERRACK, GrassFeatures.mega_taiga);
-        grassFeatures.put(BYGBlocks.BYG_SNOWY_OVERGROWN_NETHERRACK, GrassFeatures.snowy_biomes);
-        grassFeatures.put(BYGBlocks.BYG_SNOWY_BEACH_OVERGROWN_NETHERRACK, GrassFeatures.snowy_beach);
-        grassFeatures.put(BYGBlocks.BYG_WATERS_OVERGROWN_NETHERRACK, GrassFeatures.waters);
+        grassFeatures.put(ARFOBlocks.JUNGLE_OVERGROWN_STONE, GrassFeatures.jungle);
+        grassFeatures.put(ARFOBlocks.JUNGLE_EDGE_OVERGROWN_STONE, GrassFeatures.jungle_edge);
+        grassFeatures.put(ARFOBlocks.BADLANDS_OVERGROWN_STONE, GrassFeatures.badlands);
+        grassFeatures.put(ARFOBlocks.SAVANNA_OVERGROWN_STONE, GrassFeatures.savanna);
+        grassFeatures.put(ARFOBlocks.FOREST_OVERGROWN_STONE, GrassFeatures.forest);
+        grassFeatures.put(ARFOBlocks.BIRCH_FOREST_OVERGROWN_STONE, GrassFeatures.birch_forest);
+        grassFeatures.put(ARFOBlocks.DARK_FOREST_OVERGROWN_STONE, GrassFeatures.dark_forest);
+        grassFeatures.put(ARFOBlocks.PLAINS_OVERGROWN_STONE, GrassFeatures.plains);
+        grassFeatures.put(ARFOBlocks.SWAMP_OVERGROWN_STONE, GrassFeatures.swamp);
+        grassFeatures.put(ARFOBlocks.LUSH_SWAMP_OVERGROWN_STONE, GrassFeatures.lush_swamp);
+        grassFeatures.put(ARFOBlocks.MOUNTAINS_OVERGROWN_STONE, GrassFeatures.mountains);
+        grassFeatures.put(ARFOBlocks.MUSHROOM_FIELDS_OVERGROWN_STONE, GrassFeatures.mushrooms_fields);
+        grassFeatures.put(ARFOBlocks.TAIGA_OVERGROWN_STONE, GrassFeatures.taiga);
+        grassFeatures.put(ARFOBlocks.MEGA_TAIGA_OVERGROWN_STONE, GrassFeatures.mega_taiga);
+        grassFeatures.put(ARFOBlocks.SNOWY_OVERGROWN_STONE, GrassFeatures.snowy_biomes);
+        grassFeatures.put(ARFOBlocks.SNOWY_BEACH_OVERGROWN_STONE, GrassFeatures.snowy_beach);
+        grassFeatures.put(ARFOBlocks.WATERS_OVERGROWN_STONE, GrassFeatures.waters);
+        grassFeatures.put(ARFOBlocks.JUNGLE_OVERGROWN_DACITE, GrassFeatures.jungle);
+        grassFeatures.put(ARFOBlocks.JUNGLE_EDGE_OVERGROWN_DACITE, GrassFeatures.jungle_edge);
+        grassFeatures.put(ARFOBlocks.BADLANDS_OVERGROWN_DACITE, GrassFeatures.badlands);
+        grassFeatures.put(ARFOBlocks.SAVANNA_OVERGROWN_DACITE, GrassFeatures.savanna);
+        grassFeatures.put(ARFOBlocks.FOREST_OVERGROWN_DACITE, GrassFeatures.forest);
+        grassFeatures.put(ARFOBlocks.BIRCH_FOREST_OVERGROWN_DACITE, GrassFeatures.birch_forest);
+        grassFeatures.put(ARFOBlocks.DARK_FOREST_OVERGROWN_DACITE, GrassFeatures.dark_forest);
+        grassFeatures.put(ARFOBlocks.PLAINS_OVERGROWN_DACITE, GrassFeatures.plains);
+        grassFeatures.put(ARFOBlocks.SWAMP_OVERGROWN_DACITE, GrassFeatures.swamp);
+        grassFeatures.put(ARFOBlocks.LUSH_SWAMP_OVERGROWN_DACITE, GrassFeatures.lush_swamp);
+        grassFeatures.put(ARFOBlocks.MOUNTAINS_OVERGROWN_DACITE, GrassFeatures.mountains);
+        grassFeatures.put(ARFOBlocks.MUSHROOM_FIELDS_OVERGROWN_DACITE, GrassFeatures.mushrooms_fields);
+        grassFeatures.put(ARFOBlocks.TAIGA_OVERGROWN_DACITE, GrassFeatures.taiga);
+        grassFeatures.put(ARFOBlocks.MEGA_TAIGA_OVERGROWN_DACITE, GrassFeatures.mega_taiga);
+        grassFeatures.put(ARFOBlocks.SNOWY_OVERGROWN_DACITE, GrassFeatures.snowy_biomes);
+        grassFeatures.put(ARFOBlocks.SNOWY_BEACH_OVERGROWN_DACITE, GrassFeatures.snowy_beach);
+        grassFeatures.put(ARFOBlocks.WATERS_OVERGROWN_DACITE, GrassFeatures.waters);
+        grassFeatures.put(ARFOBlocks.JUNGLE_OVERGROWN_NETHERRACK, GrassFeatures.jungle);
+        grassFeatures.put(ARFOBlocks.JUNGLE_EDGE_OVERGROWN_NETHERRACK, GrassFeatures.jungle_edge);
+        grassFeatures.put(ARFOBlocks.BADLANDS_OVERGROWN_NETHERRACK, GrassFeatures.badlands);
+        grassFeatures.put(ARFOBlocks.SAVANNA_OVERGROWN_NETHERRACK, GrassFeatures.savanna);
+        grassFeatures.put(ARFOBlocks.FOREST_OVERGROWN_NETHERRACK, GrassFeatures.forest);
+        grassFeatures.put(ARFOBlocks.BIRCH_FOREST_OVERGROWN_NETHERRACK, GrassFeatures.birch_forest);
+        grassFeatures.put(ARFOBlocks.DARK_FOREST_OVERGROWN_NETHERRACK, GrassFeatures.dark_forest);
+        grassFeatures.put(ARFOBlocks.PLAINS_OVERGROWN_NETHERRACK, GrassFeatures.plains);
+        grassFeatures.put(ARFOBlocks.SWAMP_OVERGROWN_NETHERRACK, GrassFeatures.swamp);
+        grassFeatures.put(ARFOBlocks.LUSH_SWAMP_OVERGROWN_NETHERRACK, GrassFeatures.lush_swamp);
+        grassFeatures.put(ARFOBlocks.MOUNTAINS_OVERGROWN_NETHERRACK, GrassFeatures.mountains);
+        grassFeatures.put(ARFOBlocks.MUSHROOM_FIELDS_OVERGROWN_NETHERRACK, GrassFeatures.mushrooms_fields);
+        grassFeatures.put(ARFOBlocks.TAIGA_OVERGROWN_NETHERRACK, GrassFeatures.taiga);
+        grassFeatures.put(ARFOBlocks.MEGA_TAIGA_OVERGROWN_NETHERRACK, GrassFeatures.mega_taiga);
+        grassFeatures.put(ARFOBlocks.SNOWY_OVERGROWN_NETHERRACK, GrassFeatures.snowy_biomes);
+        grassFeatures.put(ARFOBlocks.SNOWY_BEACH_OVERGROWN_NETHERRACK, GrassFeatures.snowy_beach);
+        grassFeatures.put(ARFOBlocks.WATERS_OVERGROWN_NETHERRACK, GrassFeatures.waters);
 
         /*
 
@@ -132,42 +135,42 @@ public class MapUtils {
         grassFeatures.put(TraverseBlocks.GLOWING_TRAVERSE_WOODED_ISLAND_GRASS_BLOCK, GrassFeatures.wooded_island);
         grassFeatures.put(TraverseBlocks.GLOWING_TRAVERSE_WOODLANDS_GRASS_BLOCK, GrassFeatures.woodlands);
         // traverse overgrown
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_ARID_HIGHLANDS_OVERGROWN_STONE, GrassFeatures.arid_highlands);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_AUTUMNAL_WOODS_OVERGROWN_STONE, GrassFeatures.autumnal_woods);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_CLIFFS_OVERGROWN_STONE, GrassFeatures.cliffs);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_SNOWY_CLIFFS_OVERGROWN_STONE, GrassFeatures.snowy_cliffs);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_CONIFEROUS_FOREST_OVERGROWN_STONE, GrassFeatures.coniferous_forest);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_SNOWY_CONIFEROUS_FOREST_OVERGROWN_STONE, GrassFeatures.snowy_coniferous_forest);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_MEADOW_OVERGROWN_STONE, GrassFeatures.meadow);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_ROLLING_HILLS_OVERGROWN_STONE, GrassFeatures.rolling_hills);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_LUSH_SWAMP_OVERGROWN_STONE, GrassFeatures.traverse_lush_swamp);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_PLAINS_PLATEAU_OVERGROWN_STONE, GrassFeatures.plains_plateau);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_WOODED_ISLAND_OVERGROWN_STONE, GrassFeatures.wooded_island);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_WOODLANDS_OVERGROWN_STONE, GrassFeatures.woodlands);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_ARID_HIGHLANDS_OVERGROWN_DACITE, GrassFeatures.arid_highlands);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_AUTUMNAL_WOODS_OVERGROWN_DACITE, GrassFeatures.autumnal_woods);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_CLIFFS_OVERGROWN_DACITE, GrassFeatures.cliffs);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_SNOWY_CLIFFS_OVERGROWN_DACITE, GrassFeatures.snowy_cliffs);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_CONIFEROUS_FOREST_OVERGROWN_DACITE, GrassFeatures.coniferous_forest);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_SNOWY_CONIFEROUS_FOREST_OVERGROWN_DACITE, GrassFeatures.snowy_coniferous_forest);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_MEADOW_OVERGROWN_DACITE, GrassFeatures.meadow);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_ROLLING_HILLS_OVERGROWN_DACITE, GrassFeatures.rolling_hills);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_LUSH_SWAMP_OVERGROWN_DACITE, GrassFeatures.traverse_lush_swamp);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_PLAINS_PLATEAU_OVERGROWN_DACITE, GrassFeatures.plains_plateau);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_WOODED_ISLAND_OVERGROWN_DACITE, GrassFeatures.wooded_island);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_WOODLANDS_OVERGROWN_DACITE, GrassFeatures.woodlands);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_ARID_HIGHLANDS_OVERGROWN_NETHERRACK, GrassFeatures.arid_highlands);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_AUTUMNAL_WOODS_OVERGROWN_NETHERRACK, GrassFeatures.autumnal_woods);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_CLIFFS_OVERGROWN_NETHERRACK, GrassFeatures.cliffs);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_SNOWY_CLIFFS_OVERGROWN_NETHERRACK, GrassFeatures.snowy_cliffs);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_CONIFEROUS_FOREST_OVERGROWN_NETHERRACK, GrassFeatures.coniferous_forest);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_SNOWY_CONIFEROUS_FOREST_OVERGROWN_NETHERRACK, GrassFeatures.snowy_coniferous_forest);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_MEADOW_OVERGROWN_NETHERRACK, GrassFeatures.meadow);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_ROLLING_HILLS_OVERGROWN_NETHERRACK, GrassFeatures.rolling_hills);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_LUSH_SWAMP_OVERGROWN_NETHERRACK, GrassFeatures.traverse_lush_swamp);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_PLAINS_PLATEAU_OVERGROWN_NETHERRACK, GrassFeatures.plains_plateau);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_WOODED_ISLAND_OVERGROWN_NETHERRACK, GrassFeatures.wooded_island);
-        grassFeatures.put(BYGBlocks.BYG_TRAVERSE_WOODLANDS_OVERGROWN_NETHERRACK, GrassFeatures.woodlands);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_ARID_HIGHLANDS_OVERGROWN_STONE, GrassFeatures.arid_highlands);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_AUTUMNAL_WOODS_OVERGROWN_STONE, GrassFeatures.autumnal_woods);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_CLIFFS_OVERGROWN_STONE, GrassFeatures.cliffs);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_SNOWY_CLIFFS_OVERGROWN_STONE, GrassFeatures.snowy_cliffs);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_CONIFEROUS_FOREST_OVERGROWN_STONE, GrassFeatures.coniferous_forest);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_SNOWY_CONIFEROUS_FOREST_OVERGROWN_STONE, GrassFeatures.snowy_coniferous_forest);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_MEADOW_OVERGROWN_STONE, GrassFeatures.meadow);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_ROLLING_HILLS_OVERGROWN_STONE, GrassFeatures.rolling_hills);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_LUSH_SWAMP_OVERGROWN_STONE, GrassFeatures.traverse_lush_swamp);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_PLAINS_PLATEAU_OVERGROWN_STONE, GrassFeatures.plains_plateau);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_WOODED_ISLAND_OVERGROWN_STONE, GrassFeatures.wooded_island);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_WOODLANDS_OVERGROWN_STONE, GrassFeatures.woodlands);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_ARID_HIGHLANDS_OVERGROWN_DACITE, GrassFeatures.arid_highlands);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_AUTUMNAL_WOODS_OVERGROWN_DACITE, GrassFeatures.autumnal_woods);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_CLIFFS_OVERGROWN_DACITE, GrassFeatures.cliffs);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_SNOWY_CLIFFS_OVERGROWN_DACITE, GrassFeatures.snowy_cliffs);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_CONIFEROUS_FOREST_OVERGROWN_DACITE, GrassFeatures.coniferous_forest);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_SNOWY_CONIFEROUS_FOREST_OVERGROWN_DACITE, GrassFeatures.snowy_coniferous_forest);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_MEADOW_OVERGROWN_DACITE, GrassFeatures.meadow);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_ROLLING_HILLS_OVERGROWN_DACITE, GrassFeatures.rolling_hills);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_LUSH_SWAMP_OVERGROWN_DACITE, GrassFeatures.traverse_lush_swamp);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_PLAINS_PLATEAU_OVERGROWN_DACITE, GrassFeatures.plains_plateau);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_WOODED_ISLAND_OVERGROWN_DACITE, GrassFeatures.wooded_island);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_WOODLANDS_OVERGROWN_DACITE, GrassFeatures.woodlands);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_ARID_HIGHLANDS_OVERGROWN_NETHERRACK, GrassFeatures.arid_highlands);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_AUTUMNAL_WOODS_OVERGROWN_NETHERRACK, GrassFeatures.autumnal_woods);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_CLIFFS_OVERGROWN_NETHERRACK, GrassFeatures.cliffs);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_SNOWY_CLIFFS_OVERGROWN_NETHERRACK, GrassFeatures.snowy_cliffs);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_CONIFEROUS_FOREST_OVERGROWN_NETHERRACK, GrassFeatures.coniferous_forest);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_SNOWY_CONIFEROUS_FOREST_OVERGROWN_NETHERRACK, GrassFeatures.snowy_coniferous_forest);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_MEADOW_OVERGROWN_NETHERRACK, GrassFeatures.meadow);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_ROLLING_HILLS_OVERGROWN_NETHERRACK, GrassFeatures.rolling_hills);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_LUSH_SWAMP_OVERGROWN_NETHERRACK, GrassFeatures.traverse_lush_swamp);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_PLAINS_PLATEAU_OVERGROWN_NETHERRACK, GrassFeatures.plains_plateau);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_WOODED_ISLAND_OVERGROWN_NETHERRACK, GrassFeatures.wooded_island);
+        grassFeatures.put(TraverseBlocks.TRAVERSE_WOODLANDS_OVERGROWN_NETHERRACK, GrassFeatures.woodlands);
 
 
         /*
@@ -398,6 +401,190 @@ public class MapUtils {
         grassFeatures.put(BYGBlocks.BYG_WOODLANDS_OVERGROWN_NETHERRACK, GrassFeatures.byg_woodlands);
         grassFeatures.put(BYGBlocks.BYG_ZELKOVA_FOREST_OVERGROWN_NETHERRACK, GrassFeatures.zelkova_forest);
 
+        /*
+
+        BOP
+
+         */
+
+
+        grassFeatures.put(BOPBlocks.BOP_BAMBOO_BLOSSOM_GROVE_GRASS_BLOCK, GrassFeatures.bamboo_blossom_grove);
+        grassFeatures.put(BOPBlocks.BOP_BAYOU_GRASS_BLOCK, GrassFeatures.bop_bayou);
+        grassFeatures.put(BOPBlocks.BOP_CHERRY_BLOSSOM_GROVE_GRASS_BLOCK, GrassFeatures.cherry_blossom_grove);
+        grassFeatures.put(BOPBlocks.BOP_BURNT_FOREST_GRASS_BLOCK, GrassFeatures.burnt_forest);
+        grassFeatures.put(BOPBlocks.BOP_CONIFEROUS_FOREST_GRASS_BLOCK, GrassFeatures.bop_coniferous_forest);
+        grassFeatures.put(BOPBlocks.BOP_DEAD_FOREST_GRASS_BLOCK, GrassFeatures.dead_forest);
+        grassFeatures.put(BOPBlocks.BOP_WOODLAND_GRASS_BLOCK, GrassFeatures.woodland);
+        grassFeatures.put(BOPBlocks.BOP_DRYLAND_GRASS_BLOCK, GrassFeatures.dryland);
+        grassFeatures.put(BOPBlocks.BOP_FUNGAL_FIELD_GRASS_BLOCK, GrassFeatures.fungal_field);
+        grassFeatures.put(BOPBlocks.BOP_FUNGAL_FIELD_VARIANT_GRASS_BLOCK, GrassFeatures.fungal_field_variant);
+        grassFeatures.put(BOPBlocks.BOP_GRAVEL_BEACH_GRASS_BLOCK, GrassFeatures.gravel_beach);
+        grassFeatures.put(BOPBlocks.BOP_GROVE_GRASS_BLOCK, GrassFeatures.bop_grove);
+        grassFeatures.put(BOPBlocks.BOP_JADE_CLIFFS_GRASS_BLOCK, GrassFeatures.jade_cliffs);
+        grassFeatures.put(BOPBlocks.BOP_LAVENDER_FIELD_GRASS_BLOCK, GrassFeatures.lavender_field);
+        grassFeatures.put(BOPBlocks.BOP_LUSH_DESERT_GRASS_BLOCK, GrassFeatures.lush_desert);
+        grassFeatures.put(BOPBlocks.BOP_MARSH_GRASS_BLOCK, GrassFeatures.marsh);
+        grassFeatures.put(BOPBlocks.BOP_MEADOW_GRASS_BLOCK, GrassFeatures.bop_meadow);
+        grassFeatures.put(BOPBlocks.BOP_MUSKEG_GRASS_BLOCK, GrassFeatures.muskeg);
+        grassFeatures.put(BOPBlocks.BOP_OMINOUS_WOODS_GRASS_BLOCK, GrassFeatures.ominous_woods);
+        grassFeatures.put(BOPBlocks.BOP_MYSTIC_GROVE_GRASS_BLOCK, GrassFeatures.mystic_grove);
+        grassFeatures.put(BOPBlocks.BOP_ORCHARD_GRASS_BLOCK, GrassFeatures.bop_orchard);
+        grassFeatures.put(BOPBlocks.BOP_ORIGIN_VALLEY_GRASS_BLOCK, GrassFeatures.origin_valley);
+        grassFeatures.put(BOPBlocks.BOP_RAINBOW_HILLS_GRASS_BLOCK, GrassFeatures.rainbow_hills);
+        grassFeatures.put(BOPBlocks.BOP_PRAIRIE_GRASS_BLOCK, GrassFeatures.bop_prairie);
+        grassFeatures.put(BOPBlocks.BOP_RAINFOREST_GRASS_BLOCK, GrassFeatures.rainforest);
+        grassFeatures.put(BOPBlocks.BOP_REDWOOD_FOREST_GRASS_BLOCK, GrassFeatures.redwood_forest);
+        grassFeatures.put(BOPBlocks.BOP_SCRUBLAND_GRASS_BLOCK, GrassFeatures.scrubland);
+        grassFeatures.put(BOPBlocks.BOP_SEASONAL_FOREST_GRASS_BLOCK, GrassFeatures.seasonal_forest);
+        grassFeatures.put(BOPBlocks.BOP_SHRUBLAND_GRASS_BLOCK, GrassFeatures.shrubland);
+        grassFeatures.put(BOPBlocks.BOP_TROPICS_GRASS_BLOCK, GrassFeatures.tropics);
+        grassFeatures.put(BOPBlocks.BOP_TUNDRA_GRASS_BLOCK, GrassFeatures.tundra);
+        grassFeatures.put(BOPBlocks.BOP_WASTELAND_GRASS_BLOCK, GrassFeatures.wasteland);
+        grassFeatures.put(BOPBlocks.BOP_WETLAND_GRASS_BLOCK, GrassFeatures.wetland);
+        grassFeatures.put(BOPBlocks.BOP_VOLCANO_GRASS_BLOCK, GrassFeatures.bop_volcano);
+
+
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_BAMBOO_BLOSSOM_GROVE_GRASS_BLOCK, GrassFeatures.bamboo_blossom_grove);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_BAYOU_GRASS_BLOCK, GrassFeatures.bop_bayou);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_CHERRY_BLOSSOM_GROVE_GRASS_BLOCK, GrassFeatures.cherry_blossom_grove);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_BURNT_FOREST_GRASS_BLOCK, GrassFeatures.burnt_forest);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_CONIFEROUS_FOREST_GRASS_BLOCK, GrassFeatures.bop_coniferous_forest);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_DEAD_FOREST_GRASS_BLOCK, GrassFeatures.dead_forest);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_WOODLAND_GRASS_BLOCK, GrassFeatures.woodland);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_DRYLAND_GRASS_BLOCK, GrassFeatures.dryland);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_FUNGAL_FIELD_GRASS_BLOCK, GrassFeatures.fungal_field);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_FUNGAL_FIELD_VARIANT_GRASS_BLOCK, GrassFeatures.fungal_field_variant);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_GRAVEL_BEACH_GRASS_BLOCK, GrassFeatures.gravel_beach);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_GROVE_GRASS_BLOCK, GrassFeatures.bop_grove);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_JADE_CLIFFS_GRASS_BLOCK, GrassFeatures.jade_cliffs);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_LAVENDER_FIELD_GRASS_BLOCK, GrassFeatures.lavender_field);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_LUSH_DESERT_GRASS_BLOCK, GrassFeatures.lush_desert);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_MARSH_GRASS_BLOCK, GrassFeatures.marsh);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_MEADOW_GRASS_BLOCK, GrassFeatures.bop_meadow);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_MUSKEG_GRASS_BLOCK, GrassFeatures.muskeg);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_OMINOUS_WOODS_GRASS_BLOCK, GrassFeatures.ominous_woods);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_MYSTIC_GROVE_GRASS_BLOCK, GrassFeatures.mystic_grove);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_ORCHARD_GRASS_BLOCK, GrassFeatures.bop_orchard);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_ORIGIN_VALLEY_GRASS_BLOCK, GrassFeatures.origin_valley);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_RAINBOW_HILLS_GRASS_BLOCK, GrassFeatures.rainbow_hills);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_PRAIRIE_GRASS_BLOCK, GrassFeatures.bop_prairie);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_RAINFOREST_GRASS_BLOCK, GrassFeatures.rainforest);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_REDWOOD_FOREST_GRASS_BLOCK, GrassFeatures.redwood_forest);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_SCRUBLAND_GRASS_BLOCK, GrassFeatures.scrubland);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_SEASONAL_FOREST_GRASS_BLOCK, GrassFeatures.seasonal_forest);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_SHRUBLAND_GRASS_BLOCK, GrassFeatures.shrubland);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_TROPICS_GRASS_BLOCK, GrassFeatures.tropics);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_TUNDRA_GRASS_BLOCK, GrassFeatures.tundra);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_WASTELAND_GRASS_BLOCK, GrassFeatures.wasteland);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_WETLAND_GRASS_BLOCK, GrassFeatures.wetland);
+        grassFeatures.put(BOPBlocks.GLOWING_BOP_VOLCANO_GRASS_BLOCK, GrassFeatures.bop_volcano);
+
+
+        grassFeatures.put(BOPBlocks.BOP_BAMBOO_BLOSSOM_GROVE_OVERGROWN_STONE, GrassFeatures.bamboo_blossom_grove);
+        grassFeatures.put(BOPBlocks.BOP_BAYOU_OVERGROWN_STONE, GrassFeatures.bop_bayou);
+        grassFeatures.put(BOPBlocks.BOP_CHERRY_BLOSSOM_GROVE_OVERGROWN_STONE, GrassFeatures.cherry_blossom_grove);
+        grassFeatures.put(BOPBlocks.BOP_BURNT_FOREST_OVERGROWN_STONE, GrassFeatures.burnt_forest);
+        grassFeatures.put(BOPBlocks.BOP_CONIFEROUS_FOREST_OVERGROWN_STONE, GrassFeatures.bop_coniferous_forest);
+        grassFeatures.put(BOPBlocks.BOP_DEAD_FOREST_OVERGROWN_STONE, GrassFeatures.dead_forest);
+        grassFeatures.put(BOPBlocks.BOP_WOODLAND_OVERGROWN_STONE, GrassFeatures.woodland);
+        grassFeatures.put(BOPBlocks.BOP_DRYLAND_OVERGROWN_STONE, GrassFeatures.dryland);
+        grassFeatures.put(BOPBlocks.BOP_FUNGAL_FIELD_OVERGROWN_STONE, GrassFeatures.fungal_field);
+        grassFeatures.put(BOPBlocks.BOP_FUNGAL_FIELD_VARIANT_OVERGROWN_STONE, GrassFeatures.fungal_field_variant);
+        grassFeatures.put(BOPBlocks.BOP_GRAVEL_BEACH_OVERGROWN_STONE, GrassFeatures.gravel_beach);
+        grassFeatures.put(BOPBlocks.BOP_GROVE_OVERGROWN_STONE, GrassFeatures.bop_grove);
+        grassFeatures.put(BOPBlocks.BOP_JADE_CLIFFS_OVERGROWN_STONE, GrassFeatures.jade_cliffs);
+        grassFeatures.put(BOPBlocks.BOP_LAVENDER_FIELD_OVERGROWN_STONE, GrassFeatures.lavender_field);
+        grassFeatures.put(BOPBlocks.BOP_LUSH_DESERT_OVERGROWN_STONE, GrassFeatures.lush_desert);
+        grassFeatures.put(BOPBlocks.BOP_MARSH_OVERGROWN_STONE, GrassFeatures.marsh);
+        grassFeatures.put(BOPBlocks.BOP_MEADOW_OVERGROWN_STONE, GrassFeatures.bop_meadow);
+        grassFeatures.put(BOPBlocks.BOP_MUSKEG_OVERGROWN_STONE, GrassFeatures.muskeg);
+        grassFeatures.put(BOPBlocks.BOP_OMINOUS_WOODS_OVERGROWN_STONE, GrassFeatures.ominous_woods);
+        grassFeatures.put(BOPBlocks.BOP_MYSTIC_GROVE_OVERGROWN_STONE, GrassFeatures.mystic_grove);
+        grassFeatures.put(BOPBlocks.BOP_ORCHARD_OVERGROWN_STONE, GrassFeatures.bop_orchard);
+        grassFeatures.put(BOPBlocks.BOP_ORIGIN_VALLEY_OVERGROWN_STONE, GrassFeatures.origin_valley);
+        grassFeatures.put(BOPBlocks.BOP_RAINBOW_HILLS_OVERGROWN_STONE, GrassFeatures.rainbow_hills);
+        grassFeatures.put(BOPBlocks.BOP_PRAIRIE_OVERGROWN_STONE, GrassFeatures.bop_prairie);
+        grassFeatures.put(BOPBlocks.BOP_RAINFOREST_OVERGROWN_STONE, GrassFeatures.rainforest);
+        grassFeatures.put(BOPBlocks.BOP_REDWOOD_FOREST_OVERGROWN_STONE, GrassFeatures.redwood_forest);
+        grassFeatures.put(BOPBlocks.BOP_SCRUBLAND_OVERGROWN_STONE, GrassFeatures.scrubland);
+        grassFeatures.put(BOPBlocks.BOP_SEASONAL_FOREST_OVERGROWN_STONE, GrassFeatures.seasonal_forest);
+        grassFeatures.put(BOPBlocks.BOP_SHRUBLAND_OVERGROWN_STONE, GrassFeatures.shrubland);
+        grassFeatures.put(BOPBlocks.BOP_TROPICS_OVERGROWN_STONE, GrassFeatures.tropics);
+        grassFeatures.put(BOPBlocks.BOP_TUNDRA_OVERGROWN_STONE, GrassFeatures.tundra);
+        grassFeatures.put(BOPBlocks.BOP_WASTELAND_OVERGROWN_STONE, GrassFeatures.wasteland);
+        grassFeatures.put(BOPBlocks.BOP_WETLAND_OVERGROWN_STONE, GrassFeatures.wetland);
+        grassFeatures.put(BOPBlocks.BOP_VOLCANO_OVERGROWN_STONE, GrassFeatures.bop_volcano);
+
+        grassFeatures.put(BOPBlocks.BOP_BAMBOO_BLOSSOM_GROVE_OVERGROWN_DACITE, GrassFeatures.bamboo_blossom_grove);
+        grassFeatures.put(BOPBlocks.BOP_BAYOU_OVERGROWN_DACITE, GrassFeatures.bop_bayou);
+        grassFeatures.put(BOPBlocks.BOP_CHERRY_BLOSSOM_GROVE_OVERGROWN_DACITE, GrassFeatures.cherry_blossom_grove);
+        grassFeatures.put(BOPBlocks.BOP_BURNT_FOREST_OVERGROWN_DACITE, GrassFeatures.burnt_forest);
+        grassFeatures.put(BOPBlocks.BOP_CONIFEROUS_FOREST_OVERGROWN_DACITE, GrassFeatures.bop_coniferous_forest);
+        grassFeatures.put(BOPBlocks.BOP_DEAD_FOREST_OVERGROWN_DACITE, GrassFeatures.dead_forest);
+        grassFeatures.put(BOPBlocks.BOP_WOODLAND_OVERGROWN_DACITE, GrassFeatures.woodland);
+        grassFeatures.put(BOPBlocks.BOP_DRYLAND_OVERGROWN_DACITE, GrassFeatures.dryland);
+        grassFeatures.put(BOPBlocks.BOP_FUNGAL_FIELD_OVERGROWN_DACITE, GrassFeatures.fungal_field);
+        grassFeatures.put(BOPBlocks.BOP_FUNGAL_FIELD_VARIANT_OVERGROWN_DACITE, GrassFeatures.fungal_field_variant);
+        grassFeatures.put(BOPBlocks.BOP_GRAVEL_BEACH_OVERGROWN_DACITE, GrassFeatures.gravel_beach);
+        grassFeatures.put(BOPBlocks.BOP_GROVE_OVERGROWN_DACITE, GrassFeatures.bop_grove);
+        grassFeatures.put(BOPBlocks.BOP_JADE_CLIFFS_OVERGROWN_DACITE, GrassFeatures.jade_cliffs);
+        grassFeatures.put(BOPBlocks.BOP_LAVENDER_FIELD_OVERGROWN_DACITE, GrassFeatures.lavender_field);
+        grassFeatures.put(BOPBlocks.BOP_LUSH_DESERT_OVERGROWN_DACITE, GrassFeatures.lush_desert);
+        grassFeatures.put(BOPBlocks.BOP_MARSH_OVERGROWN_DACITE, GrassFeatures.marsh);
+        grassFeatures.put(BOPBlocks.BOP_MEADOW_OVERGROWN_DACITE, GrassFeatures.bop_meadow);
+        grassFeatures.put(BOPBlocks.BOP_MUSKEG_OVERGROWN_DACITE, GrassFeatures.muskeg);
+        grassFeatures.put(BOPBlocks.BOP_OMINOUS_WOODS_OVERGROWN_DACITE, GrassFeatures.ominous_woods);
+        grassFeatures.put(BOPBlocks.BOP_MYSTIC_GROVE_OVERGROWN_DACITE, GrassFeatures.mystic_grove);
+        grassFeatures.put(BOPBlocks.BOP_ORCHARD_OVERGROWN_DACITE, GrassFeatures.bop_orchard);
+        grassFeatures.put(BOPBlocks.BOP_ORIGIN_VALLEY_OVERGROWN_DACITE, GrassFeatures.origin_valley);
+        grassFeatures.put(BOPBlocks.BOP_RAINBOW_HILLS_OVERGROWN_DACITE, GrassFeatures.rainbow_hills);
+        grassFeatures.put(BOPBlocks.BOP_PRAIRIE_OVERGROWN_DACITE, GrassFeatures.bop_prairie);
+        grassFeatures.put(BOPBlocks.BOP_RAINFOREST_OVERGROWN_DACITE, GrassFeatures.rainforest);
+        grassFeatures.put(BOPBlocks.BOP_REDWOOD_FOREST_OVERGROWN_DACITE, GrassFeatures.redwood_forest);
+        grassFeatures.put(BOPBlocks.BOP_SCRUBLAND_OVERGROWN_DACITE, GrassFeatures.scrubland);
+        grassFeatures.put(BOPBlocks.BOP_SEASONAL_FOREST_OVERGROWN_DACITE, GrassFeatures.seasonal_forest);
+        grassFeatures.put(BOPBlocks.BOP_SHRUBLAND_OVERGROWN_DACITE, GrassFeatures.shrubland);
+        grassFeatures.put(BOPBlocks.BOP_TROPICS_OVERGROWN_DACITE, GrassFeatures.tropics);
+        grassFeatures.put(BOPBlocks.BOP_TUNDRA_OVERGROWN_DACITE, GrassFeatures.tundra);
+        grassFeatures.put(BOPBlocks.BOP_WASTELAND_OVERGROWN_DACITE, GrassFeatures.wasteland);
+        grassFeatures.put(BOPBlocks.BOP_WETLAND_OVERGROWN_DACITE, GrassFeatures.wetland);
+        grassFeatures.put(BOPBlocks.BOP_VOLCANO_OVERGROWN_DACITE, GrassFeatures.bop_volcano);
+
+        grassFeatures.put(BOPBlocks.BOP_BAMBOO_BLOSSOM_GROVE_OVERGROWN_NETHERRACK, GrassFeatures.bamboo_blossom_grove);
+        grassFeatures.put(BOPBlocks.BOP_BAYOU_OVERGROWN_NETHERRACK, GrassFeatures.bop_bayou);
+        grassFeatures.put(BOPBlocks.BOP_CHERRY_BLOSSOM_GROVE_OVERGROWN_NETHERRACK, GrassFeatures.cherry_blossom_grove);
+        grassFeatures.put(BOPBlocks.BOP_BURNT_FOREST_OVERGROWN_NETHERRACK, GrassFeatures.burnt_forest);
+        grassFeatures.put(BOPBlocks.BOP_CONIFEROUS_FOREST_OVERGROWN_NETHERRACK, GrassFeatures.bop_coniferous_forest);
+        grassFeatures.put(BOPBlocks.BOP_DEAD_FOREST_OVERGROWN_NETHERRACK, GrassFeatures.dead_forest);
+        grassFeatures.put(BOPBlocks.BOP_WOODLAND_OVERGROWN_NETHERRACK, GrassFeatures.woodland);
+        grassFeatures.put(BOPBlocks.BOP_DRYLAND_OVERGROWN_NETHERRACK, GrassFeatures.dryland);
+        grassFeatures.put(BOPBlocks.BOP_FUNGAL_FIELD_OVERGROWN_NETHERRACK, GrassFeatures.fungal_field);
+        grassFeatures.put(BOPBlocks.BOP_FUNGAL_FIELD_VARIANT_OVERGROWN_NETHERRACK, GrassFeatures.fungal_field_variant);
+        grassFeatures.put(BOPBlocks.BOP_GRAVEL_BEACH_OVERGROWN_NETHERRACK, GrassFeatures.gravel_beach);
+        grassFeatures.put(BOPBlocks.BOP_GROVE_OVERGROWN_NETHERRACK, GrassFeatures.bop_grove);
+        grassFeatures.put(BOPBlocks.BOP_JADE_CLIFFS_OVERGROWN_NETHERRACK, GrassFeatures.jade_cliffs);
+        grassFeatures.put(BOPBlocks.BOP_LAVENDER_FIELD_OVERGROWN_NETHERRACK, GrassFeatures.lavender_field);
+        grassFeatures.put(BOPBlocks.BOP_LUSH_DESERT_OVERGROWN_NETHERRACK, GrassFeatures.lush_desert);
+        grassFeatures.put(BOPBlocks.BOP_MARSH_OVERGROWN_NETHERRACK, GrassFeatures.marsh);
+        grassFeatures.put(BOPBlocks.BOP_MEADOW_OVERGROWN_NETHERRACK, GrassFeatures.bop_meadow);
+        grassFeatures.put(BOPBlocks.BOP_MUSKEG_OVERGROWN_NETHERRACK, GrassFeatures.muskeg);
+        grassFeatures.put(BOPBlocks.BOP_OMINOUS_WOODS_OVERGROWN_NETHERRACK, GrassFeatures.ominous_woods);
+        grassFeatures.put(BOPBlocks.BOP_MYSTIC_GROVE_OVERGROWN_NETHERRACK, GrassFeatures.mystic_grove);
+        grassFeatures.put(BOPBlocks.BOP_ORCHARD_OVERGROWN_NETHERRACK, GrassFeatures.bop_orchard);
+        grassFeatures.put(BOPBlocks.BOP_ORIGIN_VALLEY_OVERGROWN_NETHERRACK, GrassFeatures.origin_valley);
+        grassFeatures.put(BOPBlocks.BOP_RAINBOW_HILLS_OVERGROWN_NETHERRACK, GrassFeatures.rainbow_hills);
+        grassFeatures.put(BOPBlocks.BOP_PRAIRIE_OVERGROWN_NETHERRACK, GrassFeatures.bop_prairie);
+        grassFeatures.put(BOPBlocks.BOP_RAINFOREST_OVERGROWN_NETHERRACK, GrassFeatures.rainforest);
+        grassFeatures.put(BOPBlocks.BOP_REDWOOD_FOREST_OVERGROWN_NETHERRACK, GrassFeatures.redwood_forest);
+        grassFeatures.put(BOPBlocks.BOP_SCRUBLAND_OVERGROWN_NETHERRACK, GrassFeatures.scrubland);
+        grassFeatures.put(BOPBlocks.BOP_SEASONAL_FOREST_OVERGROWN_NETHERRACK, GrassFeatures.seasonal_forest);
+        grassFeatures.put(BOPBlocks.BOP_SHRUBLAND_OVERGROWN_NETHERRACK, GrassFeatures.shrubland);
+        grassFeatures.put(BOPBlocks.BOP_TROPICS_OVERGROWN_NETHERRACK, GrassFeatures.tropics);
+        grassFeatures.put(BOPBlocks.BOP_TUNDRA_OVERGROWN_NETHERRACK, GrassFeatures.tundra);
+        grassFeatures.put(BOPBlocks.BOP_WASTELAND_OVERGROWN_NETHERRACK, GrassFeatures.wasteland);
+        grassFeatures.put(BOPBlocks.BOP_WETLAND_OVERGROWN_NETHERRACK, GrassFeatures.wetland);
+        grassFeatures.put(BOPBlocks.BOP_VOLCANO_OVERGROWN_NETHERRACK, GrassFeatures.bop_volcano);
+
 
 
 
@@ -482,6 +669,40 @@ public class MapUtils {
         grassFeatures.put(BYGBlocks.BYG_WOODLANDS_FERN, BYGBlocks.LARGE_BYG_WOODLANDS_FERN);
         grassFeatures.put(BYGBlocks.BYG_ZELKOVA_FOREST_FERN, BYGBlocks.LARGE_BYG_ZELKOVA_FOREST_FERN);
 
+        grassFeatures.put(BOPBlocks.BOP_BAMBOO_BLOSSOM_GROVE_FERN, BOPBlocks.LARGE_BOP_BAMBOO_BLOSSOM_GROVE_FERN);
+        grassFeatures.put(BOPBlocks.BOP_BAYOU_FERN, BOPBlocks.LARGE_BOP_BAYOU_FERN);
+        grassFeatures.put(BOPBlocks.BOP_CHERRY_BLOSSOM_GROVE_FERN, BOPBlocks.LARGE_BOP_CHERRY_BLOSSOM_GROVE_FERN);
+        grassFeatures.put(BOPBlocks.BOP_DEAD_FOREST_FERN, BOPBlocks.LARGE_BOP_DEAD_FOREST_FERN);
+        grassFeatures.put(BOPBlocks.BOP_BURNT_FOREST_FERN, BOPBlocks.LARGE_BOP_BURNT_FOREST_FERN);
+        grassFeatures.put(BOPBlocks.BOP_CONIFEROUS_FOREST_FERN, BOPBlocks.LARGE_BOP_CONIFEROUS_FOREST_FERN);
+        grassFeatures.put(BOPBlocks.BOP_WOODLAND_FERN, BOPBlocks.LARGE_BOP_WOODLAND_FERN);
+        grassFeatures.put(BOPBlocks.BOP_DRYLAND_FERN, BOPBlocks.LARGE_BOP_DRYLAND_FERN);
+        grassFeatures.put(BOPBlocks.BOP_FUNGAL_FIELD_FERN, BOPBlocks.LARGE_BOP_FUNGAL_FIELD_FERN);
+        grassFeatures.put(BOPBlocks.BOP_FUNGAL_FIELD_VARIANT_FERN, BOPBlocks.LARGE_BOP_FUNGAL_FIELD_VARIANT_FERN);
+        grassFeatures.put(BOPBlocks.BOP_GRAVEL_BEACH_FERN, BOPBlocks.LARGE_BOP_GRAVEL_BEACH_FERN);
+        grassFeatures.put(BOPBlocks.BOP_GROVE_FERN, BOPBlocks.LARGE_BOP_GROVE_FERN);
+        grassFeatures.put(BOPBlocks.BOP_JADE_CLIFFS_FERN, BOPBlocks.LARGE_BOP_JADE_CLIFFS_FERN);
+        grassFeatures.put(BOPBlocks.BOP_LAVENDER_FIELD_FERN, BOPBlocks.LARGE_BOP_LAVENDER_FIELD_FERN);
+        grassFeatures.put(BOPBlocks.BOP_LUSH_DESERT_FERN, BOPBlocks.LARGE_BOP_LUSH_DESERT_FERN);
+        grassFeatures.put(BOPBlocks.BOP_MARSH_FERN, BOPBlocks.LARGE_BOP_MARSH_FERN);
+        grassFeatures.put(BOPBlocks.BOP_MEADOW_FERN, BOPBlocks.LARGE_BOP_MEADOW_FERN);
+        grassFeatures.put(BOPBlocks.BOP_MUSKEG_FERN, BOPBlocks.LARGE_BOP_MUSKEG_FERN);
+        grassFeatures.put(BOPBlocks.BOP_OMINOUS_WOODS_FERN, BOPBlocks.LARGE_BOP_OMINOUS_WOODS_FERN);
+        grassFeatures.put(BOPBlocks.BOP_MYSTIC_GROVE_FERN, BOPBlocks.LARGE_BOP_MYSTIC_GROVE_FERN);
+        grassFeatures.put(BOPBlocks.BOP_ORCHARD_FERN, BOPBlocks.LARGE_BOP_ORCHARD_FERN);
+        grassFeatures.put(BOPBlocks.BOP_ORIGIN_VALLEY_FERN, BOPBlocks.LARGE_BOP_ORIGIN_VALLEY_FERN);
+        grassFeatures.put(BOPBlocks.BOP_RAINBOW_HILLS_FERN, BOPBlocks.LARGE_BOP_RAINBOW_HILLS_FERN);
+        grassFeatures.put(BOPBlocks.BOP_PRAIRIE_FERN, BOPBlocks.LARGE_BOP_PRAIRIE_FERN);
+        grassFeatures.put(BOPBlocks.BOP_RAINFOREST_FERN, BOPBlocks.LARGE_BOP_RAINFOREST_FERN);
+        grassFeatures.put(BOPBlocks.BOP_REDWOOD_FOREST_FERN, BOPBlocks.LARGE_BOP_REDWOOD_FOREST_FERN);
+        grassFeatures.put(BOPBlocks.BOP_SCRUBLAND_FERN, BOPBlocks.LARGE_BOP_SCRUBLAND_FERN);
+        grassFeatures.put(BOPBlocks.BOP_SEASONAL_FOREST_FERN, BOPBlocks.LARGE_BOP_SEASONAL_FOREST_FERN);
+        grassFeatures.put(BOPBlocks.BOP_SHRUBLAND_FERN, BOPBlocks.LARGE_BOP_SHRUBLAND_FERN);
+        grassFeatures.put(BOPBlocks.BOP_TROPICS_FERN, BOPBlocks.LARGE_BOP_TROPICS_FERN);
+        grassFeatures.put(BOPBlocks.BOP_TUNDRA_FERN, BOPBlocks.LARGE_BOP_TUNDRA_FERN);
+        grassFeatures.put(BOPBlocks.BOP_WASTELAND_FERN, BOPBlocks.LARGE_BOP_WASTELAND_FERN);
+        grassFeatures.put(BOPBlocks.BOP_WETLAND_FERN, BOPBlocks.LARGE_BOP_WETLAND_FERN);
+
         return grassFeatures;
     }
 
@@ -560,6 +781,40 @@ public class MapUtils {
         grassFeatures.put(BYGBlocks.BYG_WITHERING_WOODS_GRASS, BYGBlocks.TALL_BYG_WITHERING_WOODS_GRASS);
         grassFeatures.put(BYGBlocks.BYG_WOODLANDS_GRASS, BYGBlocks.TALL_BYG_WOODLANDS_GRASS);
         grassFeatures.put(BYGBlocks.BYG_ZELKOVA_FOREST_GRASS, BYGBlocks.TALL_BYG_ZELKOVA_FOREST_GRASS);
+
+        grassFeatures.put(BOPBlocks.BOP_BAMBOO_BLOSSOM_GROVE_GRASS, BOPBlocks.TALL_BOP_BAMBOO_BLOSSOM_GROVE_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_BAYOU_GRASS, BOPBlocks.TALL_BOP_BAYOU_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_CHERRY_BLOSSOM_GROVE_GRASS, BOPBlocks.TALL_BOP_CHERRY_BLOSSOM_GROVE_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_BURNT_FOREST_GRASS, BOPBlocks.TALL_BOP_BURNT_FOREST_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_CONIFEROUS_FOREST_GRASS, BOPBlocks.TALL_BOP_CONIFEROUS_FOREST_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_DEAD_FOREST_GRASS, BOPBlocks.TALL_BOP_DEAD_FOREST_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_WOODLAND_GRASS, BOPBlocks.TALL_BOP_WOODLAND_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_DRYLAND_GRASS, BOPBlocks.TALL_BOP_DRYLAND_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_FUNGAL_FIELD_GRASS, BOPBlocks.TALL_BOP_FUNGAL_FIELD_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_FUNGAL_FIELD_VARIANT_GRASS, BOPBlocks.TALL_BOP_FUNGAL_FIELD_VARIANT_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_GRAVEL_BEACH_GRASS, BOPBlocks.TALL_BOP_GRAVEL_BEACH_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_GROVE_GRASS, BOPBlocks.TALL_BOP_GROVE_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_JADE_CLIFFS_GRASS, BOPBlocks.TALL_BOP_JADE_CLIFFS_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_LAVENDER_FIELD_GRASS, BOPBlocks.TALL_BOP_LAVENDER_FIELD_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_LUSH_DESERT_GRASS, BOPBlocks.TALL_BOP_LUSH_DESERT_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_MARSH_GRASS, BOPBlocks.TALL_BOP_MARSH_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_MEADOW_GRASS, BOPBlocks.TALL_BOP_MEADOW_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_MUSKEG_GRASS, BOPBlocks.TALL_BOP_MUSKEG_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_OMINOUS_WOODS_GRASS, BOPBlocks.TALL_BOP_OMINOUS_WOODS_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_MYSTIC_GROVE_GRASS, BOPBlocks.TALL_BOP_MYSTIC_GROVE_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_ORCHARD_GRASS, BOPBlocks.TALL_BOP_ORCHARD_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_ORIGIN_VALLEY_GRASS, BOPBlocks.TALL_BOP_ORIGIN_VALLEY_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_RAINBOW_HILLS_GRASS, BOPBlocks.TALL_BOP_RAINBOW_HILLS_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_PRAIRIE_GRASS, BOPBlocks.TALL_BOP_PRAIRIE_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_RAINFOREST_GRASS, BOPBlocks.TALL_BOP_RAINFOREST_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_REDWOOD_FOREST_GRASS, BOPBlocks.TALL_BOP_REDWOOD_FOREST_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_SCRUBLAND_GRASS, BOPBlocks.TALL_BOP_SCRUBLAND_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_SEASONAL_FOREST_GRASS, BOPBlocks.TALL_BOP_SEASONAL_FOREST_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_SHRUBLAND_GRASS, BOPBlocks.TALL_BOP_SHRUBLAND_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_TROPICS_GRASS, BOPBlocks.TALL_BOP_TROPICS_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_TUNDRA_GRASS, BOPBlocks.TALL_BOP_TUNDRA_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_WASTELAND_GRASS, BOPBlocks.TALL_BOP_WASTELAND_GRASS);
+        grassFeatures.put(BOPBlocks.BOP_WETLAND_GRASS, BOPBlocks.TALL_BOP_WETLAND_GRASS);
 
         return grassFeatures;
     }

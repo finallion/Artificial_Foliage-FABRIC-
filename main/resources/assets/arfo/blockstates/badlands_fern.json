@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "open=false": {
       "model": "arfo:block/badlands_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/badlands_fern_down"
     }
   }
 }

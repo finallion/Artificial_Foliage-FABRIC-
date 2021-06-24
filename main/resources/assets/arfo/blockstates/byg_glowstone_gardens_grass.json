@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "open=false": {
       "model": "arfo:block/byg_glowstone_gardens_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/byg_glowstone_gardens_grass_down"
     }
   }
 }

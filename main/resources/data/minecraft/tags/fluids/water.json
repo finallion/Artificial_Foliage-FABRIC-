@@ -16,8 +16,6 @@
     "arfo:still_ocean_water",
     "arfo:flowing_ocean_water",
 
-    "arfo:still_traverse_cliffs_water",
-    "arfo:flowing_traverse_cliffs_water",
     "arfo:still_traverse_lush_swamp_water",
     "arfo:flowing_traverse_lush_swamp_water",
     "arfo:still_traverse_mini_jungle_water",
@@ -42,6 +40,24 @@
     "arfo:flowing_byg_imparius_grove_water",
     "arfo:flowing_byg_ethereal_islands_water",
     "arfo:flowing_byg_shulkren_forest_water",
-    "arfo:flowing_byg_vibrant_swampland_water"
+    "arfo:flowing_byg_vibrant_swampland_water",
+
+    "arfo:still_bop_bayou_water",
+    "arfo:flowing_bop_bayou_water",
+    "arfo:still_bop_mystic_grove_water",
+    "arfo:flowing_bop_mystic_grove_water",
+    "arfo:still_bop_ominous_woods_water",
+    "arfo:flowing_bop_ominous_woods_water",
+    "arfo:still_bop_origin_valley_water",
+    "arfo:flowing_bop_origin_valley_water",
+    "arfo:still_bop_rainforest_water",
+    "arfo:flowing_bop_rainforest_water",
+    "arfo:still_bop_wasteland_water",
+    "arfo:flowing_bop_wasteland_water",
+    "arfo:still_bop_wetland_water",
+    "arfo:flowing_bop_wetland_water"
+
+
+
   ]
 }

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/bop_lush_desert_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/bop_lush_desert_fern_down"
+    }
+  }
+}

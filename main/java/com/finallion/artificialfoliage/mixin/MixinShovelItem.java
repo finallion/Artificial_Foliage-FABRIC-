@@ -38,7 +38,7 @@ public class MixinShovelItem {
         boolean success = false;
         Block block = world.getBlockState(pos).getBlock();
 
-        if (block instanceof ARFOSpreadableGrassSlab) {
+        if (block instanceof ARFOSpreadableGrassSlab || block.is(ARFOBlocks.DIRT_SLAB) || block.is(ARFOBlocks.COARSE_DIRT_SLAB) || block.is(ARFOBlocks.PODZOL_SLAB) || block.is(ARFOBlocks.ARTIFICIAL_SOIL_SLAB)) {
             EnumProperty<SlabType> TYPE = Properties.SLAB_TYPE;
             SlabType slabType = state.get(ARFOSpreadableGrassSlab.TYPE);
 
@@ -52,7 +52,7 @@ public class MixinShovelItem {
 
             success = true;
 
-        } else if (block instanceof ARFOSpreadableGrassBlock || block instanceof BlenderGrassBlock) {
+        } else if (block instanceof ARFOSpreadableGrassBlock || block instanceof BlenderGrassBlock || block.is(ARFOBlocks.ARTIFICIAL_SOIL)) {
             newState = Blocks.GRASS_PATH.getDefaultState();
             success = true;
         }

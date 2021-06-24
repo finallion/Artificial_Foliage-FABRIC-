@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "open=false": {
       "model": "arfo:block/swamp_jungle_leaves_carpet"
+    },
+    "open=true": {
+      "model": "arfo:block/swamp_jungle_leaves_carpet_down"
     }
   }
 }

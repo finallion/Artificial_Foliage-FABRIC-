@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/bop_ominous_woods_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/bop_ominous_woods_grass_down"
+    }
+  }
+}

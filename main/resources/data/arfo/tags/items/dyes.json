@@ -22,6 +22,8 @@
     "arfo:byg_forest_dye",
     "arfo:byg_mountains_dye",
     "arfo:byg_nether_dye",
-    "arfo:byg_lowlands_dye"
+    "arfo:byg_lowlands_dye",
+    "arfo:bop_grove_dye",
+    "arfo:bop_flatland_dye"
   ]
 }

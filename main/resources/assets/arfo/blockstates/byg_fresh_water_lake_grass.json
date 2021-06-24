@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "open=false": {
       "model": "arfo:block/byg_fresh_water_lake_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/byg_fresh_water_lake_grass_down"
     }
   }
 }

@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "open=false": {
       "model": "arfo:block/byg_weeping_mire_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/byg_weeping_mire_grass_down"
     }
   }
 }

@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "open=false": {
       "model": "arfo:block/byg_skyris_highlands_acacia_leaves_carpet"
+    },
+    "open=true": {
+      "model": "arfo:block/byg_skyris_highlands_acacia_leaves_carpet_down"
     }
   }
 }

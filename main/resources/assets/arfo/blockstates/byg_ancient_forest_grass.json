@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "open=false": {
       "model": "arfo:block/byg_ancient_forest_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/byg_ancient_forest_grass_down"
     }
   }
 }

@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "open=false": {
       "model": "arfo:block/lush_swamp_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/lush_swamp_grass_down"
     }
   }
 }
