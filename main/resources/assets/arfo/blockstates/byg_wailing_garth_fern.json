@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "open=false": {
       "model": "arfo:block/byg_wailing_garth_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/byg_wailing_garth_fern_down"
     }
   }
 }

@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "open=false": {
       "model": "arfo:block/traverse_rolling_hills_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/traverse_rolling_hills_grass_down"
     }
   }
 }

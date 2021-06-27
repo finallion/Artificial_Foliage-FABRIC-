@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "open=false": {
       "model": "arfo:block/jungle_edge_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/jungle_edge_fern_down"
     }
   }
 }

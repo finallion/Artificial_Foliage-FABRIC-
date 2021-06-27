@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "grass_blocks",
+  "pattern": [
+    "XXX",
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "tag": "arfo:grass_blocks"
+    },
+    "Y": {
+      "item": "arfo:plains_dye"
+    },
+    "Z": {
+      "item": "arfo:bop_flatland_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:bop_prairie_grass_block",
+    "count": 4
+  }
+}

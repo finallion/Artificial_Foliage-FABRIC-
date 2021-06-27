@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "open=false": {
       "model": "arfo:block/snowy_beach_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/snowy_beach_fern_down"
     }
   }
 }

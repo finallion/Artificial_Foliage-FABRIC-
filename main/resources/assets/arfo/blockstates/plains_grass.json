@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "open=false": {
       "model": "arfo:block/plains_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/plains_grass_down"
     }
   }
 }

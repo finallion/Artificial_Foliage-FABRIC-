@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ferns",
+  "pattern": [
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "tag": "arfo:ferns"
+    },
+    "Y": {
+      "item": "arfo:badlands_dye"
+    },
+    "Z": {
+      "item": "arfo:bop_flatland_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:bop_wasteland_fern"
+  }
+}

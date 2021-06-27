@@ -1,0 +1,72 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "particle": "minecraft:block/dirt",
+    "bottom": "minecraft:block/dirt",
+    "top": "minecraft:block/snow",
+    "side": "minecraft:block/grass_block_snow"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        8,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "down": {
+          "texture": "#bottom"
+        },
+        "up": {
+          "texture": "#top",
+          "cullface": "up"
+        },
+        "north": {
+          "texture": "#side",
+          "uv": [
+            0.0,
+            2.0,
+            16.0,
+            10.0
+          ],
+          "cullface": "north"
+        },
+        "south": {
+          "texture": "#side",
+          "uv": [
+            0.0,
+            2.0,
+            16.0,
+            10.0
+          ],
+          "cullface": "south"
+        },
+        "west": {
+          "texture": "#side",
+          "uv": [
+            0.0,
+            2.0,
+            16.0,
+            10.0
+          ],
+          "cullface": "west"
+        },
+        "east": {
+          "texture": "#side",
+          "uv": [
+            0.0,
+            2.0,
+            16.0,
+            10.0
+          ],
+          "cullface": "east"
+        }
+      }
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 package com.finallion.artificialfoliage.utils;
 
 
+import com.finallion.artificialfoliage.compatibilty.BOP.BOPBlocks;
 import com.finallion.artificialfoliage.compatibilty.BYG.BYGBlocks;
 import com.finallion.artificialfoliage.compatibilty.Traverse.TraverseBlocks;
 import com.finallion.artificialfoliage.registry.ARFOBlocks;
@@ -931,6 +932,461 @@ public class GrassFeatures {
             add(BYGBlocks.BYG_ZELKOVA_FOREST_ACACIA_LEAVES_CARPET);
         }
     };
+
+    /*
+
+
+    BOP
+
+
+     */
+
+
+
+    public static List<Block> bamboo_blossom_grove = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_BAMBOO_BLOSSOM_GROVE_FERN);
+            add(BOPBlocks.BOP_BAMBOO_BLOSSOM_GROVE_GRASS);
+            add(BOPBlocks.TALL_BOP_BAMBOO_BLOSSOM_GROVE_GRASS);
+            add(BOPBlocks.LARGE_BOP_BAMBOO_BLOSSOM_GROVE_FERN);
+            add(BOPBlocks.BOP_BAMBOO_BLOSSOM_GROVE_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_BAMBOO_BLOSSOM_GROVE_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_BAMBOO_BLOSSOM_GROVE_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_BAMBOO_BLOSSOM_GROVE_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> bop_bayou = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_BAYOU_FERN);
+            add(BOPBlocks.BOP_BAYOU_GRASS);
+            add(BOPBlocks.TALL_BOP_BAYOU_GRASS);
+            add(BOPBlocks.LARGE_BOP_BAYOU_FERN);
+            add(BOPBlocks.BOP_BAYOU_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_BAYOU_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_BAYOU_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_BAYOU_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> cherry_blossom_grove = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_CHERRY_BLOSSOM_GROVE_FERN);
+            add(BOPBlocks.BOP_CHERRY_BLOSSOM_GROVE_GRASS);
+            add(BOPBlocks.TALL_BOP_CHERRY_BLOSSOM_GROVE_GRASS);
+            add(BOPBlocks.LARGE_BOP_CHERRY_BLOSSOM_GROVE_FERN);
+            add(BOPBlocks.BOP_CHERRY_BLOSSOM_GROVE_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_CHERRY_BLOSSOM_GROVE_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_CHERRY_BLOSSOM_GROVE_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_CHERRY_BLOSSOM_GROVE_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> burnt_forest = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_BURNT_FOREST_FERN);
+            add(BOPBlocks.BOP_BURNT_FOREST_GRASS);
+            add(BOPBlocks.TALL_BOP_BURNT_FOREST_GRASS);
+            add(BOPBlocks.LARGE_BOP_BURNT_FOREST_FERN);
+            add(BOPBlocks.BOP_BURNT_FOREST_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_BURNT_FOREST_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_BURNT_FOREST_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_BURNT_FOREST_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> bop_coniferous_forest = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_CONIFEROUS_FOREST_FERN);
+            add(BOPBlocks.BOP_CONIFEROUS_FOREST_GRASS);
+            add(BOPBlocks.TALL_BOP_CONIFEROUS_FOREST_GRASS);
+            add(BOPBlocks.LARGE_BOP_CONIFEROUS_FOREST_FERN);
+            add(BOPBlocks.BOP_CONIFEROUS_FOREST_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_CONIFEROUS_FOREST_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_CONIFEROUS_FOREST_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_CONIFEROUS_FOREST_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> dead_forest = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_DEAD_FOREST_FERN);
+            add(BOPBlocks.BOP_DEAD_FOREST_GRASS);
+            add(BOPBlocks.TALL_BOP_DEAD_FOREST_GRASS);
+            add(BOPBlocks.LARGE_BOP_DEAD_FOREST_FERN);
+            add(BOPBlocks.BOP_DEAD_FOREST_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_DEAD_FOREST_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_DEAD_FOREST_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_DEAD_FOREST_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> woodland = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_WOODLAND_FERN);
+            add(BOPBlocks.BOP_WOODLAND_GRASS);
+            add(BOPBlocks.TALL_BOP_WOODLAND_GRASS);
+            add(BOPBlocks.LARGE_BOP_WOODLAND_FERN);
+            add(BOPBlocks.BOP_WOODLAND_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_WOODLAND_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_WOODLAND_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_WOODLAND_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> dryland = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_DRYLAND_FERN);
+            add(BOPBlocks.BOP_DRYLAND_GRASS);
+            add(BOPBlocks.TALL_BOP_DRYLAND_GRASS);
+            add(BOPBlocks.LARGE_BOP_DRYLAND_FERN);
+            add(BOPBlocks.BOP_DRYLAND_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_DRYLAND_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_DRYLAND_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_DRYLAND_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> fungal_field = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_FUNGAL_FIELD_FERN);
+            add(BOPBlocks.BOP_FUNGAL_FIELD_GRASS);
+            add(BOPBlocks.TALL_BOP_FUNGAL_FIELD_GRASS);
+            add(BOPBlocks.LARGE_BOP_FUNGAL_FIELD_FERN);
+            add(BOPBlocks.BOP_FUNGAL_FIELD_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_FUNGAL_FIELD_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_FUNGAL_FIELD_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_FUNGAL_FIELD_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> fungal_field_variant = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_FUNGAL_FIELD_VARIANT_FERN);
+            add(BOPBlocks.BOP_FUNGAL_FIELD_VARIANT_GRASS);
+            add(BOPBlocks.TALL_BOP_FUNGAL_FIELD_VARIANT_GRASS);
+            add(BOPBlocks.LARGE_BOP_FUNGAL_FIELD_VARIANT_FERN);
+            add(BOPBlocks.BOP_FUNGAL_FIELD_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_FUNGAL_FIELD_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_FUNGAL_FIELD_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_FUNGAL_FIELD_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> gravel_beach = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_GRAVEL_BEACH_FERN);
+            add(BOPBlocks.BOP_GRAVEL_BEACH_GRASS);
+            add(BOPBlocks.TALL_BOP_GRAVEL_BEACH_GRASS);
+            add(BOPBlocks.LARGE_BOP_GRAVEL_BEACH_FERN);
+            add(BOPBlocks.BOP_GRAVEL_BEACH_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_GRAVEL_BEACH_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_GRAVEL_BEACH_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_GRAVEL_BEACH_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> bop_grove = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_GROVE_FERN);
+            add(BOPBlocks.BOP_GROVE_GRASS);
+            add(BOPBlocks.TALL_BOP_GROVE_GRASS);
+            add(BOPBlocks.LARGE_BOP_GROVE_FERN);
+            add(BOPBlocks.BOP_GROVE_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_GROVE_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_GROVE_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_GROVE_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+
+    public static List<Block> jade_cliffs = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_JADE_CLIFFS_FERN);
+            add(BOPBlocks.BOP_JADE_CLIFFS_GRASS);
+            add(BOPBlocks.TALL_BOP_JADE_CLIFFS_GRASS);
+            add(BOPBlocks.LARGE_BOP_JADE_CLIFFS_FERN);
+            add(BOPBlocks.BOP_JADE_CLIFFS_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_JADE_CLIFFS_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_JADE_CLIFFS_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_JADE_CLIFFS_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> lavender_field = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_LAVENDER_FIELD_FERN);
+            add(BOPBlocks.BOP_LAVENDER_FIELD_GRASS);
+            add(BOPBlocks.TALL_BOP_LAVENDER_FIELD_GRASS);
+            add(BOPBlocks.LARGE_BOP_LAVENDER_FIELD_FERN);
+            add(BOPBlocks.BOP_LAVENDER_FIELD_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_LAVENDER_FIELD_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_LAVENDER_FIELD_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_LAVENDER_FIELD_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> lush_desert = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_LUSH_DESERT_FERN);
+            add(BOPBlocks.BOP_LUSH_DESERT_GRASS);
+            add(BOPBlocks.TALL_BOP_LUSH_DESERT_GRASS);
+            add(BOPBlocks.LARGE_BOP_LUSH_DESERT_FERN);
+            add(BOPBlocks.BOP_LUSH_DESERT_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_LUSH_DESERT_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_LUSH_DESERT_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_LUSH_DESERT_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> marsh = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_MARSH_FERN);
+            add(BOPBlocks.BOP_MARSH_GRASS);
+            add(BOPBlocks.TALL_BOP_MARSH_GRASS);
+            add(BOPBlocks.LARGE_BOP_MARSH_FERN);
+            add(BOPBlocks.BOP_MARSH_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_MARSH_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_MARSH_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_MARSH_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> bop_meadow = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_MEADOW_FERN);
+            add(BOPBlocks.BOP_MEADOW_GRASS);
+            add(BOPBlocks.TALL_BOP_MEADOW_GRASS);
+            add(BOPBlocks.LARGE_BOP_MEADOW_FERN);
+            add(BOPBlocks.BOP_MEADOW_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_MEADOW_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_MEADOW_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_MEADOW_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> muskeg = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_MUSKEG_FERN);
+            add(BOPBlocks.BOP_MUSKEG_GRASS);
+            add(BOPBlocks.TALL_BOP_MUSKEG_GRASS);
+            add(BOPBlocks.LARGE_BOP_MUSKEG_FERN);
+            add(BOPBlocks.BOP_MUSKEG_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_MUSKEG_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_MUSKEG_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_MUSKEG_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> ominous_woods = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_OMINOUS_WOODS_FERN);
+            add(BOPBlocks.BOP_OMINOUS_WOODS_GRASS);
+            add(BOPBlocks.TALL_BOP_OMINOUS_WOODS_GRASS);
+            add(BOPBlocks.LARGE_BOP_OMINOUS_WOODS_FERN);
+            add(BOPBlocks.BOP_OMINOUS_WOODS_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_OMINOUS_WOODS_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_OMINOUS_WOODS_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_OMINOUS_WOODS_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> mystic_grove = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_MYSTIC_GROVE_FERN);
+            add(BOPBlocks.BOP_MYSTIC_GROVE_GRASS);
+            add(BOPBlocks.TALL_BOP_MYSTIC_GROVE_GRASS);
+            add(BOPBlocks.LARGE_BOP_MYSTIC_GROVE_FERN);
+            add(BOPBlocks.BOP_MYSTIC_GROVE_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_MYSTIC_GROVE_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_MYSTIC_GROVE_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_MYSTIC_GROVE_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> bop_orchard = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_ORCHARD_FERN);
+            add(BOPBlocks.BOP_ORCHARD_GRASS);
+            add(BOPBlocks.TALL_BOP_ORCHARD_GRASS);
+            add(BOPBlocks.LARGE_BOP_ORCHARD_FERN);
+            add(BOPBlocks.BOP_ORCHARD_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_ORCHARD_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_ORCHARD_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_ORCHARD_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> origin_valley = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_ORIGIN_VALLEY_FERN);
+            add(BOPBlocks.BOP_ORIGIN_VALLEY_GRASS);
+            add(BOPBlocks.TALL_BOP_ORIGIN_VALLEY_GRASS);
+            add(BOPBlocks.LARGE_BOP_ORIGIN_VALLEY_FERN);
+            add(BOPBlocks.BOP_ORIGIN_VALLEY_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_ORIGIN_VALLEY_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_ORIGIN_VALLEY_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_ORIGIN_VALLEY_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> rainbow_hills = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_RAINBOW_HILLS_FERN);
+            add(BOPBlocks.BOP_RAINBOW_HILLS_GRASS);
+            add(BOPBlocks.TALL_BOP_RAINBOW_HILLS_GRASS);
+            add(BOPBlocks.LARGE_BOP_RAINBOW_HILLS_FERN);
+            add(BOPBlocks.BOP_RAINBOW_HILLS_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_RAINBOW_HILLS_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_RAINBOW_HILLS_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_RAINBOW_HILLS_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> redwood_forest = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_REDWOOD_FOREST_FERN);
+            add(BOPBlocks.BOP_REDWOOD_FOREST_GRASS);
+            add(BOPBlocks.TALL_BOP_REDWOOD_FOREST_GRASS);
+            add(BOPBlocks.LARGE_BOP_REDWOOD_FOREST_FERN);
+            add(BOPBlocks.BOP_REDWOOD_FOREST_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_REDWOOD_FOREST_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_REDWOOD_FOREST_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_REDWOOD_FOREST_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> bop_prairie = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_PRAIRIE_FERN);
+            add(BOPBlocks.BOP_PRAIRIE_GRASS);
+            add(BOPBlocks.TALL_BOP_PRAIRIE_GRASS);
+            add(BOPBlocks.LARGE_BOP_PRAIRIE_FERN);
+            add(BOPBlocks.BOP_PRAIRIE_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_PRAIRIE_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_PRAIRIE_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_PRAIRIE_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> scrubland = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_SCRUBLAND_FERN);
+            add(BOPBlocks.BOP_SCRUBLAND_GRASS);
+            add(BOPBlocks.TALL_BOP_SCRUBLAND_GRASS);
+            add(BOPBlocks.LARGE_BOP_SCRUBLAND_FERN);
+            add(BOPBlocks.BOP_SCRUBLAND_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_SCRUBLAND_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_SCRUBLAND_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_SCRUBLAND_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> shrubland = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_SHRUBLAND_FERN);
+            add(BOPBlocks.BOP_SHRUBLAND_GRASS);
+            add(BOPBlocks.TALL_BOP_SHRUBLAND_GRASS);
+            add(BOPBlocks.LARGE_BOP_SHRUBLAND_FERN);
+            add(BOPBlocks.BOP_SHRUBLAND_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_SHRUBLAND_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_SHRUBLAND_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_SHRUBLAND_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> seasonal_forest = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_SEASONAL_FOREST_FERN);
+            add(BOPBlocks.BOP_SEASONAL_FOREST_GRASS);
+            add(BOPBlocks.TALL_BOP_SEASONAL_FOREST_GRASS);
+            add(BOPBlocks.LARGE_BOP_SEASONAL_FOREST_FERN);
+            add(BOPBlocks.BOP_SEASONAL_FOREST_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_SEASONAL_FOREST_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_SEASONAL_FOREST_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_SEASONAL_FOREST_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+
+    public static List<Block> tropics = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_TROPICS_FERN);
+            add(BOPBlocks.BOP_TROPICS_GRASS);
+            add(BOPBlocks.TALL_BOP_TROPICS_GRASS);
+            add(BOPBlocks.LARGE_BOP_TROPICS_FERN);
+            add(BOPBlocks.BOP_TROPICS_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_TROPICS_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_TROPICS_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_TROPICS_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> tundra = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_TUNDRA_FERN);
+            add(BOPBlocks.BOP_TUNDRA_GRASS);
+            add(BOPBlocks.TALL_BOP_TUNDRA_GRASS);
+            add(BOPBlocks.LARGE_BOP_TUNDRA_FERN);
+            add(BOPBlocks.BOP_TUNDRA_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_TUNDRA_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_TUNDRA_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_TUNDRA_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> wasteland = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_WASTELAND_FERN);
+            add(BOPBlocks.BOP_WASTELAND_GRASS);
+            add(BOPBlocks.TALL_BOP_WASTELAND_GRASS);
+            add(BOPBlocks.LARGE_BOP_WASTELAND_FERN);
+            add(BOPBlocks.BOP_WASTELAND_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_WASTELAND_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_WASTELAND_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_WASTELAND_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> wetland = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_WETLAND_FERN);
+            add(BOPBlocks.BOP_WETLAND_GRASS);
+            add(BOPBlocks.TALL_BOP_WETLAND_GRASS);
+            add(BOPBlocks.LARGE_BOP_WETLAND_FERN);
+            add(BOPBlocks.BOP_WETLAND_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_WETLAND_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_WETLAND_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_WETLAND_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> rainforest = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_RAINFOREST_FERN);
+            add(BOPBlocks.BOP_RAINFOREST_GRASS);
+            add(BOPBlocks.TALL_BOP_RAINFOREST_GRASS);
+            add(BOPBlocks.LARGE_BOP_RAINFOREST_FERN);
+            add(BOPBlocks.BOP_RAINFOREST_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_RAINFOREST_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_RAINFOREST_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_RAINFOREST_ACACIA_LEAVES_CARPET);
+        }
+    };
+
+    public static List<Block> bop_volcano = new ArrayList<Block>() {
+        {
+            add(BOPBlocks.BOP_VOLCANO_FERN);
+            add(BOPBlocks.BOP_VOLCANO_GRASS);
+            add(BOPBlocks.TALL_BOP_VOLCANO_GRASS);
+            add(BOPBlocks.LARGE_BOP_VOLCANO_FERN);
+            add(BOPBlocks.BOP_VOLCANO_JUNGLE_LEAVES_CARPET);
+            add(BOPBlocks.BOP_VOLCANO_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_VOLCANO_DARK_OAK_LEAVES_CARPET);
+            add(BOPBlocks.BOP_VOLCANO_ACACIA_LEAVES_CARPET);
+        }
+    };
+
 
 
 }

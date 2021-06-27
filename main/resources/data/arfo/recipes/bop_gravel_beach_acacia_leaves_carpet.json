@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "acacia_leaves_carpet",
+  "pattern": [
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "arfo:bop_gravel_beach_acacia_leaves"
+    }
+  },
+  "result": {
+    "item": "arfo:bop_gravel_beach_acacia_leaves_carpet",
+    "count": 6
+  }
+}

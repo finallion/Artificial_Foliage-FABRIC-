@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "open=false": {
       "model": "arfo:block/byg_polluted_lake_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/byg_polluted_lake_grass_down"
     }
   }
 }

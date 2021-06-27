@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/bop_origin_valley_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/bop_origin_valley_fern_down"
+    }
+  }
+}

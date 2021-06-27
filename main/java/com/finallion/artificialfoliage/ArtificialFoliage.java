@@ -13,6 +13,15 @@ import net.minecraft.util.Identifier;
 
 
 public class ArtificialFoliage implements ModInitializer {
+    // fog water
+    // cauldron
+    // colored flower pots
+    // flowering leaves, grass
+    // flowering lily pad
+    // glowberry bush
+    // spruce and birch leave carpets
+
+
     public static final String MOD_ID = "arfo";
 
     @Override
@@ -23,7 +32,7 @@ public class ArtificialFoliage implements ModInitializer {
         VanillaLootTableCompat.init();
         ARFOItemTags.init();
 
-        // mod compat
+        // mod compat = blocks, fluids, items
         ModCompat.init();
 
 

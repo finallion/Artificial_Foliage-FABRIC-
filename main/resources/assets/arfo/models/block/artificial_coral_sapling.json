@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "arfo:blocks/artificial_coral_sapling"
+  }
+}

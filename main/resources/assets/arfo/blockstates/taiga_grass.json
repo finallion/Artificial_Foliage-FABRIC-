@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "open=false": {
       "model": "arfo:block/taiga_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/taiga_grass_down"
     }
   }
 }

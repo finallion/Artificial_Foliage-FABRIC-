@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "vines",
+  "pattern": [
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "tag": "arfo:vines"
+    },
+    "Y": {
+      "item": "arfo:jungle_dye"
+    },
+    "Z": {
+      "item": "arfo:bop_flatland_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:bop_lush_desert_vine"
+  }
+}

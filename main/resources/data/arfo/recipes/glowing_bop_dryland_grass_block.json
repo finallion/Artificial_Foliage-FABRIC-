@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "glowing_grass_blocks",
+  "pattern": [
+    "XXX",
+    "XYX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "Y": {
+      "item": "arfo:bop_dryland_grass_block"
+    }
+  },
+  "result": {
+    "item": "arfo:glowing_bop_dryland_grass_block",
+    "count": 4
+  }
+}

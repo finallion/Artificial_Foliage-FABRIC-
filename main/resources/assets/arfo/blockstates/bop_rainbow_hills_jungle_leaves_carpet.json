@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/bop_rainbow_hills_jungle_leaves_carpet"
+    },
+    "open=true": {
+      "model": "arfo:block/bop_rainbow_hills_jungle_leaves_carpet_down"
+    }
+  }
+}

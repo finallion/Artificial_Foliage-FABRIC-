@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "open=false": {
       "model": "arfo:block/traverse_wooded_island_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/traverse_wooded_island_grass_down"
     }
   }
 }

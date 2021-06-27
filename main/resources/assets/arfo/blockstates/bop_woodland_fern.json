@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/bop_woodland_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/bop_woodland_fern_down"
+    }
+  }
+}

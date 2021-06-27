@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "jungle_leaves",
+  "pattern": [
+    "XXX",
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "tag": "arfo:jungle_leaves"
+    },
+    "Y": {
+      "item": "arfo:birch_forest_dye"
+    },
+    "Z": {
+      "item": "arfo:bop_grove_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:bop_cherry_blossom_grove_jungle_leaves",
+    "count": 4
+  }
+}

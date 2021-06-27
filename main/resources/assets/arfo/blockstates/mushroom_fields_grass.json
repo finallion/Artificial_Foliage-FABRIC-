@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "open=false": {
       "model": "arfo:block/mushroom_fields_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/mushroom_fields_grass_down"
     }
   }
 }

@@ -33,6 +33,7 @@ public class ARFOSpreadableSlab extends SlabBlock implements Fertilizable {
     public static final BooleanProperty WATERLOGGED;
     public static final BooleanProperty SNOWY;
     public static final EnumProperty<DoubleBlockHalf> HALF = net.minecraft.state.property.Properties.DOUBLE_BLOCK_HALF;
+    public static final BooleanProperty SLAB_PLACEMENT;
     private static final Map<Block, List<Block>> grassFeatures = new HashMap<>();
 
     public ARFOSpreadableSlab(Settings settings) {
@@ -75,6 +76,8 @@ public class ARFOSpreadableSlab extends SlabBlock implements Fertilizable {
         boolean large = false;
         List<Block> features = new ArrayList<>();
 
+        // needs massive rework
+        //TODO check if block is instance and get direct without for-loop
         for (Block b1 : BlockMapping.slabAndBlocks.keySet()) {
             if (BlockMapping.slabAndBlocks.get(b1).is(blockState.getBlock())) {
                 features = grassFeatures.get(b1);
@@ -97,7 +100,8 @@ public class ARFOSpreadableSlab extends SlabBlock implements Fertilizable {
                 ((ARFOSpreadableBlock)blockState.getBlock()).grow(world, random, blockPos2, blockState2);
             }
             if (blockState2.getBlock() instanceof ARFOSpreadableBlock && random.nextInt(10) == 0) {
-                if (blockState2.get(TYPE) != SlabType.BOTTOM) ((ARFOSpreadableBlock)blockState.getBlock()).grow(world, random, blockPos2, blockState2);
+               // if (blockState2.get(TYPE) != SlabType.BOTTOM)
+                ((ARFOSpreadableBlock)blockState.getBlock()).grow(world, random, blockPos2, blockState2);
             }
 
 
@@ -125,9 +129,24 @@ public class ARFOSpreadableSlab extends SlabBlock implements Fertilizable {
                 }
 
                 if (blockState4.canPlaceAt(world, blockPos2) && world.getBlockState(blockPos2).isAir()) {
-                    world.setBlockState(blockPos2, blockState4, 3);
+                    // if slab is bottom slab, check if placed block can have value "open"
+                    // else do regular bone mealing
+                    if (world.getBlockState(blockPos2.down()).getBlock() instanceof ARFOSpreadableSlab && world.getBlockState(blockPos2.down()).get(TYPE) == SlabType.BOTTOM) {
+                        if (blockState4.getBlock() instanceof ARFOGrass || blockState4.getBlock() instanceof ARFOFernBlock || blockState4.getBlock() instanceof ARFOTallGrass || blockState4.getBlock() instanceof ARFOLargeFernBlock || blockState4.getBlock() instanceof ARFOLeavesCarpetBlock) {
+                            world.setBlockState(blockPos2, blockState4.with(SLAB_PLACEMENT, true), 3);
+                        }
+                    } else {
+                        world.setBlockState(blockPos2, blockState4, 3);
+                    }
+
+
                     if (large) {
-                        world.setBlockState(blockPos2.up(), blockState4.getBlock().getDefaultState().with(HALF, DoubleBlockHalf.UPPER), 3);
+                        BlockState downState = world.getBlockState(blockPos2.down());
+                        if (downState.getBlock() instanceof ARFOSpreadableSlab && world.getBlockState(blockPos2.down()).get(TYPE) == SlabType.BOTTOM) {
+                            world.setBlockState(blockPos2.up(), blockState4.getBlock().getDefaultState().with(HALF, DoubleBlockHalf.UPPER).with(SLAB_PLACEMENT, true), 3);
+                        } else {
+                            world.setBlockState(blockPos2.up(), blockState4.getBlock().getDefaultState().with(HALF, DoubleBlockHalf.UPPER), 3);
+                        }
                     }
                     large = false;
                 }
@@ -155,7 +174,7 @@ public class ARFOSpreadableSlab extends SlabBlock implements Fertilizable {
         } else if (state.getBlock() instanceof ARFOSpreadableSlab && !stateUp.getMaterial().isSolid() && state.get(TYPE) == SlabType.TOP) {
             return true;
         } else {
-            if (stateUp.getBlock() instanceof ARFOLeavesCarpetBlock || stateUp.getBlock() instanceof LeavesBlock) {
+            if (stateUp.getBlock() instanceof ARFOLeavesCarpetBlock || stateUp.getBlock() instanceof LeavesBlock || stateUp.getBlock() instanceof FenceGateBlock || stateUp.getBlock() instanceof FenceBlock) {
                 return true;
             }
             // dont know why non opaque leaves kill the grass
@@ -284,5 +303,6 @@ public class ARFOSpreadableSlab extends SlabBlock implements Fertilizable {
         TYPE = Properties.SLAB_TYPE;
         SNOWY = Properties.SNOWY;
         WATERLOGGED = Properties.WATERLOGGED;
+        SLAB_PLACEMENT = Properties.OPEN;
     }
 }

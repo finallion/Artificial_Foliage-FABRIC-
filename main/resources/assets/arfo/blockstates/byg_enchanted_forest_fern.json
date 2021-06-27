@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "open=false": {
       "model": "arfo:block/byg_enchanted_forest_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/byg_enchanted_forest_fern_down"
     }
   }
 }

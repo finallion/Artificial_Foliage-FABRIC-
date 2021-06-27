@@ -1,0 +1,6 @@
+{
+  "parent": "arfo:block/tinted_cross_down",
+  "textures": {
+    "cross": "minecraft:block/fern"
+  }
+}

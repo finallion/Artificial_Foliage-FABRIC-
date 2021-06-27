@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "arfo:block/swamp_overgrown_netherrack"
+      },
+      {
+        "model": "arfo:block/swamp_overgrown_netherrack",
+        "y": 90
+      },
+      {
+        "model": "arfo:block/swamp_overgrown_netherrack",
+        "y": 180
+      },
+      {
+        "model": "arfo:block/swamp_overgrown_netherrack",
+        "y": 270
+      }
+    ]
+  }
+}

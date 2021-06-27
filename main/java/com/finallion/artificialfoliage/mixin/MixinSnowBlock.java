@@ -18,6 +18,7 @@ public class MixinSnowBlock {
     void canPlaceAt(BlockState state, WorldView world, BlockPos pos, CallbackInfoReturnable<Boolean> info) {
         BlockState stateDown = world.getBlockState(pos.down());
         if (stateDown.getBlock() instanceof ARFOSpreadableSlab) {
+            // this seems redundant! change.
             if (stateDown.get(Properties.SLAB_TYPE) == SlabType.DOUBLE || stateDown.get(Properties.SLAB_TYPE) == SlabType.TOP || stateDown.get(Properties.SLAB_TYPE) == SlabType.BOTTOM) {
                 info.setReturnValue(true);
             }

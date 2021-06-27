@@ -906,37 +906,6 @@ public class BYGBlocks {
     public static final Block BYG_WOODLANDS_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_woodlands_overgrown_stone");
     public static final Block BYG_ZELKOVA_FOREST_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_zelkova_forest_overgrown_stone");
 
-    public static final Block BYG_TRAVERSE_ARID_HIGHLANDS_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_traverse_arid_highlands_overgrown_stone");
-    public static final Block BYG_TRAVERSE_AUTUMNAL_WOODS_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_traverse_autumnal_woods_overgrown_stone");
-    public static final Block BYG_TRAVERSE_CLIFFS_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_traverse_cliffs_overgrown_stone");
-    public static final Block BYG_TRAVERSE_SNOWY_CLIFFS_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_traverse_snowy_cliffs_overgrown_stone");
-    public static final Block BYG_TRAVERSE_CONIFEROUS_FOREST_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_traverse_coniferous_forest_overgrown_stone");
-    public static final Block BYG_TRAVERSE_SNOWY_CONIFEROUS_FOREST_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_traverse_snowy_coniferous_forest_overgrown_stone");
-    public static final Block BYG_TRAVERSE_LUSH_SWAMP_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_traverse_lush_swamp_overgrown_stone");
-    public static final Block BYG_TRAVERSE_PLAINS_PLATEAU_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_traverse_plains_plateau_overgrown_stone");
-    public static final Block BYG_TRAVERSE_ROLLING_HILLS_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_traverse_rolling_hills_overgrown_stone");
-    public static final Block BYG_TRAVERSE_MEADOW_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_traverse_meadow_overgrown_stone");
-    public static final Block BYG_TRAVERSE_WOODED_ISLAND_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_traverse_wooded_island_overgrown_stone");
-    public static final Block BYG_TRAVERSE_WOODLANDS_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_traverse_woodlands_overgrown_stone");
-
-    public static final Block BYG_JUNGLE_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_jungle_overgrown_stone");
-    public static final Block BYG_JUNGLE_EDGE_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_jungle_edge_overgrown_stone");
-    public static final Block BYG_BADLANDS_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_badlands_overgrown_stone");
-    public static final Block BYG_SAVANNA_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_savanna_overgrown_stone");
-    public static final Block BYG_FOREST_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_forest_overgrown_stone");
-    public static final Block BYG_BIRCH_FOREST_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_birch_forest_overgrown_stone");
-    public static final Block BYG_DARK_FOREST_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_dark_forest_overgrown_stone");
-    public static final Block BYG_PLAINS_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_plains_overgrown_stone");
-    public static final Block BYG_SWAMP_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_swamp_overgrown_stone");
-    public static final Block BYG_LUSH_SWAMP_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_lush_swamp_overgrown_stone");
-    public static final Block BYG_TAIGA_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_taiga_overgrown_stone");
-    public static final Block BYG_MEGA_TAIGA_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_mega_taiga_overgrown_stone");
-    public static final Block BYG_MUSHROOM_FIELDS_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_mushroom_fields_overgrown_stone");
-    public static final Block BYG_SNOWY_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_snowy_overgrown_stone");
-    public static final Block BYG_SNOWY_BEACH_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_snowy_beach_overgrown_stone");
-    public static final Block BYG_WATERS_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_waters_overgrown_stone");
-    public static final Block BYG_MOUNTAINS_OVERGROWN_STONE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_mountains_overgrown_stone");
-
     public static final Block BYG_ANCIENT_FOREST_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_ancient_forest_overgrown_stone_slab");
     public static final Block BYG_ARAUCARIA_SAVANNA_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_araucaria_savanna_overgrown_stone_slab");
     public static final Block BYG_ASPEN_FOREST_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_aspen_forest_overgrown_stone_slab");
@@ -980,37 +949,6 @@ public class BYGBlocks {
     public static final Block BYG_WITHERING_WOODS_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_withering_woods_overgrown_stone_slab");
     public static final Block BYG_WOODLANDS_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_woodlands_overgrown_stone_slab");
     public static final Block BYG_ZELKOVA_FOREST_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_zelkova_forest_overgrown_stone_slab");
-
-    public static final Block BYG_TRAVERSE_ARID_HIGHLANDS_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_traverse_arid_highlands_overgrown_stone_slab");
-    public static final Block BYG_TRAVERSE_AUTUMNAL_WOODS_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_traverse_autumnal_woods_overgrown_stone_slab");
-    public static final Block BYG_TRAVERSE_CLIFFS_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_traverse_cliffs_overgrown_stone_slab");
-    public static final Block BYG_TRAVERSE_SNOWY_CLIFFS_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_traverse_snowy_cliffs_overgrown_stone_slab");
-    public static final Block BYG_TRAVERSE_CONIFEROUS_FOREST_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_traverse_coniferous_forest_overgrown_stone_slab");
-    public static final Block BYG_TRAVERSE_SNOWY_CONIFEROUS_FOREST_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_traverse_snowy_coniferous_forest_overgrown_stone_slab");
-    public static final Block BYG_TRAVERSE_LUSH_SWAMP_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_traverse_lush_swamp_overgrown_stone_slab");
-    public static final Block BYG_TRAVERSE_PLAINS_PLATEAU_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_traverse_plains_plateau_overgrown_stone_slab");
-    public static final Block BYG_TRAVERSE_ROLLING_HILLS_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_traverse_rolling_hills_overgrown_stone_slab");
-    public static final Block BYG_TRAVERSE_MEADOW_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_traverse_meadow_overgrown_stone_slab");
-    public static final Block BYG_TRAVERSE_WOODED_ISLAND_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_traverse_wooded_island_overgrown_stone_slab");
-    public static final Block BYG_TRAVERSE_WOODLANDS_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_traverse_woodlands_overgrown_stone_slab");
-
-    public static final Block BYG_JUNGLE_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_jungle_overgrown_stone_slab");
-    public static final Block BYG_JUNGLE_EDGE_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_jungle_edge_overgrown_stone_slab");
-    public static final Block BYG_BADLANDS_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_badlands_overgrown_stone_slab");
-    public static final Block BYG_SAVANNA_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_savanna_overgrown_stone_slab");
-    public static final Block BYG_FOREST_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_forest_overgrown_stone_slab");
-    public static final Block BYG_BIRCH_FOREST_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_birch_forest_overgrown_stone_slab");
-    public static final Block BYG_DARK_FOREST_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_dark_forest_overgrown_stone_slab");
-    public static final Block BYG_PLAINS_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_plains_overgrown_stone_slab");
-    public static final Block BYG_SWAMP_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_swamp_overgrown_stone_slab");
-    public static final Block BYG_LUSH_SWAMP_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_lush_swamp_overgrown_stone_slab");
-    public static final Block BYG_TAIGA_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_taiga_overgrown_stone_slab");
-    public static final Block BYG_MEGA_TAIGA_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_mega_taiga_overgrown_stone_slab");
-    public static final Block BYG_MUSHROOM_FIELDS_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_mushroom_fields_overgrown_stone_slab");
-    public static final Block BYG_SNOWY_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_snowy_overgrown_stone_slab");
-    public static final Block BYG_SNOWY_BEACH_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_snowy_beach_overgrown_stone_slab");
-    public static final Block BYG_WATERS_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_waters_overgrown_stone_slab");
-    public static final Block BYG_MOUNTAINS_OVERGROWN_STONE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_mountains_overgrown_stone_slab");
 
     // dacite
     public static final Block BYG_ANCIENT_FOREST_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_ancient_forest_overgrown_dacite");
@@ -1057,37 +995,6 @@ public class BYGBlocks {
     public static final Block BYG_WOODLANDS_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_woodlands_overgrown_dacite");
     public static final Block BYG_ZELKOVA_FOREST_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_zelkova_forest_overgrown_dacite");
 
-    public static final Block BYG_TRAVERSE_ARID_HIGHLANDS_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_traverse_arid_highlands_overgrown_dacite");
-    public static final Block BYG_TRAVERSE_AUTUMNAL_WOODS_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_traverse_autumnal_woods_overgrown_dacite");
-    public static final Block BYG_TRAVERSE_CLIFFS_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_traverse_cliffs_overgrown_dacite");
-    public static final Block BYG_TRAVERSE_SNOWY_CLIFFS_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_traverse_snowy_cliffs_overgrown_dacite");
-    public static final Block BYG_TRAVERSE_CONIFEROUS_FOREST_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_traverse_coniferous_forest_overgrown_dacite");
-    public static final Block BYG_TRAVERSE_SNOWY_CONIFEROUS_FOREST_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_traverse_snowy_coniferous_forest_overgrown_dacite");
-    public static final Block BYG_TRAVERSE_LUSH_SWAMP_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_traverse_lush_swamp_overgrown_dacite");
-    public static final Block BYG_TRAVERSE_PLAINS_PLATEAU_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_traverse_plains_plateau_overgrown_dacite");
-    public static final Block BYG_TRAVERSE_ROLLING_HILLS_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_traverse_rolling_hills_overgrown_dacite");
-    public static final Block BYG_TRAVERSE_MEADOW_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_traverse_meadow_overgrown_dacite");
-    public static final Block BYG_TRAVERSE_WOODED_ISLAND_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_traverse_wooded_island_overgrown_dacite");
-    public static final Block BYG_TRAVERSE_WOODLANDS_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_traverse_woodlands_overgrown_dacite");
-
-    public static final Block BYG_JUNGLE_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_jungle_overgrown_dacite");
-    public static final Block BYG_JUNGLE_EDGE_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_jungle_edge_overgrown_dacite");
-    public static final Block BYG_BADLANDS_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_badlands_overgrown_dacite");
-    public static final Block BYG_SAVANNA_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_savanna_overgrown_dacite");
-    public static final Block BYG_FOREST_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_forest_overgrown_dacite");
-    public static final Block BYG_BIRCH_FOREST_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_birch_forest_overgrown_dacite");
-    public static final Block BYG_DARK_FOREST_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_dark_forest_overgrown_dacite");
-    public static final Block BYG_PLAINS_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_plains_overgrown_dacite");
-    public static final Block BYG_SWAMP_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_swamp_overgrown_dacite");
-    public static final Block BYG_LUSH_SWAMP_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_lush_swamp_overgrown_dacite");
-    public static final Block BYG_TAIGA_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_taiga_overgrown_dacite");
-    public static final Block BYG_MEGA_TAIGA_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_mega_taiga_overgrown_dacite");
-    public static final Block BYG_MUSHROOM_FIELDS_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_mushroom_fields_overgrown_dacite");
-    public static final Block BYG_SNOWY_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_snowy_overgrown_dacite");
-    public static final Block BYG_SNOWY_BEACH_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_snowy_beach_overgrown_dacite");
-    public static final Block BYG_WATERS_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_waters_overgrown_dacite");
-    public static final Block BYG_MOUNTAINS_OVERGROWN_DACITE = ARFOBlocks.createBlock(new ARFOSpreadableStoneBlock(), "byg_mountains_overgrown_dacite");
-
     public static final Block BYG_ANCIENT_FOREST_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_ancient_forest_overgrown_dacite_slab");
     public static final Block BYG_ARAUCARIA_SAVANNA_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_araucaria_savanna_overgrown_dacite_slab");
     public static final Block BYG_ASPEN_FOREST_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_aspen_forest_overgrown_dacite_slab");
@@ -1131,37 +1038,6 @@ public class BYGBlocks {
     public static final Block BYG_WITHERING_WOODS_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_withering_woods_overgrown_dacite_slab");
     public static final Block BYG_WOODLANDS_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_woodlands_overgrown_dacite_slab");
     public static final Block BYG_ZELKOVA_FOREST_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_zelkova_forest_overgrown_dacite_slab");
-
-    public static final Block BYG_TRAVERSE_ARID_HIGHLANDS_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_traverse_arid_highlands_overgrown_dacite_slab");
-    public static final Block BYG_TRAVERSE_AUTUMNAL_WOODS_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_traverse_autumnal_woods_overgrown_dacite_slab");
-    public static final Block BYG_TRAVERSE_CLIFFS_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_traverse_cliffs_overgrown_dacite_slab");
-    public static final Block BYG_TRAVERSE_SNOWY_CLIFFS_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_traverse_snowy_cliffs_overgrown_dacite_slab");
-    public static final Block BYG_TRAVERSE_CONIFEROUS_FOREST_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_traverse_coniferous_forest_overgrown_dacite_slab");
-    public static final Block BYG_TRAVERSE_SNOWY_CONIFEROUS_FOREST_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_traverse_snowy_coniferous_forest_overgrown_dacite_slab");
-    public static final Block BYG_TRAVERSE_LUSH_SWAMP_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_traverse_lush_swamp_overgrown_dacite_slab");
-    public static final Block BYG_TRAVERSE_PLAINS_PLATEAU_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_traverse_plains_plateau_overgrown_dacite_slab");
-    public static final Block BYG_TRAVERSE_ROLLING_HILLS_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_traverse_rolling_hills_overgrown_dacite_slab");
-    public static final Block BYG_TRAVERSE_MEADOW_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_traverse_meadow_overgrown_dacite_slab");
-    public static final Block BYG_TRAVERSE_WOODED_ISLAND_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_traverse_wooded_island_overgrown_dacite_slab");
-    public static final Block BYG_TRAVERSE_WOODLANDS_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_traverse_woodlands_overgrown_dacite_slab");
-
-    public static final Block BYG_JUNGLE_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_jungle_overgrown_dacite_slab");
-    public static final Block BYG_JUNGLE_EDGE_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_jungle_edge_overgrown_dacite_slab");
-    public static final Block BYG_BADLANDS_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_badlands_overgrown_dacite_slab");
-    public static final Block BYG_SAVANNA_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_savanna_overgrown_dacite_slab");
-    public static final Block BYG_FOREST_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_forest_overgrown_dacite_slab");
-    public static final Block BYG_BIRCH_FOREST_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_birch_forest_overgrown_dacite_slab");
-    public static final Block BYG_DARK_FOREST_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_dark_forest_overgrown_dacite_slab");
-    public static final Block BYG_PLAINS_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_plains_overgrown_dacite_slab");
-    public static final Block BYG_SWAMP_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_swamp_overgrown_dacite_slab");
-    public static final Block BYG_LUSH_SWAMP_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_lush_swamp_overgrown_dacite_slab");
-    public static final Block BYG_TAIGA_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_taiga_overgrown_dacite_slab");
-    public static final Block BYG_MEGA_TAIGA_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_mega_taiga_overgrown_dacite_slab");
-    public static final Block BYG_MUSHROOM_FIELDS_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_mushroom_fields_overgrown_dacite_slab");
-    public static final Block BYG_SNOWY_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_snowy_overgrown_dacite_slab");
-    public static final Block BYG_SNOWY_BEACH_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_snowy_beach_overgrown_dacite_slab");
-    public static final Block BYG_WATERS_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_waters_overgrown_dacite_slab");
-    public static final Block BYG_MOUNTAINS_OVERGROWN_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableStoneSlab(), "byg_mountains_overgrown_dacite_slab");
 
     // netherrack
     public static final Block BYG_ANCIENT_FOREST_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_ancient_forest_overgrown_netherrack");
@@ -1208,37 +1084,6 @@ public class BYGBlocks {
     public static final Block BYG_WOODLANDS_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_woodlands_overgrown_netherrack");
     public static final Block BYG_ZELKOVA_FOREST_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_zelkova_forest_overgrown_netherrack");
 
-    public static final Block BYG_TRAVERSE_ARID_HIGHLANDS_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_traverse_arid_highlands_overgrown_netherrack");
-    public static final Block BYG_TRAVERSE_AUTUMNAL_WOODS_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_traverse_autumnal_woods_overgrown_netherrack");
-    public static final Block BYG_TRAVERSE_CLIFFS_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_traverse_cliffs_overgrown_netherrack");
-    public static final Block BYG_TRAVERSE_SNOWY_CLIFFS_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_traverse_snowy_cliffs_overgrown_netherrack");
-    public static final Block BYG_TRAVERSE_CONIFEROUS_FOREST_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_traverse_coniferous_forest_overgrown_netherrack");
-    public static final Block BYG_TRAVERSE_SNOWY_CONIFEROUS_FOREST_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_traverse_snowy_coniferous_forest_overgrown_netherrack");
-    public static final Block BYG_TRAVERSE_LUSH_SWAMP_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_traverse_lush_swamp_overgrown_netherrack");
-    public static final Block BYG_TRAVERSE_PLAINS_PLATEAU_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_traverse_plains_plateau_overgrown_netherrack");
-    public static final Block BYG_TRAVERSE_ROLLING_HILLS_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_traverse_rolling_hills_overgrown_netherrack");
-    public static final Block BYG_TRAVERSE_MEADOW_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_traverse_meadow_overgrown_netherrack");
-    public static final Block BYG_TRAVERSE_WOODED_ISLAND_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_traverse_wooded_island_overgrown_netherrack");
-    public static final Block BYG_TRAVERSE_WOODLANDS_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_traverse_woodlands_overgrown_netherrack");
-
-    public static final Block BYG_JUNGLE_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_jungle_overgrown_netherrack");
-    public static final Block BYG_JUNGLE_EDGE_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_jungle_edge_overgrown_netherrack");
-    public static final Block BYG_BADLANDS_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_badlands_overgrown_netherrack");
-    public static final Block BYG_SAVANNA_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_savanna_overgrown_netherrack");
-    public static final Block BYG_FOREST_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_forest_overgrown_netherrack");
-    public static final Block BYG_BIRCH_FOREST_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_birch_forest_overgrown_netherrack");
-    public static final Block BYG_DARK_FOREST_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_dark_forest_overgrown_netherrack");
-    public static final Block BYG_PLAINS_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_plains_overgrown_netherrack");
-    public static final Block BYG_SWAMP_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_swamp_overgrown_netherrack");
-    public static final Block BYG_LUSH_SWAMP_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_lush_swamp_overgrown_netherrack");
-    public static final Block BYG_TAIGA_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_taiga_overgrown_netherrack");
-    public static final Block BYG_MEGA_TAIGA_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_mega_taiga_overgrown_netherrack");
-    public static final Block BYG_MUSHROOM_FIELDS_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_mushroom_fields_overgrown_netherrack");
-    public static final Block BYG_SNOWY_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_snowy_overgrown_netherrack");
-    public static final Block BYG_SNOWY_BEACH_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_snowy_beach_overgrown_netherrack");
-    public static final Block BYG_WATERS_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_waters_overgrown_netherrack");
-    public static final Block BYG_MOUNTAINS_OVERGROWN_NETHERRACK = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackBlock(), "byg_mountains_overgrown_netherrack");
-
     public static final Block BYG_ANCIENT_FOREST_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_ancient_forest_overgrown_netherrack_slab");
     public static final Block BYG_ARAUCARIA_SAVANNA_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_araucaria_savanna_overgrown_netherrack_slab");
     public static final Block BYG_ASPEN_FOREST_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_aspen_forest_overgrown_netherrack_slab");
@@ -1282,38 +1127,6 @@ public class BYGBlocks {
     public static final Block BYG_WITHERING_WOODS_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_withering_woods_overgrown_netherrack_slab");
     public static final Block BYG_WOODLANDS_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_woodlands_overgrown_netherrack_slab");
     public static final Block BYG_ZELKOVA_FOREST_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_zelkova_forest_overgrown_netherrack_slab");
-
-    public static final Block BYG_TRAVERSE_ARID_HIGHLANDS_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_traverse_arid_highlands_overgrown_netherrack_slab");
-    public static final Block BYG_TRAVERSE_AUTUMNAL_WOODS_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_traverse_autumnal_woods_overgrown_netherrack_slab");
-    public static final Block BYG_TRAVERSE_CLIFFS_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_traverse_cliffs_overgrown_netherrack_slab");
-    public static final Block BYG_TRAVERSE_SNOWY_CLIFFS_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_traverse_snowy_cliffs_overgrown_netherrack_slab");
-    public static final Block BYG_TRAVERSE_CONIFEROUS_FOREST_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_traverse_coniferous_forest_overgrown_netherrack_slab");
-    public static final Block BYG_TRAVERSE_SNOWY_CONIFEROUS_FOREST_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_traverse_snowy_coniferous_forest_overgrown_netherrack_slab");
-    public static final Block BYG_TRAVERSE_LUSH_SWAMP_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_traverse_lush_swamp_overgrown_netherrack_slab");
-    public static final Block BYG_TRAVERSE_PLAINS_PLATEAU_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_traverse_plains_plateau_overgrown_netherrack_slab");
-    public static final Block BYG_TRAVERSE_ROLLING_HILLS_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_traverse_rolling_hills_overgrown_netherrack_slab");
-    public static final Block BYG_TRAVERSE_MEADOW_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_traverse_meadow_overgrown_netherrack_slab");
-    public static final Block BYG_TRAVERSE_WOODED_ISLAND_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_traverse_wooded_island_overgrown_netherrack_slab");
-    public static final Block BYG_TRAVERSE_WOODLANDS_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_traverse_woodlands_overgrown_netherrack_slab");
-
-    public static final Block BYG_JUNGLE_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_jungle_overgrown_netherrack_slab");
-    public static final Block BYG_JUNGLE_EDGE_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_jungle_edge_overgrown_netherrack_slab");
-    public static final Block BYG_BADLANDS_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_badlands_overgrown_netherrack_slab");
-    public static final Block BYG_SAVANNA_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_savanna_overgrown_netherrack_slab");
-    public static final Block BYG_FOREST_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_forest_overgrown_netherrack_slab");
-    public static final Block BYG_BIRCH_FOREST_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_birch_forest_overgrown_netherrack_slab");
-    public static final Block BYG_DARK_FOREST_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_dark_forest_overgrown_netherrack_slab");
-    public static final Block BYG_PLAINS_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_plains_overgrown_netherrack_slab");
-    public static final Block BYG_SWAMP_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_swamp_overgrown_netherrack_slab");
-    public static final Block BYG_LUSH_SWAMP_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_lush_swamp_overgrown_netherrack_slab");
-    public static final Block BYG_TAIGA_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_taiga_overgrown_netherrack_slab");
-    public static final Block BYG_MEGA_TAIGA_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_mega_taiga_overgrown_netherrack_slab");
-    public static final Block BYG_MUSHROOM_FIELDS_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_mushroom_fields_overgrown_netherrack_slab");
-    public static final Block BYG_SNOWY_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_snowy_overgrown_netherrack_slab");
-    public static final Block BYG_SNOWY_BEACH_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_snowy_beach_overgrown_netherrack_slab");
-    public static final Block BYG_WATERS_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_waters_overgrown_netherrack_slab");
-    public static final Block BYG_MOUNTAINS_OVERGROWN_NETHERRACK_SLAB = ARFOBlocks.createBlock(new ARFOSpreadableNetherrackSlab(), "byg_mountains_overgrown_netherrack_slab");
-
 
     // slabs and extra blocks
     public static final Block BYG_PODZOL_DACITE_SLAB = ARFOBlocks.createBlock(new ARFOSlab(AbstractBlock.Settings.copy(Blocks.STONE)), "byg_podzol_dacite_slab");

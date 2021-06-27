@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "open=false": {
       "model": "arfo:block/traverse_cliffs_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/traverse_cliffs_fern_down"
     }
   }
 }

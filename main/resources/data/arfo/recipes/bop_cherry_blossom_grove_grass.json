@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "grass",
+  "pattern": [
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "tag": "arfo:grass"
+    },
+    "Y": {
+      "item": "arfo:birch_forest_dye"
+    },
+    "Z": {
+      "item": "arfo:bop_grove_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:bop_cherry_blossom_grove_grass"
+  }
+}
