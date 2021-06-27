@@ -516,6 +516,7 @@ public class ARFOItems {
 
 
 
+    public static final Item ARTIFICIAL_CORAL_SAPLING = createItem(new BlockItem(ARFOBlocks.ARTIFICIAL_CORAL_SAPLING, new Item.Settings().group(ArtificialFoliage.ADVANCED)), Registry.BLOCK.getId(ARFOBlocks.ARTIFICIAL_CORAL_SAPLING));
 
 
 }

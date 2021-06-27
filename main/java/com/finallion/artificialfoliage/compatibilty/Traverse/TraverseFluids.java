@@ -1,6 +1,5 @@
 package com.finallion.artificialfoliage.compatibilty.Traverse;
 
-import com.finallion.artificialfoliage.compatibilty.Traverse.fluids.CliffsWater;
 import com.finallion.artificialfoliage.compatibilty.Traverse.fluids.MiniJungleWater;
 import com.finallion.artificialfoliage.compatibilty.Traverse.fluids.TraverseLushSwampWater;
 import com.finallion.artificialfoliage.registry.ARFOFluids;

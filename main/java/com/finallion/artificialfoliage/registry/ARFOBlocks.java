@@ -11,6 +11,7 @@ import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.world.gen.feature.Feature;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,6 +43,7 @@ public class ARFOBlocks {
         blocksList.add(block);
         return block;
     }
+
 
     public static final Block JUNGLE_GRASS_BLOCK = createBlock(new ARFOSpreadableGrassBlock(), "jungle_grass_block");
     public static final Block BADLANDS_GRASS_BLOCK = createBlock(new ARFOSpreadableGrassBlock(), "badlands_grass_block");
@@ -505,6 +507,9 @@ public class ARFOBlocks {
     public static final Block WARM_OCEAN_WATER = createFluidBlock(ARFOFluids.STILL_WARM_OCEAN_WATER, "warm_ocean_water");
     public static final Block SWAMP_WATER = createFluidBlock(ARFOFluids.STILL_SWAMP_WATER, "swamp_water");
     public static final Block OCEAN_WATER = createFluidBlock(ARFOFluids.STILL_OCEAN_WATER, "ocean_water");
+
+
+    public static final Block ARTIFICIAL_CORAL_SAPLING = createBlock(new ARFOCoralSapling(), "artificial_coral_sapling");
 
 
     public static final Block BLENDER_GRASS_BLOCK = createBlock(new BlenderGrassBlock(), "blender_grass_block");

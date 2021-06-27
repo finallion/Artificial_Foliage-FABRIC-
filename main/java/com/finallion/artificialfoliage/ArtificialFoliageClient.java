@@ -72,6 +72,7 @@ public class ArtificialFoliageClient implements ClientModInitializer {
         FluidUtils.registerFluidColor(6388580, ARFOFluids.STILL_SWAMP_WATER, ARFOFluids.FLOWING_SWAMP_WATER);
         FluidUtils.registerFluidColor(4159204, ARFOFluids.STILL_OCEAN_WATER, ARFOFluids.FLOWING_OCEAN_WATER);
 
+        BlockRenderLayerMap.INSTANCE.putBlock(ARFOBlocks.ARTIFICIAL_CORAL_SAPLING, ColorUtils.PLANT_BLOCK_LAYER);
 
         // blocks
         ColorUtils.registerGrassBlockColor(ColorProvider.MUSHROOM_FIELDS_COLOR,

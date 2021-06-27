@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "arfo:traverse_cliffs_water_bucket"
+      "arfo:artificial_coral_sapling"
     ]
   },
   "criteria": {
@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:bucket"
+            "item": "minecraft:bone_meal"
           }
         ]
       }
@@ -19,7 +19,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "arfo:traverse_cliffs_water_bucket"
+        "recipe": "arfo:artificial_coral_sapling"
       }
     }
   },

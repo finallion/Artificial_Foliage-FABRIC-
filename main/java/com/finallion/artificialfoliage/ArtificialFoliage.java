@@ -13,10 +13,16 @@ import net.minecraft.util.Identifier;
 
 
 public class ArtificialFoliage implements ModInitializer {
-    // Coral generator
+    // fog water
+    // cauldron
+    // overlay water
+    // plants waterloggable with custom water -> x!
     // colored flower pots
-    // flowering leaves
-    //TODO remove cliff water
+    // flowering leaves, grass
+    // flowering lily pad
+    // glowberry bush
+    // spruce and birch leave carpets
+
 
     public static final String MOD_ID = "arfo";
 
