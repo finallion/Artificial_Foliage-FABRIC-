@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dark_oak_leaves",
+  "pattern": [
+    "XXX",
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "tag": "arfo:dark_oak_leaves"
+    },
+    "Y": {
+      "item": "arfo:dark_forest_dye"
+    },
+    "Z": {
+      "item": "arfo:bop_grove_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:bop_ominous_woods_dark_oak_leaves",
+    "count": 4
+  }
+}

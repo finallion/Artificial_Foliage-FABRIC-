@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tall_grass",
+  "pattern": [
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "tag": "arfo:tall_grass"
+    },
+    "Y": {
+      "item": "minecraft:cyan_dye"
+    },
+    "Z": {
+      "item": "arfo:bop_grove_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:tall_bop_fungal_field_variant_grass"
+  }
+}

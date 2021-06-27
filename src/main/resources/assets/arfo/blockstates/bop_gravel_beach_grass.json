@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/bop_gravel_beach_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/bop_gravel_beach_grass_down"
+    }
+  }
+}

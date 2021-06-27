@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/byg_lush_tundra_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/byg_lush_tundra_fern_down"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/traverse_arid_highlands_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/traverse_arid_highlands_fern_down"
+    }
+  }
+}

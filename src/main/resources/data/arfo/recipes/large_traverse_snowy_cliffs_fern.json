@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "large_ferns",
+  "pattern": [
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "tag": "arfo:large_ferns"
+    },
+    "Y": {
+      "item": "arfo:snowy_beach_dye"
+    },
+    "Z": {
+      "item": "arfo:traverse_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:large_traverse_snowy_cliffs_fern"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "oak_leaves",
+  "pattern": [
+    "XXX",
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "tag": "arfo:oak_leaves"
+    },
+    "Y": {
+      "item": "arfo:savanna_dye"
+    },
+    "Z": {
+      "item": "arfo:byg_mountains_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:byg_autumnal_valley_oak_leaves",
+    "count": 4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/snowy_beach_dark_oak_leaves_carpet"
+    },
+    "open=true": {
+      "model": "arfo:block/snowy_beach_dark_oak_leaves_carpet_down"
+    }
+  }
+}

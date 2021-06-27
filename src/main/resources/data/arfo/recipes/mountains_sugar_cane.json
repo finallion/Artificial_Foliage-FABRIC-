@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sugar_canes",
+  "pattern": [
+    "XY "
+  ],
+  "key": {
+    "X": {
+      "tag": "arfo:sugar_canes"
+    },
+    "Y": {
+      "item": "arfo:mountains_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:mountains_sugar_cane"
+  }
+}

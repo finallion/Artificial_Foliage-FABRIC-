@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "type=bottom":
+    {
+      "model": "arfo:block/byg_mycelium_netherrack_slab"
+    },
+    "type=top":
+    {
+      "model": "arfo:block/byg_mycelium_netherrack_slab_top"
+    },
+    "type=double":
+    {
+      "model": "arfo:block/byg_mycelium_netherrack_slab_double"
+    }
+  }
+}

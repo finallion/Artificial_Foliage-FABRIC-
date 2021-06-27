@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XYX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:netherrack"
+    },
+    "Y": {
+      "item": "minecraft:orange_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:byg_embur_nylium_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/byg_fresh_water_lake_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/byg_fresh_water_lake_fern_down"
+    }
+  }
+}

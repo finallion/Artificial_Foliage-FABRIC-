@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/byg_sythian_torrids_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/byg_sythian_torrids_grass_down"
+    }
+  }
+}

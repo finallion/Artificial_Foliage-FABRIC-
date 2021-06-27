@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/waters_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/waters_fern_down"
+    }
+  }
+}

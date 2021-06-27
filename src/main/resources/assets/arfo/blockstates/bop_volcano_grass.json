@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/bop_volcano_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/bop_volcano_grass_down"
+    }
+  }
+}

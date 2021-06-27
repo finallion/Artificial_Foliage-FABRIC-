@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "Y  "
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:oak_leaves"
+    },
+    "Y": {
+      "item": "minecraft:orange_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:traverse_orange_autumnal_leaves_carpet",
+    "count": 6
+  }
+}

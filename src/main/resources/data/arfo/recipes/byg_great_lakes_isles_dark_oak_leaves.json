@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dark_oak_leaves",
+  "pattern": [
+    "XXX",
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "tag": "arfo:dark_oak_leaves"
+    },
+    "Y": {
+      "item": "arfo:snowy_beach_dye"
+    },
+    "Z": {
+      "item": "arfo:byg_lowlands_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:byg_great_lakes_isles_dark_oak_leaves",
+    "count": 4
+  }
+}

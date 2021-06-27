@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XYX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:diorite"
+    },
+    "Y": {
+      "item": "minecraft:podzol"
+    }
+  },
+  "result": {
+    "item": "arfo:byg_podzol_dacite_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dark_oak_leaves",
+  "pattern": [
+    "XXX",
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "tag": "arfo:dark_oak_leaves"
+    },
+    "Y": {
+      "item": "arfo:forest_dye"
+    },
+    "Z": {
+      "item": "arfo:traverse_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:traverse_wooded_island_dark_oak_leaves",
+    "count": 4
+  }
+}

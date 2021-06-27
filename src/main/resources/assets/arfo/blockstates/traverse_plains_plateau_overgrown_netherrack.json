@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "arfo:block/traverse_plains_plateau_overgrown_netherrack"
+      },
+      {
+        "model": "arfo:block/traverse_plains_plateau_overgrown_netherrack",
+        "y": 90
+      },
+      {
+        "model": "arfo:block/traverse_plains_plateau_overgrown_netherrack",
+        "y": 180
+      },
+      {
+        "model": "arfo:block/traverse_plains_plateau_overgrown_netherrack",
+        "y": 270
+      }
+    ]
+  }
+}

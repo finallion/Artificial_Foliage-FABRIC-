@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/traverse_lush_swamp_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/traverse_lush_swamp_fern_down"
+    }
+  }
+}

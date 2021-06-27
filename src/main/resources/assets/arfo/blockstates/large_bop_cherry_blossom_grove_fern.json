@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "half=upper,open=false": {
+      "model": "arfo:block/large_bop_cherry_blossom_grove_fern_top"
+    },
+    "half=lower,open=false": {
+      "model": "arfo:block/large_bop_cherry_blossom_grove_fern_bottom"
+    },
+    "half=upper,open=true": {
+      "model": "arfo:block/large_bop_cherry_blossom_grove_fern_top_down"
+    },
+    "half=lower,open=true": {
+      "model": "arfo:block/large_bop_cherry_blossom_grove_fern_bottom_down"
+    }
+  }
+}

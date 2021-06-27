@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/mountains_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/mountains_grass_down"
+    }
+  }
+}

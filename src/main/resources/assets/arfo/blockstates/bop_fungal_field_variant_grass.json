@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/bop_fungal_field_variant_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/bop_fungal_field_variant_grass_down"
+    }
+  }
+}

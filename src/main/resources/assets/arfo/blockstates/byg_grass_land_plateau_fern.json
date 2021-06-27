@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/byg_grass_land_plateau_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/byg_grass_land_plateau_fern_down"
+    }
+  }
+}

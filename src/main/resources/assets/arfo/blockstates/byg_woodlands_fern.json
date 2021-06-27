@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/byg_woodlands_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/byg_woodlands_fern_down"
+    }
+  }
+}

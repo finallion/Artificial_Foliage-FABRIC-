@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XYX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:crimson_nylium"
+    },
+    "Y": {
+      "item": "minecraft:blackstone"
+    }
+  },
+  "result": {
+    "item": "arfo:byg_overgrown_crimson_blackstone_slab",
+    "count": 6
+  }
+}
