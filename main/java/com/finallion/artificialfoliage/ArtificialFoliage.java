@@ -15,7 +15,6 @@ import net.minecraft.util.Identifier;
 public class ArtificialFoliage implements ModInitializer {
     // fog water
     // cauldron
-    // overlay water
     // colored flower pots
     // flowering leaves, grass
     // flowering lily pad
