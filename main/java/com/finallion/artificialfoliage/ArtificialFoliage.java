@@ -16,7 +16,6 @@ public class ArtificialFoliage implements ModInitializer {
     // fog water
     // cauldron
     // overlay water
-    // plants waterloggable with custom water -> x!
     // colored flower pots
     // flowering leaves, grass
     // flowering lily pad
