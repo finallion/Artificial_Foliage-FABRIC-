@@ -1,0 +1,22 @@
+{
+  "required": true,
+  "package": "com.finallion.artificialfoliage.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MixinPlantBlock",
+    "MixinBlock",
+    "MixinHoeItem",
+    "MixinShovelItem",
+    "MixinSnowBlock",
+    "MixinSpreadableBlock",
+    "MixinNetherrackBlock",
+    "MixinFeature",
+    "AccessorFluidTags"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+
+  ]
+}

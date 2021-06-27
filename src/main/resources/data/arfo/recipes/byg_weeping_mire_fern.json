@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ferns",
+  "pattern": [
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "tag": "arfo:ferns"
+    },
+    "Y": {
+      "item": "arfo:lush_swamp_dye"
+    },
+    "Z": {
+      "item": "arfo:byg_nether_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:byg_weeping_mire_fern"
+  }
+}

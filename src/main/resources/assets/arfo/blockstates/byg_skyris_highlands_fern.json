@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/byg_skyris_highlands_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/byg_skyris_highlands_fern_down"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " #Y",
+    " X#",
+    "X  "
+  ],
+  "key": {
+    "#": {
+      "tag": "arfo:moderate_dyes"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    },
+    "Y": {
+      "tag": "minecraft:saplings"
+    }
+  },
+  "result": {
+    "item": "arfo:wand_of_nature_colors",
+    "count": 1
+  }
+}

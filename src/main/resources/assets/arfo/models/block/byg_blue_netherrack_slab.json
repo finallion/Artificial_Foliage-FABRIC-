@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "arfo:blocks/byg_blue_netherrack",
+    "top": "arfo:blocks/byg_blue_netherrack",
+    "side": "arfo:blocks/byg_blue_netherrack"
+  }
+}

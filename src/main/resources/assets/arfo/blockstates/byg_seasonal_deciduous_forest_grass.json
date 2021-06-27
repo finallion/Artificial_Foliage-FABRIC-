@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/byg_seasonal_deciduous_forest_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/byg_seasonal_deciduous_forest_grass_down"
+    }
+  }
+}

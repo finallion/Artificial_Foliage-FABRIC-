@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "type=bottom":
+    {
+      "model": "arfo:block/byg_overgrown_crimson_blackstone_slab"
+    },
+    "type=top":
+    {
+      "model": "arfo:block/byg_overgrown_crimson_blackstone_slab_top"
+    },
+    "type=double":
+    {
+      "model": "arfo:block/byg_overgrown_crimson_blackstone_slab_double"
+    }
+  }
+}

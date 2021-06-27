@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/bop_cherry_blossom_grove_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/bop_cherry_blossom_grove_grass_down"
+    }
+  }
+}

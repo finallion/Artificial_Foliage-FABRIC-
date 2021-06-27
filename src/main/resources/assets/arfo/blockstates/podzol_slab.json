@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "type=bottom":
+    {
+      "model": "arfo:block/podzol_slab"
+    },
+    "type=top":
+    {
+      "model": "arfo:block/podzol_slab_top"
+    },
+    "type=double":
+    {
+      "model": "minecraft:block/podzol"
+    }
+  }
+}

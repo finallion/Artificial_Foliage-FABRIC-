@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "arfo:block/byg_red_oak_forest_overgrown_netherrack"
+      },
+      {
+        "model": "arfo:block/byg_red_oak_forest_overgrown_netherrack",
+        "y": 90
+      },
+      {
+        "model": "arfo:block/byg_red_oak_forest_overgrown_netherrack",
+        "y": 180
+      },
+      {
+        "model": "arfo:block/byg_red_oak_forest_overgrown_netherrack",
+        "y": 270
+      }
+    ]
+  }
+}

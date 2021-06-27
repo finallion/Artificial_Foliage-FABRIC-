@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/byg_araucaria_savanna_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/byg_araucaria_savanna_fern_down"
+    }
+  }
+}

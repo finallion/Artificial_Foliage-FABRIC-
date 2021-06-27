@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "snowy=false,type=top": {
+      "model": "arfo:block/byg_great_lakes_overgrown_dacite_slab_top"
+    },
+    "snowy=true,type=top": {
+      "model": "arfo:block/byg_great_lakes_overgrown_dacite_slab_top_snow"
+    },
+    "snowy=false,type=bottom": {
+      "model": "arfo:block/byg_great_lakes_overgrown_dacite_slab"
+    },
+    "snowy=true,type=bottom": {
+      "model": "arfo:block/byg_great_lakes_overgrown_dacite_slab_snow"
+    },
+    "snowy=false,type=double": {
+      "model": "arfo:block/byg_great_lakes_overgrown_dacite"
+    },
+    "snowy=true,type=double": {
+      "model": "arfo:block/overgrown_dacite_snowy"
+    }
+  }
+}

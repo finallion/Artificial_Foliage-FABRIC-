@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dark_oak_leaves_carpet",
+  "pattern": [
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "arfo:bop_burnt_forest_dark_oak_leaves"
+    }
+  },
+  "result": {
+    "item": "arfo:bop_burnt_forest_dark_oak_leaves_carpet",
+    "count": 6
+  }
+}

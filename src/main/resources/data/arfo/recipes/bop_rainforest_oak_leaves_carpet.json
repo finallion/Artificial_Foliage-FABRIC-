@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "oak_leaves_carpet",
+  "pattern": [
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "arfo:bop_rainforest_oak_leaves"
+    }
+  },
+  "result": {
+    "item": "arfo:bop_rainforest_oak_leaves_carpet",
+    "count": 6
+  }
+}

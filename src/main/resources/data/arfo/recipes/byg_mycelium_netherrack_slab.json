@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XYX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:netherrack"
+    },
+    "Y": {
+      "item": "minecraft:mycelium"
+    }
+  },
+  "result": {
+    "item": "arfo:byg_mycelium_netherrack_slab",
+    "count": 6
+  }
+}

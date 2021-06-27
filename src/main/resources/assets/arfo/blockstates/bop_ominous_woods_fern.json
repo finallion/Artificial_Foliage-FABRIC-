@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/bop_ominous_woods_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/bop_ominous_woods_fern_down"
+    }
+  }
+}

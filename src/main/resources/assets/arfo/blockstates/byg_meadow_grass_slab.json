@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "type=bottom":
+    {
+      "model": "arfo:block/byg_meadow_grass_slab"
+    },
+    "type=top":
+    {
+      "model": "arfo:block/byg_meadow_grass_slab_top"
+    },
+    "type=double":
+    {
+      "model": "arfo:block/byg_meadow_grass_slab_double"
+    }
+  }
+}

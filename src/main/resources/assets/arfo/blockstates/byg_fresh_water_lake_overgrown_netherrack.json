@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "arfo:block/byg_fresh_water_lake_overgrown_netherrack"
+      },
+      {
+        "model": "arfo:block/byg_fresh_water_lake_overgrown_netherrack",
+        "y": 90
+      },
+      {
+        "model": "arfo:block/byg_fresh_water_lake_overgrown_netherrack",
+        "y": 180
+      },
+      {
+        "model": "arfo:block/byg_fresh_water_lake_overgrown_netherrack",
+        "y": 270
+      }
+    ]
+  }
+}

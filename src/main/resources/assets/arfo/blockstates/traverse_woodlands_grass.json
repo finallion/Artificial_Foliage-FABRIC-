@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/traverse_woodlands_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/traverse_woodlands_grass_down"
+    }
+  }
+}

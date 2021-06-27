@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "arfo:blocks/artificial_stone_soil",
+    "bottom": "arfo:blocks/artificial_stone_soil",
+    "top": "arfo:blocks/artificial_stone_soil",
+    "side": "arfo:blocks/artificial_stone_soil"
+  }
+}

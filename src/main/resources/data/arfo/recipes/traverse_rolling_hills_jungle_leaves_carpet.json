@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "jungle_leaves_carpet",
+  "pattern": [
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "arfo:traverse_rolling_hills_jungle_leaves"
+    }
+  },
+  "result": {
+    "item": "arfo:traverse_rolling_hills_jungle_leaves_carpet",
+    "count": 6
+  }
+}

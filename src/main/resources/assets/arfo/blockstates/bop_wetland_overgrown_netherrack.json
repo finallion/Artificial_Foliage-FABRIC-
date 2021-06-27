@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "arfo:block/bop_wetland_overgrown_netherrack"
+      },
+      {
+        "model": "arfo:block/bop_wetland_overgrown_netherrack",
+        "y": 90
+      },
+      {
+        "model": "arfo:block/bop_wetland_overgrown_netherrack",
+        "y": 180
+      },
+      {
+        "model": "arfo:block/bop_wetland_overgrown_netherrack",
+        "y": 270
+      }
+    ]
+  }
+}

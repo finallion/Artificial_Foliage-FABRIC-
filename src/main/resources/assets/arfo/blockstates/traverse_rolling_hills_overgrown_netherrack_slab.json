@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "arfo:block/traverse_rolling_hills_overgrown_netherrack_slab_top"
+    },
+    "type=bottom": {
+      "model": "arfo:block/traverse_rolling_hills_overgrown_netherrack_slab"
+    },
+    "type=double": {
+      "model": "arfo:block/traverse_rolling_hills_overgrown_netherrack"
+    }
+  }
+}
