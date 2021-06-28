@@ -479,6 +479,11 @@ public class ARFOItems {
     public static final Item BIRCH_LEAVES_CARPET = createItem(new BlockItem(ARFOBlocks.BIRCH_LEAVES_CARPET, new Item.Settings().group(ArtificialFoliage.ADVANCED)), Registry.BLOCK.getId(ARFOBlocks.BIRCH_LEAVES_CARPET));
     public static final Item AZALEA_LEAVES_CARPET = createItem(new BlockItem(ARFOBlocks.AZALEA_LEAVES_CARPET, new Item.Settings().group(ArtificialFoliage.ADVANCED)), Registry.BLOCK.getId(ARFOBlocks.AZALEA_LEAVES_CARPET));
     public static final Item FLOWERING_AZALEA_LEAVES_CARPET = createItem(new BlockItem(ARFOBlocks.FLOWERING_AZALEA_LEAVES_CARPET, new Item.Settings().group(ArtificialFoliage.ADVANCED)), Registry.BLOCK.getId(ARFOBlocks.FLOWERING_AZALEA_LEAVES_CARPET));
+
+    public static final Item GLOW_BERRY_LEAVES = createItem(new BlockItem(ARFOBlocks.GLOW_BERRY_LEAVES, new Item.Settings().group(ArtificialFoliage.ADVANCED)), Registry.BLOCK.getId(ARFOBlocks.GLOW_BERRY_LEAVES));
+    public static final Item GLOW_BERRY_BUSH = createItem(new BlockItem(ARFOBlocks.GLOW_BERRY_BUSH, new Item.Settings().group(ArtificialFoliage.ADVANCED)), Registry.BLOCK.getId(ARFOBlocks.GLOW_BERRY_BUSH));
+    public static final Item GLOW_BERRY_LEAVES_CARPET = createItem(new BlockItem(ARFOBlocks.GLOW_BERRY_LEAVES_CARPET, new Item.Settings().group(ArtificialFoliage.ADVANCED)), Registry.BLOCK.getId(ARFOBlocks.GLOW_BERRY_LEAVES_CARPET));
+
     public static final Item GRASS_SLAB = createItem(new BlockItem(ARFOBlocks.GRASS_SLAB, new Item.Settings().group(ArtificialFoliage.ADVANCED)), Registry.BLOCK.getId(ARFOBlocks.GRASS_SLAB));
     public static final Item DIRT_SLAB = createItem(new BlockItem(ARFOBlocks.DIRT_SLAB, new Item.Settings().group(ArtificialFoliage.ADVANCED)), Registry.BLOCK.getId(ARFOBlocks.DIRT_SLAB));
     public static final Item COARSE_DIRT_SLAB = createItem(new BlockItem(ARFOBlocks.COARSE_DIRT_SLAB, new Item.Settings().group(ArtificialFoliage.ADVANCED)), Registry.BLOCK.getId(ARFOBlocks.COARSE_DIRT_SLAB));

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "open=false,berries=false": {
+      "model": "arfo:block/glow_berry_leaves_carpet"
+    },
+    "open=false,berries=true": {
+      "model": "arfo:block/glow_berry_leaves_carpet_lit"
+    },
+    "open=true,berries=false": {
+      "model": "arfo:block/glow_berry_leaves_carpet_down"
+    },
+    "open=true,berries=true": {
+      "model": "arfo:block/glow_berry_leaves_carpet_down_lit"
+    }
+  }
+}

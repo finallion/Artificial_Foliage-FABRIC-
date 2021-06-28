@@ -35,14 +35,14 @@ public class ArtificialFoliage implements ModInitializer {
         // mod compat
         ModCompat.init();
 
-        // when pasting from 1.16
-        // -> change vine blockstate!
-        // -> remember azalea leaves carpets
-        // -> remove blender blocks + wands
+        //TODO add glow berry stuff to bee growables tag
+        // TODO potted sweet berry
+
 
         // replaces "item" predicate with "items" which breaks the loot table in 1.17
         // set directory to absolute path
 
+        /*
 
         try {
             List<Path> files = findLootTables("C:\\Users\\lbret\\Desktop\\Modding\\Artificial Foliage FABRIC 1.17\\src\\main\\resources\\assets\\arfo\\blockstates");
@@ -53,10 +53,7 @@ public class ArtificialFoliage implements ModInitializer {
             e.printStackTrace();
         }
 
-
-
-
-
+         */
 
     }
 

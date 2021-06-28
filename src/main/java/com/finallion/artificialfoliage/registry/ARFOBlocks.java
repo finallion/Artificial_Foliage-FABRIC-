@@ -500,8 +500,6 @@ public class ARFOBlocks {
 
     public static final Block ARTIFICIAL_CORAL_SAPLING = createBlock(new ARFOCoralSapling(), "artificial_coral_sapling");
 
-    public static final Block AZALEA_LEAVES_CARPET  = ARFOBlocks.createBlock(new ARFOLeavesCarpetBlock(), "azalea_leaves_carpet");
-    public static final Block FLOWERING_AZALEA_LEAVES_CARPET  = ARFOBlocks.createBlock(new ARFOLeavesCarpetBlock(), "flowering_azalea_leaves_carpet");
 
     public static final Block COLD_OCEAN_WATER = createFluidBlock(ARFOFluids.STILL_COLD_OCEAN_WATER, "cold_ocean_water");
     public static final Block FROZEN_OCEAN_WATER = createFluidBlock(ARFOFluids.STILL_FROZEN_OCEAN_WATER, "frozen_ocean_water");
@@ -510,6 +508,17 @@ public class ARFOBlocks {
     public static final Block SWAMP_WATER = createFluidBlock(ARFOFluids.STILL_SWAMP_WATER, "swamp_water");
     public static final Block OCEAN_WATER = createFluidBlock(ARFOFluids.STILL_OCEAN_WATER, "ocean_water");
 
+
+
+    // 1.17 only
+    public static final Block AZALEA_LEAVES_CARPET  = ARFOBlocks.createBlock(new ARFOLeavesCarpetBlock(), "azalea_leaves_carpet");
+    public static final Block FLOWERING_AZALEA_LEAVES_CARPET  = ARFOBlocks.createBlock(new ARFOLeavesCarpetBlock(), "flowering_azalea_leaves_carpet");
+
+
+    public static final Block GLOW_BERRY_LEAVES = ARFOBlocks.createBlock(new ARFOGlowingLeavesBlock(), "glow_berry_leaves");
+    public static final Block GLOW_BERRY_BUSH = ARFOBlocks.createBlock(new ARFOGlowingBushBlock(), "glow_berry_bush");
+    public static final Block POTTED_GLOW_BERRY_BUSH = ARFOBlocks.createPottedBlock(GLOW_BERRY_BUSH, "glow_berry_bush");
+    public static final Block GLOW_BERRY_LEAVES_CARPET = ARFOBlocks.createBlock(new ARFOGlowingLeavesCarpetBlock(), "glow_berry_leaves_carpet");
 
 
 }

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "berries=false": {
+      "model": "arfo:block/glow_berry_bush_stage0"
+    },
+    "berries=true": {
+      "model": "arfo:block/glow_berry_bush_stage1"
+    }
+  }
+}

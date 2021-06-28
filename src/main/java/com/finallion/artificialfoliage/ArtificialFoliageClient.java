@@ -50,6 +50,10 @@ public class ArtificialFoliageClient implements ClientModInitializer {
         FluidUtils.registerFluidColor(4159204, ARFOFluids.STILL_OCEAN_WATER, ARFOFluids.FLOWING_OCEAN_WATER);
 
         BlockRenderLayerMap.INSTANCE.putBlock(ARFOBlocks.ARTIFICIAL_CORAL_SAPLING, ColorUtils.PLANT_BLOCK_LAYER);
+        BlockRenderLayerMap.INSTANCE.putBlock(ARFOBlocks.GLOW_BERRY_BUSH, ColorUtils.PLANT_BLOCK_LAYER);
+        BlockRenderLayerMap.INSTANCE.putBlock(ARFOBlocks.POTTED_GLOW_BERRY_BUSH, ColorUtils.PLANT_BLOCK_LAYER);
+        BlockRenderLayerMap.INSTANCE.putBlock(ARFOBlocks.GLOW_BERRY_LEAVES_CARPET, ColorUtils.LEAVE_BLOCK_LAYER);
+        BlockRenderLayerMap.INSTANCE.putBlock(ARFOBlocks.GLOW_BERRY_LEAVES, ColorUtils.LEAVE_BLOCK_LAYER);
 
 
         // blocks

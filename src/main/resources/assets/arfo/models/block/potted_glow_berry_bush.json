@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/flower_pot_cross",
+  "textures": {
+    "plant": "arfo:blocks/glow_berry_bush_lit"
+  }
+}

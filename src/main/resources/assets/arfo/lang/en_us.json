@@ -2656,5 +2656,9 @@
   "itemGroup.arfo.addons": "Artificial Foliage Expansion",
 
   "block.arfo.azalea_leaves_carpet": "Azalea Leaves Carpet",
-  "block.arfo.flowering_azalea_leaves_carpet": "Flowering Azalea Leaves Carpet"
+  "block.arfo.flowering_azalea_leaves_carpet": "Flowering Azalea Leaves Carpet",
+
+  "block.arfo.glow_berry_leaves_carpet": "Glow Berry Leaves Carpet",
+  "block.arfo.glow_berry_leaves": "Glow Berry Leaves",
+  "block.arfo.glow_berry_bush": "Glow Berry Bush"
 }

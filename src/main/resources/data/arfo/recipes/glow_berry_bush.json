@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XY "
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:sweet_berries"
+    },
+    "Y": {
+      "item": "minecraft:glow_berries"
+    }
+  },
+  "result": {
+    "item": "arfo:glow_berry_bush",
+    "count": 1
+  }
+}
