@@ -1,8 +1,10 @@
 {
   "variants": {
-    "":
-      {
-        "model": "arfo:block/birch_leaves_carpet"
-      }
+    "open=false": {
+      "model": "arfo:block/birch_leaves_carpet"
+    },
+    "open=true": {
+      "model": "arfo:block/birch_leaves_carpet_down"
+    }
   }
 }

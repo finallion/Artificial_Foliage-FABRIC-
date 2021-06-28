@@ -34,7 +34,7 @@ public class ARFOGlowingLeavesCarpetBlock extends PlantBlock implements Fertiliz
     protected static final VoxelShape LEAF_CARPET = Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 1.0D, 16.0D);
 
     public ARFOGlowingLeavesCarpetBlock() {
-        super(FabricBlockSettings.of(Material.LEAVES).nonOpaque().noCollision().breakInstantly().sounds(BlockSoundGroup.AZALEA_LEAVES).luminance(createLightLevelFromBerriesBlockState(12)));
+        super(FabricBlockSettings.of(Material.LEAVES).nonOpaque().noCollision().breakInstantly().sounds(BlockSoundGroup.AZALEA_LEAVES).luminance(createLightLevelFromBerriesBlockState(14)));
 
         this.setDefaultState(this.stateManager.getDefaultState().with(SLAB_PLACEMENT, false).with(BERRIES, true));
     }

@@ -25,7 +25,7 @@ import java.util.function.ToIntFunction;
 public class ARFOGlowingLeavesBlock extends LeavesBlock implements Fertilizable, CaveVines {
 
     public ARFOGlowingLeavesBlock() {
-        super(FabricBlockSettings.copyOf(Blocks.AZALEA_LEAVES).luminance(createLightLevelFromBerriesBlockState(12)));
+        super(FabricBlockSettings.copyOf(Blocks.AZALEA_LEAVES).luminance(createLightLevelFromBerriesBlockState(14)));
         this.setDefaultState((BlockState)((BlockState)this.stateManager.getDefaultState()).with(BERRIES, true));
     }
 

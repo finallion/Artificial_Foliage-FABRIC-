@@ -52,6 +52,7 @@ public class ArtificialFoliageClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ARFOBlocks.ARTIFICIAL_CORAL_SAPLING, ColorUtils.PLANT_BLOCK_LAYER);
         BlockRenderLayerMap.INSTANCE.putBlock(ARFOBlocks.GLOW_BERRY_BUSH, ColorUtils.PLANT_BLOCK_LAYER);
         BlockRenderLayerMap.INSTANCE.putBlock(ARFOBlocks.POTTED_GLOW_BERRY_BUSH, ColorUtils.PLANT_BLOCK_LAYER);
+        BlockRenderLayerMap.INSTANCE.putBlock(ARFOBlocks.POTTED_SWEET_BERRY_BUSH, ColorUtils.PLANT_BLOCK_LAYER);
         BlockRenderLayerMap.INSTANCE.putBlock(ARFOBlocks.GLOW_BERRY_LEAVES_CARPET, ColorUtils.LEAVE_BLOCK_LAYER);
         BlockRenderLayerMap.INSTANCE.putBlock(ARFOBlocks.GLOW_BERRY_LEAVES, ColorUtils.LEAVE_BLOCK_LAYER);
 

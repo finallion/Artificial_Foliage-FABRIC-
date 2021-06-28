@@ -518,6 +518,7 @@ public class ARFOBlocks {
     public static final Block GLOW_BERRY_LEAVES = ARFOBlocks.createBlock(new ARFOGlowingLeavesBlock(), "glow_berry_leaves");
     public static final Block GLOW_BERRY_BUSH = ARFOBlocks.createBlock(new ARFOGlowingBushBlock(), "glow_berry_bush");
     public static final Block POTTED_GLOW_BERRY_BUSH = ARFOBlocks.createPottedBlock(GLOW_BERRY_BUSH, "glow_berry_bush");
+    public static final Block POTTED_SWEET_BERRY_BUSH = ARFOBlocks.createPottedBlock(Blocks.SWEET_BERRY_BUSH, "sweet_berry_bush");
     public static final Block GLOW_BERRY_LEAVES_CARPET = ARFOBlocks.createBlock(new ARFOGlowingLeavesCarpetBlock(), "glow_berry_leaves_carpet");
 
 
