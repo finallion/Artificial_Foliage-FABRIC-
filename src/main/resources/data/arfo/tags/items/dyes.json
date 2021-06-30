@@ -1,29 +1,11 @@
 {
   "replace": false,
   "values": [
-    "arfo:mushroom_fields_dye",
-    "arfo:jungle_dye",
-    "arfo:jungle_edge_dye",
-    "arfo:forest_dye",
-    "arfo:birch_forest_dye",
-    "arfo:plains_dye",
-    "arfo:waters_dye",
-    "arfo:mega_taiga_dye",
-    "arfo:taiga_dye",
-    "arfo:mountains_dye",
-    "arfo:snowy_beach_dye",
-    "arfo:snowy_dye",
-    "arfo:dark_forest_dye",
-    "arfo:lush_swamp_dye",
-    "arfo:swamp_dye",
-    "arfo:savanna_dye",
-    "arfo:badlands_dye",
-    "arfo:traverse_dye",
-    "arfo:byg_forest_dye",
-    "arfo:byg_mountains_dye",
-    "arfo:byg_nether_dye",
-    "arfo:byg_lowlands_dye",
-    "arfo:bop_grove_dye",
-    "arfo:bop_flatland_dye"
+    "#arfo:moderate_dyes",
+    "#arfo:lukewarm_dyes",
+    "#arfo:cold_dyes",
+    "#arfo:warm_dyes",
+    "#arfo:swamp_dyes",
+    "#arfo:frozen_dyes"
   ]
 }
