@@ -117,6 +117,7 @@ public class ARFOSpreadableSlab extends SlabBlock implements Fertilizable {
                         blockState4 = features.get(3).getDefaultState().with(HALF, DoubleBlockHalf.LOWER);
                         large = true;
                     }
+                    // TODO: increase leaf carpets spawn when recipes got removed
                 } else if (rand < 45) {
                     blockState4 = features.get(random.nextInt(features.size() / 2) + 4).getDefaultState();
                 }
