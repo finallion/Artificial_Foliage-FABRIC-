@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "grass_slab_blocks",
+  "pattern": [
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "arfo:byg_cypress_swampland_grass_block"
+    }
+  },
+  "result": {
+    "item": "arfo:byg_cypress_swampland_grass_slab",
+    "count": 6
+  }
+}

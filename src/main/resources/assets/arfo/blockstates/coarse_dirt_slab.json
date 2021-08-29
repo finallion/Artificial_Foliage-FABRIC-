@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "type=bottom":
+    {
+      "model": "arfo:block/coarse_dirt_slab"
+    },
+    "type=top":
+    {
+      "model": "arfo:block/coarse_dirt_slab_top"
+    },
+    "type=double":
+    {
+      "model": "minecraft:block/coarse_dirt"
+    }
+  }
+}

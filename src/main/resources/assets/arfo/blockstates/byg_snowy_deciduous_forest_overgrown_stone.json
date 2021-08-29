@@ -1,0 +1,24 @@
+{
+  "variants": {
+    "snowy=false": [
+      {
+        "model": "arfo:block/byg_snowy_deciduous_forest_overgrown_stone"
+      },
+      {
+        "model": "arfo:block/byg_snowy_deciduous_forest_overgrown_stone",
+        "y": 90
+      },
+      {
+        "model": "arfo:block/byg_snowy_deciduous_forest_overgrown_stone",
+        "y": 180
+      },
+      {
+        "model": "arfo:block/byg_snowy_deciduous_forest_overgrown_stone",
+        "y": 270
+      }
+    ],
+    "snowy=true": {
+      "model": "arfo:block/overgrown_stone_snowy"
+    }
+  }
+}

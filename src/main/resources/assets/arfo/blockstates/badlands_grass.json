@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/badlands_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/badlands_grass_down"
+    }
+  }
+}

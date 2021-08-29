@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "snowy=false,type=top": {
+      "model": "arfo:block/byg_fresh_water_lake_grass_slab_top"
+    },
+    "snowy=true,type=top": {
+      "model": "arfo:block/byg_fresh_water_lake_grass_slab_top_snow"
+    },
+    "snowy=false,type=bottom": {
+      "model": "arfo:block/byg_fresh_water_lake_grass_slab"
+    },
+    "snowy=true,type=bottom": {
+      "model": "arfo:block/byg_fresh_water_lake_grass_slab_snow"
+    },
+    "snowy=false,type=double": {
+      "model": "arfo:block/byg_fresh_water_lake_grass_block"
+    },
+    "snowy=true,type=double": {
+      "model": "arfo:block/grass_block_snow"
+    }
+  }
+}

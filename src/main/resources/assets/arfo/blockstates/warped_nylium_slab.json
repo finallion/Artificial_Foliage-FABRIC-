@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "type=bottom":
+    {
+      "model": "arfo:block/warped_nylium_slab"
+    },
+    "type=top":
+    {
+      "model": "arfo:block/warped_nylium_slab_top"
+    },
+    "type=double":
+    {
+      "model": "minecraft:block/warped_nylium"
+    }
+  }
+}

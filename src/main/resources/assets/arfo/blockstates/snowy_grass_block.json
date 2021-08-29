@@ -1,0 +1,24 @@
+{
+  "variants": {
+    "snowy=false": [
+      {
+        "model": "arfo:block/snowy_grass_block"
+      },
+      {
+        "model": "arfo:block/snowy_grass_block",
+        "y": 90
+      },
+      {
+        "model": "arfo:block/snowy_grass_block",
+        "y": 180
+      },
+      {
+        "model": "arfo:block/snowy_grass_block",
+        "y": 270
+      }
+    ],
+    "snowy=true": {
+      "model": "arfo:block/grass_block_snow"
+    }
+  }
+}

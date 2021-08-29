@@ -1,0 +1,63 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:water",
+    "minecraft:flowing_water",
+    "arfo:still_cold_ocean_water",
+    "arfo:flowing_cold_ocean_water",
+    "arfo:still_frozen_ocean_water",
+    "arfo:flowing_frozen_ocean_water",
+    "arfo:still_lukewarm_ocean_water",
+    "arfo:flowing_lukewarm_ocean_water",
+    "arfo:still_warm_ocean_water",
+    "arfo:flowing_warm_ocean_water",
+    "arfo:still_swamp_water",
+    "arfo:flowing_swamp_water",
+    "arfo:still_ocean_water",
+    "arfo:flowing_ocean_water",
+
+    "arfo:still_traverse_lush_swamp_water",
+    "arfo:flowing_traverse_lush_swamp_water",
+    "arfo:still_traverse_mini_jungle_water",
+    "arfo:flowing_traverse_mini_jungle_water",
+
+    "arfo:still_byg_bulbis_gardens_water",
+    "arfo:still_byg_crag_gardens_water",
+    "arfo:still_byg_dead_sea_water",
+    "arfo:still_byg_polluted_lake_water",
+    "arfo:still_byg_tropical_island_water",
+    "arfo:still_byg_glowshroom_bayou_water",
+    "arfo:still_byg_imparius_grove_water",
+    "arfo:still_byg_ethereal_islands_water",
+    "arfo:still_byg_shulkren_forest_water",
+    "arfo:still_byg_vibrant_swampland_water",
+    "arfo:flowing_byg_bulbis_gardens_water",
+    "arfo:flowing_byg_crag_gardens_water",
+    "arfo:flowing_byg_dead_sea_water",
+    "arfo:flowing_byg_polluted_lake_water",
+    "arfo:flowing_byg_tropical_island_water",
+    "arfo:flowing_byg_glowshroom_bayou_water",
+    "arfo:flowing_byg_imparius_grove_water",
+    "arfo:flowing_byg_ethereal_islands_water",
+    "arfo:flowing_byg_shulkren_forest_water",
+    "arfo:flowing_byg_vibrant_swampland_water",
+
+    "arfo:still_bop_bayou_water",
+    "arfo:flowing_bop_bayou_water",
+    "arfo:still_bop_mystic_grove_water",
+    "arfo:flowing_bop_mystic_grove_water",
+    "arfo:still_bop_ominous_woods_water",
+    "arfo:flowing_bop_ominous_woods_water",
+    "arfo:still_bop_origin_valley_water",
+    "arfo:flowing_bop_origin_valley_water",
+    "arfo:still_bop_rainforest_water",
+    "arfo:flowing_bop_rainforest_water",
+    "arfo:still_bop_wasteland_water",
+    "arfo:flowing_bop_wasteland_water",
+    "arfo:still_bop_wetland_water",
+    "arfo:flowing_bop_wetland_water"
+
+
+
+  ]
+}

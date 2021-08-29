@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/byg_shrub_lands_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/byg_shrub_lands_fern_down"
+    }
+  }
+}

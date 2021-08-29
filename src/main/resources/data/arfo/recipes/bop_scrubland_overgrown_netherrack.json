@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "overgrown_netherrack",
+  "pattern": [
+    "XXX",
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:netherrack"
+    },
+    "Y": {
+      "item": "arfo:savanna_dye"
+    },
+    "Z": {
+      "item": "arfo:bop_flatland_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:bop_scrubland_overgrown_netherrack",
+    "count": 4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/snowy_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/snowy_fern_down"
+    }
+  }
+}

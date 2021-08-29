@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/byg_skyris_highlands_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/byg_skyris_highlands_grass_down"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "overgrown_stone_slab_blocks",
+  "pattern": [
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "arfo:lush_swamp_overgrown_stone"
+    }
+  },
+  "result": {
+    "item": "arfo:lush_swamp_overgrown_stone_slab",
+    "count": 6
+  }
+}

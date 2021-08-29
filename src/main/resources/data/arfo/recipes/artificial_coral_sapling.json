@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XY "
+  ],
+  "key": {
+    "X": {
+      "tag": "arfo:corals"
+    },
+    "Y": {
+      "item": "minecraft:bone_meal"
+    }
+  },
+  "result": {
+    "item": "arfo:artificial_coral_sapling"
+  }
+}

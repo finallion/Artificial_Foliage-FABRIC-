@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/byg_cold_swamplands_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/byg_cold_swamplands_fern_down"
+    }
+  }
+}

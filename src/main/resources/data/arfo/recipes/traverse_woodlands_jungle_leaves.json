@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "jungle_leaves",
+  "pattern": [
+    "XXX",
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "tag": "arfo:jungle_leaves"
+    },
+    "Y": {
+      "item": "arfo:taiga_dye"
+    },
+    "Z": {
+      "item": "arfo:traverse_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:traverse_woodlands_jungle_leaves",
+    "count": 4
+  }
+}

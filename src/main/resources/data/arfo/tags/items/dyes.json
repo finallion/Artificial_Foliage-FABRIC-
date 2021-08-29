@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#arfo:moderate_dyes",
+    "#arfo:lukewarm_dyes",
+    "#arfo:cold_dyes",
+    "#arfo:warm_dyes",
+    "#arfo:swamp_dyes",
+    "#arfo:frozen_dyes"
+  ]
+}

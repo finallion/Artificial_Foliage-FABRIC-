@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "arfo",
+  "version": "1.9",
+
+  "name": "Artificial Foliage",
+  "description": "Grass blocks, grass slabs, grass, leaves and much more in every vanilla or modded biome color",
+  "authors": [
+    "Fianllion"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": "https://github.com/finallion/Artificial_Foliage-FABRIC-"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.finallion.artificialfoliage.ArtificialFoliage"
+    ],
+    "client": [
+      "com.finallion.artificialfoliage.ArtificialFoliageClient"
+    ]
+  },
+  "mixins": [
+    "arfo.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "traverse": "*",
+    "byg": "*",
+    "bop": "*"
+  }
+}

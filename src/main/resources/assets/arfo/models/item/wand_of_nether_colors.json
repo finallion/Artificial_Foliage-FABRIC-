@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "arfo:items/wand_of_nether_colors"
+  }
+}

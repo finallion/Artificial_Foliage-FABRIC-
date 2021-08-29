@@ -1,0 +1,72 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "particle": "minecraft:block/stone",
+    "bottom": "minecraft:block/stone",
+    "top": "minecraft:block/snow",
+    "side": "arfo:blocks/byg_overgrown_stone_snow_side"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        8,
+        16
+      ],
+      "faces": {
+        "down": {
+          "texture": "#bottom",
+          "cullface": "down"
+        },
+        "up": {
+          "texture": "#top"
+        },
+        "north": {
+          "texture": "#side",
+          "uv": [
+            0.0,
+            2.0,
+            16.0,
+            10.0
+          ],
+          "cullface": "north"
+        },
+        "south": {
+          "texture": "#side",
+          "uv": [
+            0.0,
+            2.0,
+            16.0,
+            10.0
+          ],
+          "cullface": "south"
+        },
+        "west": {
+          "texture": "#side",
+          "uv": [
+            0.0,
+            2.0,
+            16.0,
+            10.0
+          ],
+          "cullface": "west"
+        },
+        "east": {
+          "texture": "#side",
+          "uv": [
+            0.0,
+            2.0,
+            16.0,
+            10.0
+          ],
+          "cullface": "east"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/traverse_snowy_coniferous_forest_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/traverse_snowy_coniferous_forest_fern_down"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "half=upper,open=false": {
+      "model": "arfo:block/tall_bop_mystic_grove_grass_top"
+    },
+    "half=lower,open=false": {
+      "model": "arfo:block/tall_bop_mystic_grove_grass_bottom"
+    },
+    "half=upper,open=true": {
+      "model": "arfo:block/tall_bop_mystic_grove_grass_top_down"
+    },
+    "half=lower,open=true": {
+      "model": "arfo:block/tall_bop_mystic_grove_grass_bottom_down"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "type=bottom":
+    {
+      "model": "arfo:block/artificial_stone_soil_slab"
+    },
+    "type=top":
+    {
+      "model": "arfo:block/artificial_stone_soil_slab_top"
+    },
+    "type=double":
+    {
+      "model": "arfo:block/artificial_stone_soil"
+    }
+  }
+}

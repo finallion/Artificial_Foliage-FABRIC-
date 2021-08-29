@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dark_oak_leaves",
+  "pattern": [
+    "XXX",
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "tag": "arfo:dark_oak_leaves"
+    },
+    "Y": {
+      "item": "arfo:lush_swamp_dye"
+    },
+    "Z": {
+      "item": "arfo:traverse_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:traverse_lush_swamp_dark_oak_leaves",
+    "count": 4
+  }
+}

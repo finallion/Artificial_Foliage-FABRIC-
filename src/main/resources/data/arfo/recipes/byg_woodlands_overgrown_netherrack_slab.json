@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "overgrown_netherrack_slab_blocks",
+  "pattern": [
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "arfo:byg_cika_woods_overgrown_netherrack"
+    }
+  },
+  "result": {
+    "item": "arfo:byg_woodlands_overgrown_netherrack_slab",
+    "count": 6
+  }
+}

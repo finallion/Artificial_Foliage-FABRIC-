@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "water_buckets",
+  "pattern": [
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:bucket"
+    },
+    "Y": {
+      "tag": "arfo:lukewarm_dyes"
+    },
+    "Z": {
+      "item": "arfo:byg_lowlands_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:byg_dead_sea_water_bucket"
+  }
+}

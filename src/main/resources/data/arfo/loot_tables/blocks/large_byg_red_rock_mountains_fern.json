@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "arfo:large_byg_red_rock_mountains_fern",
+              "properties": {
+                "half": "lower"
+              }
+            },
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "items": [ "minecraft:shears" ]
+              }
+            }
+          ],
+          "name": "arfo:large_byg_red_rock_mountains_fern"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "arfo:large_byg_red_rock_mountains_fern",
+              "properties": {
+                "half": "upper"
+              }
+            },
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "items": [ "minecraft:shears" ]
+              }
+            }
+          ],
+          "name": "arfo:large_byg_red_rock_mountains_fern"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ]
+}

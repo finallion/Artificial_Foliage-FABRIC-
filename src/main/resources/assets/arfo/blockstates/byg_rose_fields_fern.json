@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/byg_rose_fields_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/byg_rose_fields_fern_down"
+    }
+  }
+}

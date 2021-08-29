@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/jungle_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/jungle_grass_down"
+    }
+  }
+}

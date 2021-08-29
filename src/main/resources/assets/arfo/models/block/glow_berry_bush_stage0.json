@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "arfo:blocks/glow_berry_bush"
+  }
+}

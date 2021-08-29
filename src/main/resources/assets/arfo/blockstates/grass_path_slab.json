@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "type=bottom":
+    {
+      "model": "arfo:block/grass_path_slab"
+    },
+    "type=top":
+    {
+      "model": "arfo:block/grass_path_slab_top"
+    },
+    "type=double":
+    {
+      "model": "minecraft:block/dirt_path"
+    }
+  }
+}

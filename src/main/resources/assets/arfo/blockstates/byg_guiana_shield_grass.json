@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/byg_guiana_shield_grass"
+    },
+    "open=true": {
+      "model": "arfo:block/byg_guiana_shield_grass_down"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dark_oak_leaves",
+  "pattern": [
+    "XXX",
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "tag": "arfo:dark_oak_leaves"
+    },
+    "Y": {
+      "item": "arfo:mega_taiga_dye"
+    },
+    "Z": {
+      "item": "arfo:bop_flatland_dye"
+    }
+  },
+  "result": {
+    "item": "arfo:bop_muskeg_dark_oak_leaves",
+    "count": 4
+  }
+}

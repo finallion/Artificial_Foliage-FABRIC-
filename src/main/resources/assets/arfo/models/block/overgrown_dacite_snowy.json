@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "side": "arfo:blocks/byg_overgrown_dacite_snow_side",
+    "bottom": "arfo:blocks/byg_overgrown_dacite_bottom",
+    "top": "minecraft:block/snow",
+    "particle": "arfo:blocks/byg_overgrown_dacite_bottom"
+  }
+}

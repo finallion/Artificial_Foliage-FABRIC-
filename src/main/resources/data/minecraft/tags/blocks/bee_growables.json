@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:crops",
+    "minecraft:sweet_berry_bush",
+    "minecraft:cave_vines",
+    "minecraft:cave_vines_plant",
+    "arfo:glow_berry_leaves",
+    "arfo:glow_berry_leaves_carpet",
+    "arfo:glow_berry_bush"
+  ]
+}

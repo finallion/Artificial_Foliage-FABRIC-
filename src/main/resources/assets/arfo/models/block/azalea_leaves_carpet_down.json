@@ -1,0 +1,6 @@
+{
+  "parent": "arfo:block/leaf_carpet_down",
+  "textures": {
+    "all": "arfo:blocks/azalea_leaves"
+  }
+}

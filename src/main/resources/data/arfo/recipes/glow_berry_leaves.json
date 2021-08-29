@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XY "
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:azalea_leaves"
+    },
+    "Y": {
+      "item": "minecraft:glow_berries"
+    }
+  },
+  "result": {
+    "item": "arfo:glow_berry_leaves",
+    "count": 4
+  }
+}

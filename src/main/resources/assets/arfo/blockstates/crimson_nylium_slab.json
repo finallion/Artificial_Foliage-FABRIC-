@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "type=bottom":
+    {
+      "model": "arfo:block/crimson_nylium_slab"
+    },
+    "type=top":
+    {
+      "model": "arfo:block/crimson_nylium_slab_top"
+    },
+    "type=double":
+    {
+      "model": "minecraft:block/crimson_nylium"
+    }
+  }
+}

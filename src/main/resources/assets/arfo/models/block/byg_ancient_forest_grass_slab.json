@@ -1,0 +1,108 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "particle": "minecraft:block/dirt",
+    "bottom": "minecraft:block/dirt",
+    "top": "minecraft:block/grass_block_top",
+    "side": "minecraft:block/grass_block_side",
+    "overlay": "minecraft:block/grass_block_side_overlay"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        8,
+        16
+      ],
+      "faces": {
+        "down": {
+          "texture": "#bottom",
+          "cullface": "down"
+        },
+        "up": {
+          "texture": "#top",
+          "tintindex": 1
+        },
+        "north": {
+          "texture": "#side",
+          "cullface": "north"
+        },
+        "south": {
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "texture": "#side",
+          "cullface": "west"
+        },
+        "east": {
+          "texture": "#side",
+          "cullface": "east"
+        }
+      }
+    },
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        8,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#overlay",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            8.0
+          ],
+          "cullface": "north",
+          "tintindex": 1
+        },
+        "south": {
+          "texture": "#overlay",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            8.0
+          ],
+          "cullface": "south",
+          "tintindex": 1
+        },
+        "west": {
+          "texture": "#overlay",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            8.0
+          ],
+          "cullface": "west",
+          "tintindex": 1
+        },
+        "east": {
+          "texture": "#overlay",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            8.0
+          ],
+          "cullface": "east",
+          "tintindex": 1
+        }
+      }
+    }
+  ]
+}

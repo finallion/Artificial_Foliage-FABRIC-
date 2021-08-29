@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "arfo:block/bop_lavender_field_fern"
+    },
+    "open=true": {
+      "model": "arfo:block/bop_lavender_field_fern_down"
+    }
+  }
+}
