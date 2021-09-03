@@ -2,6 +2,7 @@ package com.finallion.artificialfoliage.block;
 
 import com.finallion.artificialfoliage.registry.ARFOBlocks;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.NyliumBlock;
@@ -25,7 +26,7 @@ public class ARFOGlowingNyliumBlock extends NyliumBlock {
     public static final BooleanProperty WATERLOGGED;
 
     public ARFOGlowingNyliumBlock() {
-        super(FabricBlockSettings.copyOf(Blocks.CRIMSON_NYLIUM).luminance(15));
+        super(FabricBlockSettings.copyOf(Blocks.CRIMSON_NYLIUM).breakByTool(FabricToolTags.PICKAXES).luminance(15));
     }
 
     @Override
