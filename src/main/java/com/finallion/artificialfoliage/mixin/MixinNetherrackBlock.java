@@ -35,8 +35,6 @@ public class MixinNetherrackBlock {
                 world.setBlockState(pos, Blocks.WARPED_NYLIUM.getDefaultState(), 2);
             } else if (blockState.isOf(ARFOBlocks.CRIMSON_NYLIUM_SLAB) || blockState.isOf(ARFOBlocks.GLOWING_CRIMSON_NYLIUM)) {
                 world.setBlockState(pos, Blocks.CRIMSON_NYLIUM.getDefaultState(), 2);
-            } else {
-                world.setBlockState(pos, blockState.getBlock().getDefaultState(), 2);
             }
         }
 
