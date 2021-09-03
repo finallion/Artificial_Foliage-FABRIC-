@@ -30,7 +30,7 @@ public class MixinNetherrackBlock {
             }
         }
 
-        if (state.getBlock() != blockState.getBlock() && !(blockState.isOf(Blocks.AIR))) {
+        if (state.getBlock() != blockState.getBlock()) {
             if (blockState.isOf(ARFOBlocks.WARPED_NYLIUM_SLAB) || blockState.isOf(ARFOBlocks.GLOWING_WARPED_NYLIUM)) {
                 world.setBlockState(pos, Blocks.WARPED_NYLIUM.getDefaultState(), 2);
             } else if (blockState.isOf(ARFOBlocks.CRIMSON_NYLIUM_SLAB) || blockState.isOf(ARFOBlocks.GLOWING_CRIMSON_NYLIUM)) {
